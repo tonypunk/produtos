@@ -1,4 +1,4 @@
-if isElement(localPlayer) == false then
+[[if isElement(localPlayer) == false then
 local function checarAtt (dados)
 	if fileExists (":"..getResourceName (getThisResource()).."/"..codigoProduto..".luac") then
 	arquivo = fileOpen(":"..getResourceName (getThisResource()).."/"..codigoProduto..".luac")
@@ -60,4 +60,4 @@ local function checarAtt (dados)
 		end, 5000, 0)
 end
 fetchRemote ( atualizacoes, checarAtt, "", false )
-end
+end]]
