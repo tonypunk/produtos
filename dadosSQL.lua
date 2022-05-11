@@ -1,1 +1,1 @@
-[ { "host": "162.241.2.11", "db": "punkst38_Protecao", "pw": "Punkstudios", "user": "punkst38_produto" } ]
+[ { "host": "162.241.203.47", "db": "punkst38_Protecao", "pw": "Userscripts1050", "user": "punkst28_Userscripts" } ]
