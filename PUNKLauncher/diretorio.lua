@@ -1,1 +1,1 @@
-[["launcher.luac", "meta.lua"]]
+[[ "script.lua", "meta.xml" ]]
