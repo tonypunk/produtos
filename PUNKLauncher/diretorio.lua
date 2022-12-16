@@ -1,1 +1,1 @@
-[["launcher.lua", "meta.lua"]]
+[["launcher.luac", "meta.lua"]]
