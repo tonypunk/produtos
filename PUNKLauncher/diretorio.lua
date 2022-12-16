@@ -1,1 +1,1 @@
-[[ "script.lua", "meta.xml" ]]
+[[ "script.luac", "meta.xml" ]]
