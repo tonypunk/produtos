@@ -1,1 +1,0 @@
-[[ "script.luac", "meta.xml" ]]
