@@ -17,80 +17,80 @@ configuracoes = {
 	--
 	["Skateboard"] = {
 		--
-		modelo = "skateboard", --nome do arquivo .dff na pasta
-		textura = "skateboard", --nome do arquivo .txd na pasta
-		colisao = "skateboard", --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
+		modelo = "modelos/objetos/skateboard.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/skateboard.txd", --nome do arquivo .txd na pasta
+		colisao = "modelos/objetos/skateboard.col", --nome do arquivo .col na pasta, caso não haja pode usar um ID e ele irá copiar a colisão
 		--
 	},
 	--
 	["Notebook"] = {
 		--
-		modelo = "notebook", --nome do arquivo .dff na pasta
-		textura = "notebook", --nome do arquivo .txd na pasta
-		colisao = "notebook", --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
+		modelo = "modelos/objetos/notebook.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/notebook.txd", --nome do arquivo .txd na pasta
+		colisao = "modelos/objetos/notebook.col", --nome do arquivo .col na pasta, caso não haja pode usar um ID e ele irá copiar a colisão
 		--
 	},
 	--
 	["Notebook B"] = {
 		--
-		modelo = "notebookB", --nome do arquivo .dff na pasta
-		textura = "notebook", --nome do arquivo .txd na pasta
-		colisao = "notebook", --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
+		modelo = "modelos/objetos/notebookB.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/notebook.txd", --nome do arquivo .txd na pasta
+		colisao = "modelos/objetos/notebook.col", --nome do arquivo .col na pasta, caso não haja pode usar um ID e ele irá copiar a colisão
 		--
 	},
 	
 	["Oculos 1"] = {
 		--
-		modelo = "oculos1", --nome do arquivo .dff na pasta
-		textura = "oculos", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/oculos1.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/oculos.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Oculos 2"] = {
 		--
-		modelo = "oculos2", --nome do arquivo .dff na pasta
-		textura = "oculos", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/oculos2.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/oculos.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Oculos 3"] = {
 		--
-		modelo = "oculos3", --nome do arquivo .dff na pasta
-		textura = "oculos", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/oculos3.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/oculos.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Oculos 4"] = {
 		--
-		modelo = "oculos4", --nome do arquivo .dff na pasta
-		textura = "oculos", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/oculos4.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/oculos.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Oculos 5"] = {
 		--
-		modelo = "oculos5", --nome do arquivo .dff na pasta
-		textura = "oculos", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/oculos5.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/oculos.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Oculos 6"] = {
 		--
-		modelo = "oculos6", --nome do arquivo .dff na pasta
-		textura = "oculos", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/oculos6.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/oculos.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Oculos 7"] = {
 		--
-		modelo = "oculos7", --nome do arquivo .dff na pasta
-		textura = "oculos", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/oculos7.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/oculos.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
@@ -98,56 +98,56 @@ configuracoes = {
 	--
 	["Relogio 1"] = {
 		--
-		modelo = "relogio1", --nome do arquivo .dff na pasta
-		textura = "relogios", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/relogio1.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/relogios.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Relogio 2"] = {
 		--
-		modelo = "relogio2", --nome do arquivo .dff na pasta
-		textura = "relogios", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/relogio2.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/relogios.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Relogio 3"] = {
 		--
-		modelo = "relogio3", --nome do arquivo .dff na pasta
-		textura = "relogios", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/relogio3.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/relogios.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Relogio 4"] = {
 		--
-		modelo = "relogio4", --nome do arquivo .dff na pasta
-		textura = "relogios", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/relogio4.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/relogios.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Relogio 5"] = {
 		--
-		modelo = "relogio5", --nome do arquivo .dff na pasta
-		textura = "relogios", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/relogio5.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/relogios.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Relogio 6"] = {
 		--
-		modelo = "relogio6", --nome do arquivo .dff na pasta
-		textura = "relogios", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/relogio6.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/relogios.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
 	--
 	["Relogio 7"] = {
 		--
-		modelo = "relogio7", --nome do arquivo .dff na pasta
-		textura = "relogios", --nome do arquivo .txd na pasta
+		modelo = "modelos/objetos/relogio7.dff", --nome do arquivo .dff na pasta
+		textura = "modelos/objetos/relogios.txd", --nome do arquivo .txd na pasta
 		colisao = 1212, --ID para copiar a colisão caso não haja um arquivo de colisao (.col)
 		--
 	},
