@@ -1,1 +1,1 @@
-[ { "host": "135.148.56.168", "db": "punkstudios_protecao", "pw": "ogD6Lc4ZtAzLgAxC", "user": "punkstudios_protecao" } ]
+[ { "host": "51.81.63.11", "db": "punkstudios_protecao", "pw": "AKf0fubskAKnyYMz", "user": "punkstudios_prot" } ]
