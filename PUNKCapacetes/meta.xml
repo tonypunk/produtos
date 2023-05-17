@@ -94,7 +94,6 @@
 	<file src="arquivos/construction/textures/stripe.png" type="client" />
 
 	<file src="arquivos/firefighter/firefighter.dff" type="client" />
-	<file src="arquivos/firefighter/firefighter.col" type="client" />
 	<file src="arquivos/firefighter/firefighter_visor.dff" type="client" />
 	<file src="arquivos/firefighter/textures/body.png" type="client" />
 	<file src="arquivos/firefighter/textures/paint.png" type="client" />
