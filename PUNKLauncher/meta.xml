@@ -1,0 +1,31 @@
+<meta>
+    <info author="Tony_Punk" type="script" name="Launcher PUNK STUDIOS" descriptions="" version="320" />
+	<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+    <script src="script.luac" type="shared" />
+	<file src = "tema/tema.mp3" />
+	<file src = "cartazes/apontar.jpg" />
+	<file src = "cartazes/escadas.jpg" />
+	<file src = "cartazes/deitar.jpg" />
+	<file src = "cartazes/skinLoader.jpg" />
+	<file src = "cartazes/objectLoader.jpg" />
+	<file src = "cartazes/vehicleLoader.jpg" />
+	<file src = "cartazes/capacetes.jpg" />
+	<file src = "cartazes/test1.jpg" />
+	<file src = "cartazes/test2.jpg" />
+	<file src="cartazes/punk.png"/>
+    <file src="cartazes/PunkStudios.png"/>
+    <file src="cartazes/close.png"/>
+    <file src="cartazes/volume.png"/>
+    <file src="cartazes/Rectanglelogin.png"/>
+    <file src="cartazes/RectangleNav.png"/>
+    <file src="cartazes/Rectangle.png"/>
+    <file src="cartazes/Login.png"/>
+    <file src="cartazes/Senha.png"/>
+    <file src="cartazes/Acessar.png"/>
+    <file src="cartazes/Token.png"/>
+    <file src="cartazes/site.png"/>
+    <file src="cartazes/dc.png"/>
+    <file src="cartazes/uppre.png"/>
+    <file src="cartazes/setadireita.png"/>
+    <file src="cartazes/setaesquerda.png"/>
+</meta>
