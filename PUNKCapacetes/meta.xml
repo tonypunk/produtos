@@ -151,20 +151,6 @@
 	<file src="arquivos/downhill/textures/paint_1.png" type="client" />
 	<file src="arquivos/downhill/textures/paint_2.png" type="client" />
 	<file src="arquivos/downhill/textures/paint_3.png" type="client" />
-
-	
-
-
-	<file src="arquivos/swat/swat.dff" type="client" />
-	<file src="arquivos/swat/swat_visor.dff" type="client" />
-	<file src="arquivos/swat/textures/body.png" type="client" />
-	<file src="arquivos/swat/textures/paint.png" type="client" />
-	<file src="arquivos/swat/textures/visor.png" type="client" />
-	
-	<file src="arquivos/chopper/chopper.dff" type="client" />
-	<file src="arquivos/chopper/chopper_visor.dff" type="client" />
-	<file src="arquivos/chopper/textures/paint.png" type="client" />
-	<file src="arquivos/chopper/textures/visor.png" type="client" />
 	
     <export function="createHelmet" type="shared" />
 	<export function="useHelmet" type="shared" />
