@@ -6,7 +6,6 @@ nao = false
 --Capacetes
 --
 capacetes = {
-	--
 	--Sportive
 	["Branco"] = {
 		--
@@ -401,7 +400,7 @@ capacetes = {
 				--
 				{
 				textura = "arquivos/sportive/textures/paint.png",
-				cor = {50,10,10,255},
+				cor = {150,10,10,255},
 				},
 				--
 				{
@@ -6056,6 +6055,18 @@ veiculos = { --posição dos capacetes no veículo adicione quantos capacetes qu
 	--
 }
 --
+
+--Comandos
+comandos = {
+capacete = "capacete", -- comando padrão para colocar/remover capacete
+viseira = "visiera", -- comando padrão para subir/descer a viseira
+}
+
+--Controles
+controles = {
+capacete = "c", -- tecla padrão para colocar/remover capacete
+viseira = "x", -- tecla padrão para subir/descer a viseira
+}
 
 configuracoes = {
 
