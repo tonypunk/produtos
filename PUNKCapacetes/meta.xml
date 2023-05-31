@@ -5,8 +5,6 @@
     <script src="script.luac" type="shared" />
 	<script src="instrucoes.lua" type="shared" />
 
-
-	<file src="arquivos/helmets.txd" type="client" />
     <file src="arquivos/sportive/sportive_closed.dff" type="client" />
 	<file src="arquivos/sportive/sportive_open.dff" type="client" />
 	
