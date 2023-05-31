@@ -1,0 +1,156 @@
+<meta>
+    <info name="PUNK Capacetes" author="Tony_Punk" type="script" version="70" description="Sistema de capacetes personalizável. Acesse nosso discord: discord.gg/bkmeQqg"></info>
+    <min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+	<script src="config.lua" type="shared" />
+    <script src="script.luac" type="shared" />
+	<script src="instrucoes.lua" type="shared" />
+
+
+	<file src="arquivos/helmets.txd" type="client" />
+    <file src="arquivos/sportive/sportive_closed.dff" type="client" />
+	<file src="arquivos/sportive/sportive_open.dff" type="client" />
+	
+	<file src="arquivos/sportive/textures/ace.txd" type="client" />
+	<file src="arquivos/sportive/textures/blue.txd" type="client" />
+	<file src="arquivos/sportive/textures/crimson.txd" type="client" />
+	<file src="arquivos/sportive/textures/flames.txd" type="client" />
+	<file src="arquivos/sportive/textures/shatter.txd" type="client" />
+	<file src="arquivos/sportive/textures/skull.txd" type="client" />
+	<file src="arquivos/sportive/textures/square.txd" type="client" />
+	<file src="arquivos/sportive/textures/stars.txd" type="client" />
+	<file src="arquivos/sportive/textures/white.txd" type="client" />
+	<file src="arquivos/sportive/textures/matte.txd" type="client" />
+	<file src="arquivos/sportive/textures/mirror.txd" type="client" />
+	<file src="arquivos/sportive/textures/matte_mirror.txd" type="client" />
+	<file src="arquivos/sportive/textures/mirror_matte.txd" type="client" />
+
+	<file src="arquivos/off-road/off-road_open.dff" type="client" />
+	<file src="arquivos/off-road/off-road_closed.dff" type="client" />
+	<file src="arquivos/off-road/textures/matte.txd" type="client" />
+	<file src="arquivos/off-road/textures/mirror.txd" type="client" />
+	<file src="arquivos/off-road/textures/yellow.txd" type="client" />
+	<file src="arquivos/off-road/textures/black.txd" type="client" />
+	<file src="arquivos/off-road/textures/orange.txd" type="client" />
+	<file src="arquivos/off-road/textures/blue.txd" type="client" />
+	<file src="arquivos/off-road/textures/green.txd" type="client" />
+	<file src="arquivos/off-road/textures/red.txd" type="client" />
+	<file src="arquivos/off-road/textures/gold.txd" type="client" />
+	<file src="arquivos/off-road/textures/pink.txd" type="client" />
+	
+	<file src="arquivos/open-face/open-face.dff" type="client" />
+	<file src="arquivos/open-face/textures/blue.txd" type="client" />
+	<file src="arquivos/open-face/textures/gray.txd" type="client" />
+	<file src="arquivos/open-face/textures/black.txd" type="client" />
+	<file src="arquivos/open-face/textures/white.txd" type="client" />
+	<file src="arquivos/open-face/textures/orange.txd" type="client" />
+	<file src="arquivos/open-face/textures/red.txd" type="client" />
+	<file src="arquivos/open-face/textures/pink.txd" type="client" />
+	
+	<file src="arquivos/mod/mod.dff" type="client" />
+	<file src="arquivos/mod/textures/mod.txd" type="client" />
+	<file src="arquivos/mod/textures/faggio.txd" type="client" />
+	<file src="arquivos/mod/textures/mod_green.txd" type="client" />
+	<file src="arquivos/mod/textures/faggio_green.txd" type="client" />
+	
+	<file src="arquivos/patrol/patrol.dff" type="client" />
+	<file src="arquivos/patrol/textures/blue.txd" type="client" />
+	<file src="arquivos/patrol/textures/black.txd" type="client" />
+	<file src="arquivos/patrol/textures/white.txd" type="client" />
+	
+	<file src="arquivos/short/short.dff" type="client" />
+	<file src="arquivos/short/brim.dff" type="client" />
+	<file src="arquivos/short/saw.dff" type="client" />
+	<file src="arquivos/short/spikes.dff" type="client" />
+	<file src="arquivos/short/textures/short.txd" type="client" />
+	
+	<file src="arquivos/dome/dome.dff" type="client" />
+	<file src="arquivos/dome/spikes.dff" type="client" />
+	<file src="arquivos/dome/textures/ace.txd" type="client" />
+	<file src="arquivos/dome/textures/black.txd" type="client" />
+	<file src="arquivos/dome/textures/bull.txd" type="client" />
+	<file src="arquivos/dome/textures/carbon.txd" type="client" />
+	<file src="arquivos/dome/textures/chrome.txd" type="client" />
+	<file src="arquivos/dome/textures/feather.txd" type="client" />
+	<file src="arquivos/dome/textures/green.txd" type="client" />
+	<file src="arquivos/dome/textures/orange.txd" type="client" />
+	<file src="arquivos/dome/textures/patriot.txd" type="client" />
+	<file src="arquivos/dome/textures/purple.txd" type="client" />
+	<file src="arquivos/dome/textures/skull.txd" type="client" />
+	<file src="arquivos/dome/textures/snake.txd" type="client" />
+	<file src="arquivos/dome/textures/zebra.txd" type="client" />
+	
+	<file src="arquivos/stunt/stunt_closed.dff" type="client" />
+	<file src="arquivos/stunt/stunt_open.dff" type="client" />
+	<file src="arquivos/stunt/textures/black.txd" type="client" />
+	<file src="arquivos/stunt/textures/blue.txd" type="client" />
+	<file src="arquivos/stunt/textures/cream.txd" type="client" />
+	<file src="arquivos/stunt/textures/gold.txd" type="client" />
+	<file src="arquivos/stunt/textures/gray.txd" type="client" />
+	<file src="arquivos/stunt/textures/orange.txd" type="client" />
+	<file src="arquivos/stunt/textures/pink.txd" type="client" />
+	<file src="arquivos/stunt/textures/red.txd" type="client" />
+	<file src="arquivos/stunt/textures/silver.txd" type="client" />
+	<file src="arquivos/stunt/textures/teal.txd" type="client" />
+	<file src="arquivos/stunt/textures/white.txd" type="client" />
+	
+	<file src="arquivos/aviator/aviator_open.dff" type="client" />
+	<file src="arquivos/aviator/aviator_closed.dff" type="client" />
+	<file src="arquivos/aviator/textures/black.txd" type="client" />
+	<file src="arquivos/aviator/textures/default.txd" type="client" />
+	<file src="arquivos/aviator/textures/gray.txd" type="client" />
+
+	<file src="arquivos/pilot/pilot_open.dff" type="client" />
+	<file src="arquivos/pilot/pilot_closed.dff" type="client" />
+	<file src="arquivos/pilot/textures/default.txd" type="client" />
+	<file src="arquivos/pilot/textures/shark.txd" type="client" />
+	
+	<file src="arquivos/construction/construction.dff" type="client" />
+	<file src="arquivos/construction/textures/blue.txd" type="client" />
+	<file src="arquivos/construction/textures/white.txd" type="client" />
+	<file src="arquivos/construction/textures/orange.txd" type="client" />
+	<file src="arquivos/construction/textures/yellow.txd" type="client" />
+
+	<file src="arquivos/firefighter/firefighter_open.dff" type="client" />
+	<file src="arquivos/firefighter/firefighter_closed.dff" type="client" />
+	<file src="arquivos/firefighter/textures/orange.txd" type="client" />
+	<file src="arquivos/firefighter/textures/yellow.txd" type="client" />
+	<file src="arquivos/firefighter/textures/white.txd" type="client" />
+	
+	<file src="arquivos/roller/roller.dff" type="client" />
+	<file src="arquivos/roller/textures/blue.txd" type="client" />
+	<file src="arquivos/roller/textures/yellow.txd" type="client" />
+	<file src="arquivos/roller/textures/white.txd" type="client" />
+	
+	<file src="arquivos/bmx/bmx.dff" type="client" />
+	<file src="arquivos/bmx/textures/black.txd" type="client" />
+	<file src="arquivos/bmx/textures/pink.txd" type="client" />
+	<file src="arquivos/bmx/textures/teal.txd" type="client" />
+	
+	<file src="arquivos/downhill/downhill_open.dff" type="client" />
+	<file src="arquivos/downhill/downhill_closed.dff" type="client" />
+	<file src="arquivos/downhill/textures/green.txd" type="client" />
+	<file src="arquivos/downhill/textures/red.txd" type="client" />
+	<file src="arquivos/downhill/textures/white.txd" type="client" />
+	
+	<file src="arquivos/skate/skate.dff" type="client" />
+	<file src="arquivos/skate/textures/orange.txd" type="client" />
+	<file src="arquivos/skate/textures/black.txd" type="client" />
+	<file src="arquivos/skate/textures/white.txd" type="client" />
+	
+    <export function="createHelmet" type="shared" />
+	<export function="useHelmet" type="shared" />
+	<export function="useVisor" type="shared" />
+	<export function="pickHelmet" type="shared" />
+	<export function="dropHelmet" type="shared" />
+	<export function="storeHelmet" type="shared" />
+	<export function="storeHelmetInVehicle" type="shared" />
+	<export function="paintHelmet" type="shared" />
+	<export function="getPedHelmet" type="shared" />
+	<export function="getPedHelmets" type="shared" />
+	<export function="paintHelmet" type="shared" />
+	<export function="getData" type="shared" />
+	<export function="setObjectReflection" type="shared" />
+	
+	
+    <oop>true</oop>
+</meta>
