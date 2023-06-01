@@ -717,12 +717,14 @@ veiculos = { --posição dos capacetes no veículo adicione quantos capacetes qu
 --Comandos
 comandos = {
 capacete = "capacete", -- comando padrão para colocar/remover capacete
-viseira = "visiera", -- comando padrão para subir/descer a viseira
+viseira = "viseira", -- comando padrão para subir/descer a viseira
+soltar = "soltar", -- comando padrão para soltar o capacete
+armazenar = "guardar", --comando padrão para armazenar o capacete
 }
 
 --Controles
 controles = {
-capacete = "c", -- tecla padrão para colocar/remover capacete
+capacete = "h", -- tecla padrão para colocar/remover capacete
 viseira = "x", -- tecla padrão para subir/descer a viseira
 }
 
