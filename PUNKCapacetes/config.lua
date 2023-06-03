@@ -733,15 +733,15 @@ configuracoes = {
 	perder = sim, --perder capacete ao morrer
 
 	attach = function (...)
-	return exports.PUNKAttach:attach (...)
+	return exports.attach:attach (...)
 	end,
 	
 	detach = function (...)
-	return exports.PUNKAttach:detach (...)
+	return exports.attach:detach (...)
 	end,
 	
 	getDetails = function (...)
-	return exports.PUNKAttach:getDetails (...)
+	return exports.attach:getDetails (...)
 	end,
 	
 }
