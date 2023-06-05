@@ -626,8 +626,8 @@ veiculos = { --posição dos capacetes no veículo adicione quantos capacetes qu
 	[581] = {
 		--
 		[1] = { --Passageiro que pode usar este capacete
-		posicao = {0,0.15,0.5}, --posição do capacete no veiculo
-		rotacao = {0,0,90}, --rotação do capacete no veiculo
+		posicao = {0,0.15,0.525}, --posição do capacete no veiculo
+		rotacao = {15,-90,0}, --rotação do capacete no veiculo
 		capacete = "Caveira", --tipo de capacete neste passageiro
 		rede = sim, --este capacete é armazenado em uma redezinha
 		automatico = sim, -- este passageiro veste o capacete automaticamente ao entrar neste banco
@@ -635,8 +635,8 @@ veiculos = { --posição dos capacetes no veículo adicione quantos capacetes qu
 		},
 		--
 		[2] = { --Passageiro que pode usar este capacete
-		posicao = {-0.3,0.45,0.45}, --posição do capacete no veiculo
-		rotacao = {180,90,-180}, --rotação do capacete no veiculo
+		posicao = {0,-0.8,0.525}, --posição do capacete no veiculo
+		rotacao = {15,-90,0}, --rotação do capacete no veiculo
 		capacete = "Incendiario", --tipo de capacete neste passageiro
 		rede = nao, --este capacete é armazenado em uma redezinha
 		automatico = sim, -- este passageiro veste o capacete automaticamente ao entrar neste banco
