@@ -1,0 +1,69 @@
+<meta>
+    <info name="Cintos de segurança" author="PUNK STUDIOS" type="script" version="70" description="Acesse nosso discord: discord.gg/DnyCUzJ"></info>
+    <min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+    
+	<script src="config.lua" type="shared" />
+    <script src="script.luac" type="shared" />
+	
+	<file src="arquivos/modelos/default.dff"></file>
+	<file src="arquivos/modelos/circular.dff"></file>
+	<file src="arquivos/modelos/losangular.dff"></file>
+	<file src="arquivos/modelos/triangular.dff"></file>
+	
+	<file src="arquivos/texturas/camo/belt.txd"></file>
+	<file src="arquivos/texturas/camo/left.txd"></file>
+	<file src="arquivos/texturas/camo/right.txd"></file>
+	<file src="arquivos/texturas/camo/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/default/belt.txd"></file>
+	<file src="arquivos/texturas/default/left.txd"></file>
+	<file src="arquivos/texturas/default/right.txd"></file>
+	<file src="arquivos/texturas/default/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/desert/belt.txd"></file>
+	<file src="arquivos/texturas/desert/left.txd"></file>
+	<file src="arquivos/texturas/desert/right.txd"></file>
+	<file src="arquivos/texturas/desert/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/gold/belt.txd"></file>
+	<file src="arquivos/texturas/gold/left.txd"></file>
+	<file src="arquivos/texturas/gold/right.txd"></file>
+	<file src="arquivos/texturas/gold/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/ice/belt.txd"></file>
+	<file src="arquivos/texturas/ice/left.txd"></file>
+	<file src="arquivos/texturas/ice/right.txd"></file>
+	<file src="arquivos/texturas/ice/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/lava/belt.txd"></file>
+	<file src="arquivos/texturas/lava/left.txd"></file>
+	<file src="arquivos/texturas/lava/right.txd"></file>
+	<file src="arquivos/texturas/lava/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/leopard/belt.txd"></file>
+	<file src="arquivos/texturas/leopard/left.txd"></file>
+	<file src="arquivos/texturas/leopard/right.txd"></file>
+	<file src="arquivos/texturas/leopard/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/pink/belt.txd"></file>
+	<file src="arquivos/texturas/pink/left.txd"></file>
+	<file src="arquivos/texturas/pink/right.txd"></file>
+	<file src="arquivos/texturas/pink/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/snow/belt.txd"></file>
+	<file src="arquivos/texturas/snow/left.txd"></file>
+	<file src="arquivos/texturas/snow/right.txd"></file>
+	<file src="arquivos/texturas/snow/crossed.txd"></file>
+	
+	<file src="arquivos/texturas/zebra/belt.txd"></file>
+	<file src="arquivos/texturas/zebra/left.txd"></file>
+	<file src="arquivos/texturas/zebra/right.txd"></file>
+	<file src="arquivos/texturas/zebra/crossed.txd"></file>
+
+	<export function="giveSeatbelt" type="server" />
+	<export function="takeSeatbelt" type="server" />
+	<export function="getSeatbelt" type="server" />
+	<export function="getSeatbeltState" type="server" />
+	
+	<oop>true</oop>
+</meta>
