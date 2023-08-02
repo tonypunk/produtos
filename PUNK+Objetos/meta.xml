@@ -1,0 +1,40 @@
+<meta>
+    <info author="Punk Studios" type="script" name="Objetos novos" descriptions="www.punkstudios.com.br" version="313" />
+	<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+    <script src="config.lua" type="shared" />
+    <script src="+objetos.luac" type="shared" />
+	<script src="instrucoes.lua" type="server" />
+    
+	<file src="modelos/objetos/skateboard.dff" type="client" />
+    <file src="modelos/objetos/skateboard.txd" type="client" />
+	<file src="modelos/objetos/skateboard.col" type="client" />
+	
+	<file src="modelos/objetos/notebook.dff" type="client" />
+    <file src="modelos/objetos/notebookB.dff" type="client" />
+	<file src="modelos/objetos/notebook.txd" type="client" />
+	<file src="modelos/objetos/notebook.col" type="client" />
+
+	<file src="modelos/objetos/oculos1.dff" type="client" />
+	<file src="modelos/objetos/oculos2.dff" type="client" />
+	<file src="modelos/objetos/oculos3.dff" type="client" />
+	<file src="modelos/objetos/oculos4.dff" type="client" />
+	<file src="modelos/objetos/oculos5.dff" type="client" />
+	<file src="modelos/objetos/oculos6.dff" type="client" />
+	<file src="modelos/objetos/oculos7.dff" type="client" />
+	<file src="modelos/objetos/oculos.txd" type="client" />
+	
+	<file src="modelos/objetos/relogio1.dff" type="client" />
+	<file src="modelos/objetos/relogio2.dff" type="client" />
+	<file src="modelos/objetos/relogio3.dff" type="client" />
+	<file src="modelos/objetos/relogio4.dff" type="client" />
+	<file src="modelos/objetos/relogio5.dff" type="client" />
+	<file src="modelos/objetos/relogio6.dff" type="client" />
+	<file src="modelos/objetos/relogio7.dff" type="client" />
+	<file src="modelos/objetos/relogios.txd" type="client" />
+	
+    <export function="createObject" type="shared" />
+    <export function="setObjectModel" type="shared" />
+    <export function="getObjectModel" type="shared" />
+    
+    <oop>true</oop>
+</meta>
