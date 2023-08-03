@@ -17,16 +17,16 @@ _setElementModel = setElementModel --não tocar
 
 function createVehicle (...)
     if type (arg[1]) == "number" then return _createVehicle (unpack (arg)) end
-return exports["PUNKVehicleLoader"]:createVehicle (unpack (arg))
+return exports["PUNK+Veiculos"]:createVehicle (unpack (arg))
 end
 
 function getElementModel (elemento)
-	if getElementType (elemento) == "vehicle" then return exports["PUNKVehicleLoader"]:getVehicleModel (elemento) end
+	if getElementType (elemento) == "vehicle" then return exports["PUNK+Veiculos"]:getVehicleModel (elemento) end
 return _getElementModel (elemento)
 end
 
 function setElementModel (...)
-	if getElementType (arg[2]) == "string" then return exports["PUNKVehicleLoader"]:setVehicleModel (unpack(arg)) end
+	if getElementType (arg[2]) == "string" then return exports["PUNK+Veiculos"]:setVehicleModel (unpack(arg)) end
 return _setElementModel (unpack(arg))
 end
 ]]
