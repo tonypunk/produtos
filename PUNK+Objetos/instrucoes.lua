@@ -11,7 +11,7 @@ createObject ("Skateboard", 1242.11, 1245.2, 1545.5)
 Para utilizar elementos de nosso sistema em seus mods cole o seguinte código no topo dos scripts
 
 --Setup
-resource = "PUNKObjectLoader" --nome da pasta deste mod
+resource = "PUNK+Objetos" --nome da pasta deste mod
 
 _createObject = createObject --não tocar
 _getElementModel = getElementModel --não tocar
