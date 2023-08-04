@@ -1,0 +1,20 @@
+<meta>
+    <script src="launcher.luac" type="shared" />
+    
+    <file src="designer/html/index.html" />
+    <file src="designer/css/index.css" />
+    <file src="designer/html/img/iconlojapunk.png" />
+    <file src="designer/js/index.js" />
+    <file src="designer/js/jquery.min.js" />
+    <file src="designer/js/notification.js" />
+    <file src="designer/html/sound/PunkStudios.mp3" />
+    
+    <file src="designer/css/img_notification/bell-solid.svg"></file>
+    <file src="designer/css/img_notification/circle-check-solid.svg"></file>
+    <file src="designer/css/img_notification/circle-xmark-solid.svg"></file>
+    <file src="designer/css/img_notification/shield-solid.svg"></file>
+    <file src="designer/css/img_notification/triangle-exclamation-solid.svg"></file>
+    <file src="designer/css/img_notification/qrcode.svg"></file>
+
+
+</meta>
