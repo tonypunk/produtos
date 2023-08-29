@@ -19,7 +19,6 @@ _getElementModel = getElementModel --não tocar
 _setElementModel = setElementModel --não tocar
 
 function createVehicle (...)
-    if type (arg[1]) == "number" then return _createVehicle (unpack (arg)) end
 return exports["PUNK+Veiculos"]:createVehicle (unpack (arg))
 end
 
