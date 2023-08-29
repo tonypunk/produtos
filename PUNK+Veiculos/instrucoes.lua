@@ -5,8 +5,11 @@ Veiculos:
 createVehicle (id, x,y,z, rotacao, skin, interior, dimensao, time)
 exemplo: createVehicle (1210, 1242.11, 1245.2, 1545.5)
 
-A diferença é que os elementos novos são referidos pelo NOME em vez de ID
+Você só precisa utilizar um nome
 createVehicle ("Stinger", 1242.11, 1245.2, 1545.5)
+
+Ou um ID diferente dos que já existem
+createVehicle (1000, 1242.11, 1245.2, 1545.5)
 
 Para utilizar elementos de nosso sistema em seus mods cole o seguinte código no topo dos scripts
 
