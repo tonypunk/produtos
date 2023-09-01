@@ -19,6 +19,12 @@ _getElementModel = getElementModel --não tocar
 _setElementModel = setElementModel --não tocar
 
 function createVehicle (...)
+	for i=400, 611 do
+		if arg[1] == i then
+		_createVehicle (unpack (arg))
+		return
+		end
+	end
 return exports["PUNK+Veiculos"]:createVehicle (unpack (arg))
 end
 
