@@ -33,7 +33,11 @@ return _getElementModel (elemento)
 end
 
 function setElementModel (...)
-	if getElementType (arg[2]) == "string" then return exports["PUNK+Veiculos"]:setVehicleModel (unpack(arg)) end
-return _setElementModel (unpack(arg))
+	for i=400, 611 do
+		if arg[2] == i then
+		return _setElementModel (unpack(arg))
+		end
+	end
+return exports["PUNK+Veiculos"]:setVehicleModel (unpack(arg))
 end
 ]]
