@@ -26,6 +26,7 @@ function createVehicle (...)
 	end
 return exports["PUNK+Veiculos"]:createVehicle (unpack (arg))
 end
+Vehicle = createVehicle
 
 function getElementModel (elemento)
 	if getElementType (elemento) == "vehicle" then return exports["PUNK+Veiculos"]:getVehicleModel (elemento) end
