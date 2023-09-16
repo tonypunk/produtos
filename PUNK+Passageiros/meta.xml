@@ -1,0 +1,27 @@
+<meta>
+    <info name="Passageiros" author="Tony_Punk PUNK STUDIOS" type="script" version="70" description="Acesse nosso discord: discord.gg/bkmeQqg"></info>
+    <min_mta_version server="1.5.8-9.20979" client="1.5.8-9.20979"></min_mta_version>
+    <script src="config.lua" type="shared" />
+    <script src="+passageiros.luac" type="shared" />
+	<script src="extra/command.lua" type="shared" />
+	<script src="extra/camera.lua" type="shared" />
+	<script src="extra/radio.lua" type="shared" />
+	<script src="extra/bus.lua" type="shared" />
+	<script src="extra/at400.lua" type="shared" />
+	
+	<export function="warpPedIntoVehicle" type="shared" />
+	<export function="removePedFromVehicle" type="shared" />
+	<export function="setPedEnterVehicle" type="shared" />
+	<export function="setPedExitVehicle" type="shared" />
+	<export function="getVehicleOccupant" type="shared" />
+	<export function="getVehicleOccupants" type="shared" />
+	<export function="getVehicleMaxPassengers" type="shared" />
+	<export function="isPedInVehicle" type="shared" />
+	<export function="getPedOccupiedVehicle" type="shared" />
+	<export function="getPedOccupiedVehicleSeat" type="shared" />
+	<export function="findAccess" type="shared" />
+	<export function="pMove" type="shared" />
+	<export function="pRot" type="shared" />
+	
+    <oop>true</oop>
+</meta>
