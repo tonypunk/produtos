@@ -3,7 +3,7 @@
     <min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
     
 	<script src="config.lua" type="shared" />
-    <script src="script.luac" type="shared" />
+    	<script src="cintos.luac" type="shared" />
 	
 	<file src="arquivos/modelos/default.dff"></file>
 	<file src="arquivos/modelos/circular.dff"></file>
