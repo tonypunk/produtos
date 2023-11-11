@@ -18,23 +18,15 @@ _getElementModel = getElementModel --não tocar
 _setElementModel = setElementModel --não tocar
 
 --Funções
-function spawnPlayer (...)
-	if type (arg[6]) == "string" then return exports[resource]:spawnPlayer (unpack (arg)) end
-_spawnPlayer (unpack(arg))
-end
-
 function createObject (...)
-    if type (arg[1]) == "number" then return _createObject (unpack (arg)) end
 return exports[resource]:createObject (unpack (arg))
 end
 
 function getElementModel (...)
-	if type (arg[1]) == "object" or type (arg[1]) == "object" then return exports[resource]:getPedModel (...) end
-return _getElementModel (unpack(arg))
+return exports[resource]:getObjectModel (...)
 end
 
 function setElementModel (...)
-	if type (arg[2]) == "string" then return exports[resource]:setObjectModel (unpack(arg) end
-return _setElementModel (unpack(arg))
+return exports[resource]:setObjectModel (unpack(arg)
 end
 ]]
