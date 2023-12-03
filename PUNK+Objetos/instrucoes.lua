@@ -17,9 +17,15 @@ _createObject = createObject --não tocar
 _getElementModel = getElementModel --não tocar
 _setElementModel = setElementModel --não tocar
 
+function getData ()
+return exports[resource]:getData ()
+end
+
 --Funções
 function createObject (...)
-return exports[resource]:createObject (unpack (arg))
+local ob = unpack (arg)
+	if getData()[ob] then return exports[resource]:createObject (unpack (arg)) end
+return _createObject (unpack (arg))
 end
 
 function getElementModel (...)
