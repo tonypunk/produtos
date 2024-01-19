@@ -97,7 +97,7 @@ end)
 	addEventHandler ("onClientKey", root, function (botao, estado)
 	local arma = getPedWeapon(localPlayer)
 		if not armas[arma] then return end
-		if isPedEnteringVehicle (localPlayer) then return end
+		--if isPedEnteringVehicle (localPlayer) then return end
 		if isCursorShowing() then return end
 	local veiculo = getPedOccupiedVehicle (localPlayer)
 		if veiculo then
