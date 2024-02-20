@@ -238,7 +238,7 @@ cor = {0,0,0},
 _spawnPlayer = spawnPlayer --não tocar
 function spawnPlayer (...)
 	if type (arg[6]) == "string" then
-	return exports["PUNKSkinLoader"]:spawnPlayer (unpack (arg))
+	return exports["PUNK+Skins"]:spawnPlayer (unpack (arg))
 	end
 return _spawnPlayer (unpack(arg))
 end
@@ -248,19 +248,20 @@ function createPed (...)
     if type (arg[1]) == "number" then
     return _createPed (unpack (arg))
     else
-    return exports["PUNKSkinLoader"]:createPed (unpack (arg))
+    return exports["PUNK+Skins"]:createPed (unpack (arg))
     end
 end
 
 _getElementModel = getElementModel --não tocar
-function getElementModel (...)
-	return exports["PUNKSkinLoader"]:getElementModel (unpack(arg))
+function getElementModel (elemento)
+	if getElementType (elemento) == "player" or getElementType (elemento) == "ped" then return exports["PUNK+Skins"]:getElementModel (elemento) end
+return _getElementModel (elemento)
 end
 
 _setElementModel = setElementModel --não tocar
 function setElementModel (...)
-	if type (arg[1]) == "ped" or type (arg[1]) == "player" and type (arg[2]) == "string" then
-	return exports["PUNKSkinLoader"]:setElementModel (unpack(arg))
+	if getElementType (arg[1]) == "ped" or getElementType (arg[1]) == "player" and type (arg[2]) == "string" then
+	return exports["PUNK+Skins"]:setElementModel (unpack(arg))
 	end
 return _setElementModel (unpack(arg))
 end
