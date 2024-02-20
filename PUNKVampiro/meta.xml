@@ -4,7 +4,7 @@
 	<script src="config.lua" type="shared" />
 	<script src="vampiro.luac" type="shared" />
 	<script src="files/script/3d.lua" type="shared" />
-	<script src="files/script/tutorial.luac" type="shared" />
+	<script src="files/script/tutorial.lua" type="shared" />
 	
 	<file src="files/3d/characters/bat.txd" />
 	<file src="files/3d/characters/bat.dff" />

@@ -2,7 +2,6 @@
 --Setup
 
 local resource = "PUNK+Passageiros"
-
 	_warpPedIntoVehicle = warpPedIntoVehicle
 	function warpPedIntoVehicle (...)
 	return exports[resource]:warpPedIntoVehicle (...)
@@ -53,34 +52,9 @@ local resource = "PUNK+Passageiros"
 	return exports[resource]:getPedOccupiedVehicleSeat (...)
 	end
 	
-	_isPedDoingGangDriveby = isPedDoingGangDriveby
-	function isPedDoingGangDriveby (boneco)
-	return exports[resource]:isPedDoingGangDriveby (...)
-	end
-	
-	_setPedDoingGangDriveBy = setPedDoingGangDriveBy
-	function setPedDoingGangDriveBy (boneco)
-	return exports[resource]:setPedDoingGangDriveBy (...)
-	end
-	
-	_isPedEnteringVehicle = isPedEnteringVehicle
-	function isPedEnteringVehicle (boneco)
-	return exports[resource]:isPedEnteringVehicle (...)
-	end
-	
-	_isPedExitingVehicle = isPedExitingVehicle
-	function isPedExitingVehicle (boneco)
-	return exports[resource]:isPedExitingVehicle (...)
-	end
-	
-	_getSeatAccessPosition = getSeatAccessPosition
-	function getSeatAccessPosition (boneco)
-	return exports[resource]:getSeatAccessPosition (...)
-	end
-	
-	exports[resource]:pMove (ped, time, x,y,z, vehicle) --Mover o boneco em um determinado veiculo
-	exports[resource]:pRot (ped, time, x,y,z, vehicle) --Rotacionar o boneco em um determinado veiculo
-	exports[resource]:findAccess (ped [,vehicle]) --Busca um acesso próximo para ocupar como passageiro
+	pMove (ped, time, x,y,z, vehicle) --Mover o boneco em um determinado veiculo
+	pRot (ped, time, x,y,z, vehicle) --Rotacionar o boneco em um determinado veiculo
+	findAccess (ped [,vehicle]) --Busca um acesso próximo para ocupar como passageiro
 	
 --Eventos
 "onClientVehicleStartEnter"
@@ -98,6 +72,5 @@ local resource = "PUNK+Passageiros"
 "onPlayerVehicleEnter"
 "onClientPlayerVehicleExit"
 "onPlayerVehicleExit"
-"onClientPedDriveby"
-"onPedDriveby"
+	
 ]]

@@ -124,4 +124,11 @@ escadas = {
 		superior = {-1736.5709, -445.9409, 13.5}, --posição superior da escada
 	},
 	--
+	{
+		objeto = nao, --ativar/desativar criação do objeto escada
+		rotacao = {0,0,270}, --rotação da escada
+		inferior = {1919.247, -1753.813, 13.383}, --posição inferior da escada
+		superior = {1919.247, -1753.813, 18.383}, --posição superior da escada
+	},
+	--
 }

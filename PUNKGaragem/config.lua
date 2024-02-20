@@ -18,7 +18,6 @@ garagens = {
 		},
 		--
 		entrada = {
-		
 			--
 			jogador = {
 			posicao = {897.1083984375,-1203.5548095703,16.9765625}, --posição tridimensional (x,y,z) 

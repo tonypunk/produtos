@@ -208,7 +208,7 @@ veiculos = {
 						
 						[3] = {
 							delay = 100,
-							posicao = {1.6,-0.5,0.6, 500},
+							posicao = {1.5,-0.5,0.6, 500},
 							rotacao = {0,0,0, -1},
 						},
 						
@@ -1404,11 +1404,9 @@ veiculos = {
 						},
 						
 						[3] = {
-							anim = {"ped", "abseil", -1, true, true, false, false, 1, true,true, 0.0, 0.4},
+							anim = {"ped", "DRIVE_BOAT", 1, true, true, false, true, 1, true},
 							delay = 350,
 							posicao = {-2,-0.425,-2.3, -1},
-							rotacao = {-7.5,8,7.5, -1},
-							
 						},
 						
 					},
@@ -1418,7 +1416,6 @@ veiculos = {
 						[1] = {
 							anim =  {"ped", "WALK_player", 350, false, true, false, false},
 							delay = 0,
-							rotacao = {0,0,0, -1},
 						},
 						
 						[2] = {
@@ -1490,10 +1487,9 @@ veiculos = {
 						},
 						
 						[3] = {
-							anim = {"ped", "abseil", -1, true, true, false, false, 1, true,false, 0.0, 0.4},
+							anim = {"ped", "DRIVE_BOAT", 1, true, true, false, true, 1, true},
 							delay = 350,
 							posicao = {1,-0.425,-2.3, -1},
-							rotacao = {-7.5,-8,90, -1},
 						},
 						
 					},
@@ -2039,7 +2035,7 @@ veiculos = {
 			acesso = {
 				--
 				[1] = {
-				posicao = {-2.230,-0.425,0},
+				posicao = {-2.230,-0.425,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2127,7 +2123,7 @@ veiculos = {
 			acesso = {
 				--
 				[1] = {
-				posicao = {0.225,-0.425,0},
+				posicao = {0.225,-0.425,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2215,7 +2211,7 @@ veiculos = {
 			acesso = {
 				--
 				[1] = {
-				posicao = {0.625,2.5,0},
+				posicao = {0.625,2.5,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2301,7 +2297,7 @@ veiculos = {
 			acesso = {
 				--
 				[1] = {
-				posicao = {0.625,3.325,0},
+				posicao = {0.625,3.325,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2387,7 +2383,7 @@ veiculos = {
 			acesso = {
 				--
 				[1] = {
-				posicao = {0.625,4.15,0},
+				posicao = {0.625,4.15,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2473,7 +2469,7 @@ veiculos = {
 			acesso = {
 				--
 				[1] = {
-				posicao = {-2.625,2.5,0},
+				posicao = {-2.625,2.5,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2559,7 +2555,7 @@ veiculos = {
 			acesso = {
 				--
 				[1] = {
-				posicao = {-2.625,3.325,0},
+				posicao = {-2.625,3.325,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2645,7 +2641,7 @@ veiculos = {
 			acesso = {
 				--
 				[1] = {
-				posicao = {-2.625,4.15,0},
+				posicao = {-2.625,4.15,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2736,7 +2732,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {-0.25,-8.25,-1},
+				posicao = {-1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2754,18 +2750,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-2.75,0.75, 2000},
+							posicao = {0,-2.75,1, 2000},
 							delay = 2250,
 						},
 						
@@ -2907,7 +2903,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {0.25,-8.25,-1},
+				posicao = {1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -2925,18 +2921,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-2.75,0.75, 2000},
+							posicao = {0,-2.75,1, 2000},
 							delay = 2250,
 						},
 						
@@ -3079,7 +3075,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {-0.25,-8.25,-1},
+				posicao = {-1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -3097,18 +3093,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-3.65,0.75, 1667},
+							posicao = {0,-3.65,1, 1667},
 							delay = 2250,
 						},
 						
@@ -3251,7 +3247,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {0.25,-8.25,-1},
+				posicao = {1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -3269,18 +3265,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-3.65,0.75, 1667},
+							posicao = {0,-3.65,1, 1667},
 							delay = 2250,
 						},
 						
@@ -3423,7 +3419,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {-0.25,-8.25,-1},
+				posicao = {-1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -3441,18 +3437,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-4.5,0.75, 1334},
+							posicao = {0,-4.5,1, 1334},
 							delay = 2250,
 						},
 						
@@ -3594,7 +3590,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {0.25,-8.25,-1},
+				posicao = {1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -3612,18 +3608,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-4.5,0.75, 1334},
+							posicao = {0,-4.5,1, 1334},
 							delay = 2250,
 						},
 						
@@ -3766,7 +3762,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {-0.25,-8.25,-1},
+				posicao = {-1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -3784,18 +3780,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-5.35,0.75, 1001},
+							posicao = {0,-5.35,1, 1001},
 							delay = 2250,
 						},
 						
@@ -3938,7 +3934,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {0.25,-8.25,-1},
+				posicao = {1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -3956,18 +3952,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-5.35,0.75, 1001},
+							posicao = {0,-5.35,1, 1001},
 							delay = 2250,
 						},
 						
@@ -4110,7 +4106,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {-0.25,-8.25,-1},
+				posicao = {-1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -4128,18 +4124,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-6.25,0.75, 668},
+							posicao = {0,-6.25,1, 668},
 							delay = 2250,
 						},
 						
@@ -4282,7 +4278,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {0.25,-8.25,-1},
+				posicao = {1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -4300,18 +4296,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-6.25,0.75, 668},
+							posicao = {0,-6.25,1, 668},
 							delay = 2250,
 						},
 						
@@ -4454,7 +4450,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {-0.25,-8.25,-1},
+				posicao = {-1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -4472,18 +4468,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-7.15,0.75, 335},
+							posicao = {0,-7.15,1, 335},
 							delay = 2250,
 						},
 						
@@ -4626,7 +4622,7 @@ veiculos = {
 				--
 				[1] = {
 				porta = 1,
-				posicao = {0.25,-8.25,-1},
+				posicao = {1,-8.25,-1},
 				rotacao = {0,0,0, -1},
 					--
 					entrar = {
@@ -4644,18 +4640,18 @@ veiculos = {
 						
 						[3] = {
 							anim =  {"ped", "climb_jump_b", -1, false, false, false, true, 1, true},
-							posicao = {0,-8.175,0.5, 50},
+							posicao = {0,-8.25,0.5, -1},
 							delay = 1400,
 						},
 						
 						[4] = {
-							posicao = {0,-8.25,0.75, -1},
-							delay = 1450,
+							posicao = {0,-8.25,1, -1},
+							delay = 1650,
 						},
 						
 						[5] = {
 							anim =  {"ped", "WALK_player", -1, true, true, false, false},
-							posicao = {0,-7.15,0.75, 335},
+							posicao = {0,-7.15,1, 335},
 							delay = 2250,
 						},
 						
@@ -4785,1993 +4781,6 @@ veiculos = {
 			--
 		},
 		--
-	},
-	--
-	
-	[trem_bala] = { --Streak (Trem bala)
-		--
-		[1] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,7.75,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,7.75,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,7.75,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,7.75,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,7.75,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,7.75,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[2] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,7,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,7.,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,7,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,7,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,7,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,7,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[3] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,5,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,5,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,5,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,5,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,5,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,5,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[4] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,5,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,5,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,5,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,5,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,5,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,5,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[5] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,4.25,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,4.3,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,4.3,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,4.3,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,4.3,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,4.3,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[6] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,4.25,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,4.3,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,4.3,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,4.3,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,4.3,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,4.3,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[7] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,3.75,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,3.75,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,3.75,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,3.75,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,3.75,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,3.75,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[8] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,3.75,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,3.75,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,3.75,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,3.75,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,3.75,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,3.75,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[9] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,3,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,3,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,3,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,3,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,3,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,3,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[10] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,3,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,3,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,3,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,3,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,3,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,3,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[11] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,1,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,1,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,1,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,1,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,1,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,1,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[12] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,1,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,1,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,1,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,1,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,1,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,1,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[13] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,0.25,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,0.25,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,0.25,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,0.25,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,0.25,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,0.25,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[14] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,0.25,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,0.25,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,0.25,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,0.25,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,0.25,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,0.25,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[15] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,-0.25,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,-0.25,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,-0.25,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,-0.25,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,-0.25,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,-0.25,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[16] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,-0.25,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,-0.25,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,-0.25,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,-0.25,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,-0.25,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,-0.25,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[17] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,-1,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,-1,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,-1,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,-1,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,-1,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,-1,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[18] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,-1,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,-1,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,-1,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,-1,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,-1,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,-1,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[19] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,-3,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,-3,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,-3,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,-3,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,-3,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,-3,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[20] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,-3,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,-3,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,-3,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,-3,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,-3,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,-3,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[21] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,-3.75,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,-3.75,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,-3.75,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,-3.75,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,-3.75,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,-3.75,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[22] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,-3.75,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,-3.75,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,-3.75,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,-3.75,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,-3.75,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,-3.75,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[23] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,-4.25,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,-4.25,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,-4.25,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,-4.25,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,-4.25,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,-4.25,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[24] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,-4.25,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,-4.25,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,-4.25,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,-4.25,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,-4.25,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,-4.25,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[25] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.6,-5,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {-0.6,-5,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.9,-5,0, 700},
-							rotacao = {0,15,-90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {-1,-5,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {-1,-5,-0.75, -1},
-							rotacao = {0,0,-90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {-0.6,-5,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[26] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,-5,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,-5,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,-5,0, 700},
-							rotacao = {1,-5,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,-5,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,-5,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,-5,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[27] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.6,-7,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.6,-7,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,-7,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,-7,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,-7,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.6,-7,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[28] = {
-			--
-			radio = sim,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.525,-7.75,-0.5},
-				tolerancia = 1.1,
-					--
-					entrar = {
-					
-						
-						[1] = {
-							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
-							delay = 0,
-							posicao = {0.525,-7.75,0, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.9,-7.75,0, 700},
-							rotacao = {0,-15,90,700},
-						},
-						--
-						[3] = {
-							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
-							delay = 550,
-							posicao = {1,-7.75,-0.75, 250},
-						},
-						--
-						
-					},
-					--
-					sair = {
-					
-						
-						[1] = {
-							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
-							delay = 0,
-							posicao = {1,-7.75,-0.75, -1},
-							rotacao = {0,0,90, -1},
-						},
-						--
-						[2] = {
-							delay = 50,
-							posicao = {0.525,-7.75,-0.5, -1},
-						},
-						--
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[29] = {
-			--
-			radio = true,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.525,-5.615,0},
-				rotacao = {0,0,0, -1},
-					--
-					entrar = {
-					
-						[1] = {
-							anim = {"ped", "abseil", -1, true, false, false, false, 1, true, false, 0.0, 0.4},
-							delay = 0,
-							posicao = {-0.525,-5.615,0, -1},
-							rotacao = {-15,-15,90,-1},
-						},
-						
-					},
-					--
-					sair = {
-					
-						[1] = {
-							anim =  {},
-							posicao = {-0.525,-5.615,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 0,
-						},
-						
-						[2] = {
-							posicao = {-0.525,-5.615,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 50,
-						},
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[30] = {
-			--
-			radio = true,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.525,-5.615,0},
-				rotacao = {0,0,0, -1},
-					--
-					entrar = {
-					
-						[1] = {
-							anim = {"ped", "abseil", -1, true, true, false, false, 1, true,true, 0.0, 0.4},
-							delay = 0,
-							posicao = {0.525,-5.5,0, -1},
-							rotacao = {-15,15,0,-1},
-							
-						},
-						
-					},
-					--
-					sair = {
-					
-						[1] = {
-							anim =  {},
-							posicao = {0.525,-5.5,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 0,
-						},
-						
-						[2] = {
-							posicao = {0.525,-5.5,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 50,
-						},
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[31] = {
-			--
-			radio = true,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.525,-2.5,0},
-				rotacao = {0,0,0, -1},
-					--
-					entrar = {
-					
-						[1] = {
-							anim = {"ped", "abseil", -1, true, true, false, false, 1, true,true, 0.0, 0.4},
-							delay = 0,
-							posicao = {0.525,-2.9,0, -1},
-							rotacao = {-15,15,0,-1},
-							
-						},
-						
-					},
-					--
-					sair = {
-					
-						[1] = {
-							anim =  {},
-							posicao = {0.525,-2.9,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 0,
-						},
-						
-						[2] = {
-							posicao = {0.525,-2.9,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 50,
-						},
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[32] = {
-			--
-			radio = true,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.525,-1.5,0},
-				rotacao = {0,0,0, -1},
-					--
-					entrar = {
-					
-						[1] = {
-							anim = {"ped", "abseil", -1, true, false, false, false, 1, true, false, 0.0, 0.4},
-							delay = 0,
-							posicao = {-0.525,-1.575,0, -1},
-							rotacao = {-15,-15,90,-1},
-						},
-						
-					},
-					--
-					sair = {
-					
-						[1] = {
-							anim =  {},
-							posicao = {-0.525,-1.575,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 0,
-						},
-						
-						[2] = {
-							posicao = {-0.525,-1.575,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 50,
-						},
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[33] = {
-			--
-			radio = true,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.525,2.5,0},
-				rotacao = {0,0,0, -1},
-					--
-					entrar = {
-					
-						[1] = {
-							anim = {"ped", "abseil", -1, true, false, false, false, 1, true, false, 0.0, 0.4},
-							delay = 0,
-							posicao = {-0.525,2.45,0, -1},
-							rotacao = {-15,-15,90,-1},
-						},
-						
-					},
-					--
-					sair = {
-					
-						[1] = {
-							anim =  {},
-							posicao = {-0.525,2.45,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 0,
-						},
-						
-						[2] = {
-							posicao = {-0.525,2.45,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 50,
-						},
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[34] = {
-			--
-			radio = true,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.525,1.5,0},
-				rotacao = {0,0,0, -1},
-					--
-					entrar = {
-					
-						[1] = {
-							anim = {"ped", "abseil", -1, true, true, false, false, 1, true,true, 0.0, 0.4},
-							delay = 0,
-							posicao = {0.525,1.15,0, -1},
-							rotacao = {-15,15,0,-1},
-							
-						},
-						
-					},
-					--
-					sair = {
-					
-						[1] = {
-							anim =  {},
-							posicao = {0.525,1.15,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 0,
-						},
-						
-						[2] = {
-							posicao = {0.525,1.15,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 50,
-						},
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[35] = {
-			--
-			radio = true,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {-0.525,5.615,0},
-				rotacao = {0,0,0, -1},
-					--
-					entrar = {
-					
-						[1] = {
-							anim = {"ped", "abseil", -1, true, false, false, false, 1, true, false, 0.0, 0.4},
-							delay = 0,
-							posicao = {-0.525,5.1,0, -1},
-							rotacao = {-15,-15,90,-1},
-						},
-						
-					},
-					--
-					sair = {
-					
-						[1] = {
-							anim =  {},
-							posicao = {-0.525,5.2,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 0,
-						},
-						
-						[2] = {
-							posicao = {-0.525,5.2,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 50,
-						},
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-		[36] = {
-			--
-			radio = true,
-			--
-			acesso = {
-				--
-				[1] = {
-				posicao = {0.525,5.615,0},
-				rotacao = {0,0,0, -1},
-					--
-					entrar = {
-					
-						[1] = {
-							anim = {"ped", "abseil", -1, true, true, false, false, 1, true,true, 0.0, 0.4},
-							delay = 0,
-							posicao = {0.525,5.2,0, -1},
-							rotacao = {-15,15,0,-1},
-							
-						},
-						
-					},
-					--
-					sair = {
-					
-						[1] = {
-							anim =  {},
-							posicao = {0.525,5.2,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 0,
-						},
-						
-						[2] = {
-							posicao = {0.525,5.2,0, -1},
-							rotacao = {0,0,0,-1},
-							delay = 50,
-						},
-						
-					},
-					--
-				},
-				--
-			},
-			--
-		},
-		--
-	
-		
 	},
 	--
 	[431] = { --Bus
@@ -10926,6 +8935,1635 @@ veiculos = {
 			--
 		},
 		--
+	},
+	--
+	[trem_bala] = { --Streak (Trem bala)
+		--
+		[1] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,7.75,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,7.75,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,7.75,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,7.75,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,7.75,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,7.75,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[2] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,7,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,7.,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,7,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,7,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,7,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,7,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[3] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,5,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,5,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,5,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,5,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,5,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,5,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[4] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,5,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,5,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,5,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,5,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,5,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,5,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[5] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,4.25,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,4.3,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,4.3,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,4.3,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,4.3,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,4.3,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[6] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,4.25,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,4.3,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,4.3,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,4.3,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,4.3,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,4.3,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[7] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,3.75,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,3.75,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,3.75,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,3.75,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,3.75,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,3.75,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[8] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,3.75,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,3.75,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,3.75,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,3.75,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,3.75,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,3.75,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[9] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,3,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,3,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,3,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,3,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,3,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,3,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[10] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,3,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,3,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,3,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,3,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,3,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,3,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[11] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,1,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,1,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,1,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,1,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,1,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,1,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[12] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,1,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,1,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,1,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,1,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,1,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,1,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[13] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,0.25,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,0.25,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,0.25,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,0.25,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,0.25,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,0.25,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[14] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,0.25,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,0.25,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,0.25,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,0.25,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,0.25,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,0.25,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[15] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,-0.25,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,-0.25,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,-0.25,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,-0.25,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,-0.25,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,-0.25,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[16] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,-0.25,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,-0.25,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,-0.25,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,-0.25,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,-0.25,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,-0.25,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[17] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,-1,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,-1,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,-1,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,-1,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,-1,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,-1,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[18] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,-1,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,-1,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,-1,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,-1,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,-1,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,-1,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[19] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,-3,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,-3,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,-3,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,-3,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,-3,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,-3,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[20] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,-3,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,-3,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,-3,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,-3,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,-3,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,-3,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[21] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,-3.75,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,-3.75,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,-3.75,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,-3.75,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,-3.75,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,-3.75,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[22] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,-3.75,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,-3.75,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,-3.75,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,-3.75,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,-3.75,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,-3.75,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[23] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,-4.25,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,-4.25,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,-4.25,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,-4.25,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,-4.25,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,-4.25,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[24] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,-4.25,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,-4.25,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,-4.25,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,-4.25,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,-4.25,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,-4.25,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[25] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {-0.6,-5,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_l", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {-0.6,-5,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.9,-5,0, 700},
+							rotacao = {0,15,-90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {-1,-5,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {-1,-5,-0.75, -1},
+							rotacao = {0,0,-90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {-0.6,-5,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[26] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,-5,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,-5,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,-5,0, 700},
+							rotacao = {1,-5,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,-5,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,-5,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,-5,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[27] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,-7,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,-7,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,-7,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,-7,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,-7,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,-7,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		[28] = {
+			--
+			radio = sim,
+			--
+			acesso = {
+				--
+				[1] = {
+				posicao = {0.6,-7.75,-0.5},
+				tolerancia = 1.1,
+					--
+					entrar = {
+					
+						
+						[1] = {
+							anim =  {"food", "ff_sit_in_r", 1000, false, true, false, true, 1, true, false, 2},
+							delay = 0,
+							posicao = {0.6,-7.75,0, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.9,-7.75,0, 700},
+							rotacao = {0,-15,90,700},
+						},
+						--
+						[3] = {
+							anim = {"ped", "CAR_sitp", -1, true, true, false, true},
+							delay = 550,
+							posicao = {1,-7.75,-0.75, 250},
+						},
+						--
+						
+					},
+					--
+					sair = {
+					
+						
+						[1] = {
+							anim =  {"tattoos", "tat_sit_out_p", 500, false, true, false, false, 1, true, false, 2},
+							delay = 0,
+							posicao = {1,-7.75,-0.75, -1},
+							rotacao = {0,0,90, -1},
+						},
+						--
+						[2] = {
+							delay = 50,
+							posicao = {0.6,-7.75,-0.5, -1},
+						},
+						--
+						
+					},
+					--
+				},
+				--
+			},
+			--
+		},
+		--
+		
 	},
 	--
 	[577] = { --AT-400 (Maior aeronave do jogo)

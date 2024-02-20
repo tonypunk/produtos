@@ -18,4 +18,23 @@ getPedHelmet (boneco) -- obtem o capacete atual do boneco
 getPedHelmets (boneco) -- obtem todo os capacetes do boneco
 getData () --obtem todas as informações do arquivo config
 getDetails () -- obtem os detalhes de acoplagem do capacete
+
+
+acoplagem do capacete custom da squad: 
+--
+acoplagem = { --posições do capacete na cabeça e na mão
+ --
+   ["cabeça"] = { --posicao do capacete na cabeça
+   posicao = {0.0225,0.048,0.0225}, --posição do capacete na cabeça
+   rotacao = {3,0,-90}, --rotação do capacete na cabeça
+   },
+	--
+	["mão"] = { --posicao do capacete segurando na mão
+	posicao = {-0.025,-0.125,0.0275}, --posição do capacete na mao
+    rotacao = {0,0,-15}, --rotação do capacete na mao
+    },
+	--
+},
+ --
+
 ]]

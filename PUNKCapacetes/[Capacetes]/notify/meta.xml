@@ -1,0 +1,30 @@
+<meta>
+    <min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+	<script src="script.lua" type="shared" />
+	
+	<file src="assets/defaultbg.png"/>
+    <file src="assets/fonts/font.ttf"/>
+    <file src="assets/fonts/fonttitle.ttf"/>
+    <file src="assets/icons/accept1.png"/>
+    <file src="assets/icons/accept2.png"/>
+	<file src="assets/icons/accept3.png"/>
+	<file src="assets/icons/accept4.png"/>
+	<file src="assets/sounds/acquire.wav"/>
+	<file src="assets/sounds/navigation.wav"/>
+	<file src="assets/sounds/return.wav"/>
+	<file src="assets/sounds/confirm.wav"/>
+	<file src="assets/sounds/headsup.wav"/>
+	
+	<export function="createHeadsupMessage" type="shared" />
+	<export function="createNativeUI" type="shared" />
+	<export function="addNativeButton" type="shared" />
+	<export function="getNativeButtons" type="shared" />
+	<export function="playNativeSound" type="shared" />
+	<export function="destroyNativeUI" type="shared" />
+	<export function="removeNativeUI" type="shared" />
+	<export function="destroyNativeBox" type="shared" />
+	<export function="removeNativeBox" type="shared" />
+	<export function="setNativeButtonIcon" type="shared" />
+	
+    <oop>true</oop>
+</meta>

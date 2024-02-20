@@ -1,5 +1,3 @@
-resource = "PUNK+Passageiros"
-
 _getNearestElement = getNearestElement
 function getNearestElement(player, type, distance)
 	local result = false
@@ -58,7 +56,7 @@ addEventHandler ("onVehicleStartExit", getRootElement(), function (ped, seat)
 	if getElementModel (source) == 577 then
 		if seat == 0 or seat == 2 then
 		_removePedFromVehicle (ped)
-		exports[resource]:setPedExitVehicle (ped)
+		exports.PUNKPassageiros:setPedExitVehicle (ped)
 		end
 	end
 end)
@@ -70,7 +68,7 @@ addEventHandler ("onVehicleStartEnter", getRootElement(), function (ped, seat)
 		local tempV = source
 			setTimer (function ()
 				if isElement (ped) and isElement (tempV) then
-				exports[resource]:setPedEnterVehicle (ped, tempV, 2)
+				exports.PUNKPassageiros:setPedEnterVehicle (ped, tempV, 2)
 				end
 			end, 100, 1)
 		end
@@ -91,7 +89,7 @@ addEventHandler ("onVehicleStartExit", getRootElement(), function (ped, seat)
 	if getElementModel (source) == 577 then
 		if seat == 1 or seat == 3 then
 		_removePedFromVehicle (ped)
-		exports[resource]:setPedExitVehicle (ped)
+		exports.PUNKPassageiros:setPedExitVehicle (ped)
 		end
 	end
 end)
@@ -103,7 +101,7 @@ addEventHandler ("onVehicleStartEnter", getRootElement(), function (ped, seat)
 		local tempV = source
 			setTimer (function ()
 				if isElement (ped) and isElement (tempV) then
-				exports[resource]:setPedEnterVehicle (ped, tempV, 3)
+				exports.PUNKPassageiros:setPedEnterVehicle (ped, tempV, 3)
 				end
 			end, 100, 1)
 		end

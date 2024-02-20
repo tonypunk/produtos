@@ -638,7 +638,7 @@ veiculos = { --posição dos capacetes no veículo adicione quantos capacetes qu
 		posicao = {0,-0.8,0.525}, --posição do capacete no veiculo
 		rotacao = {15,-90,0}, --rotação do capacete no veiculo
 		capacete = "Incendiario", --tipo de capacete neste passageiro
-		rede = sim, --este capacete é armazenado em uma redezinha
+		rede = nao, --este capacete é armazenado em uma redezinha
 		automatico = sim, -- este passageiro veste o capacete automaticamente ao entrar neste banco
 		pre = sim, -- se a opção automatica estiver ativa, este capacete é vestido antes de subir ao veiculo
 		},
