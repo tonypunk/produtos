@@ -2,6 +2,6 @@
     <info author="Tony_Punk" type="script" name="Assaltos" descriptions="Mod de assaltos configurável" version="313" />
 	<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
 	<script src="config.lua" type="shared" />
-    <script src="assaltos.lua" type="shared" />
+    <script src="assaltos.luac" type="shared" />
 	<script src="design.lua" type="client" />
 </meta>
