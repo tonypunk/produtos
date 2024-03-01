@@ -9,6 +9,71 @@ nao = false	--não tocar
 
 assaltos = {
 	--
+	["Market Station"] = {
+		--
+		acesso = {"Everyone"},
+		--
+		vitimas = {
+			--
+			{
+			nome = "Walter", --nome da vitima
+			aparencia = 223, --skin da vitima
+			posicao = {861.166, -1383.196, 13.721}, --posição
+			rotacao = 180, -- rotação
+			interior = 0, -- interior
+			dimensao = 0, -- dimensao
+			recompensa = {100,200},	-- grana da recompensa
+			bolsa = {"Maço"}, --o que a vítima irá entregar: Maço, Pacote, Mochila, Maleta e Malote
+			estrelas = {1},	--quantidade média de estrelas colocadas sob o jogador
+			distancia = 25, -- distancia maxima que o jogador poderá se distanciar do atendente sem cancelar o assalto, essa distancia também é necessaria para empreender fuga
+			alarme = nao, -- esta vitima tem acesso a um alarme
+			restricao = {0,1,2,3,4,5,6,7,8,9,41,42,43,10,11,12,13,14,15,44,45,46,40}, -- armas que não intimidam essa vitima
+			rastreavel = nao, --ativar/desativar dinheiro sujo
+			imortal = nao, --ativar/desativar imortalidade para esta vitima
+			balcao = nao,
+			vida = 50, --vida da vitima
+			colete = 0, --colete da vitima
+			arma = 22, --arma da vitima
+			reagir = 50, --porcentagem de chance da vitima reagir ao assalto caso o assaltante não consiga
+			
+				--
+				tempo = {
+				duracao = {5}, --tempo médio que vai durar o roubo (segundos)
+				disponivel = {10}, --tempo que o dinheiro ficará disponivel
+				fuga = {10}, --tempo médio que vai durar a fuga
+				cooldown = {15}, --tempo para poder roubar o local novamente (segundos)
+				},
+				--
+				icone = {
+				normal = 52,	-- o icone que irá aparecer no mapa
+				assalto = 36, -- o icone que irá aparecer no mapa quando o local estiver sendo roubado
+				},
+				--
+				frases = {
+					--
+					assaltante = {
+					"Ninguem se move, isso é um assalto!",
+					"Isso é um assalto!",
+					"Passa a grana ou estouro seus miolos!",
+					},
+					--
+					vitima = {
+					"Pode levar o que quiser, só não me machuque!",
+					"Não me mate, eu tenho dois filhos para criar!",
+					},
+					--
+					reagir = {
+					"É bom que você tenha vindo preparado!",
+					"Pode vir que tem chumbo grosso!",
+					},
+					--
+				--
+				}
+			},
+			--
+		},
+	},
+	--
 	["Jogadores"] = {
 	acesso = {"Everyone"},
 		recompensa = { --Parâmtros da recompensa
@@ -50,7 +115,271 @@ assaltos = {
 		},
 		--
 	},
-
+	--
+	["98¢ Store Aeroporto"] = {
+		--
+		acesso = {"Everyone"},
+		--
+		vitimas = {
+			--
+			{
+			nome = "Nick", --nome da vitima
+			aparencia = 142, --skin da vitima
+			posicao = {1937.287, -2116.439, 13.564}, --posição
+			rotacao = 205, -- rotação
+			interior = 0, -- interior
+			dimensao = 0, -- dimensao
+			recompensa = {250,500},	-- grana da recompensa
+			bolsa = {"Maço"}, --o que a vítima irá entregar: Maço, Pacote, Mochila, Maleta e Malote
+			estrelas = {1},	--quantidade média de estrelas colocadas sob o jogador
+			distancia = 50, -- distancia maxima que o jogador poderá se distanciar do atendente sem cancelar o assalto, essa distancia também é necessaria para empreender fuga
+			alarme = nao, -- esta vitima tem acesso a um alarme
+			restricao = {0,1,2,3,4,5,6,7,8,9,41,42,43,10,11,12,13,14,15,44,45,46,40}, -- armas que não intimidam essa vitima
+			rastreavel = nao, --ativar/desativar dinheiro sujo
+			imortal = nao, --ativar/desativar imortalidade para esta vitima
+			balcao = sim,
+			vida = 50, --vida da vitima
+			colete = 0, --colete da vitima
+			arma = 22, --arma da vitima
+			reagir = 50, --porcentagem de chance da vitima reagir ao assalto
+				--
+				tempo = {
+				duracao = {10,20}, --tempo médio que vai durar o roubo (segundos)
+				disponivel = {45,90}, --tempo que o dinheiro ficará disponivel
+				fuga = {45,90}, --tempo médio que vai durar a fuga
+				cooldown = {120,180}, --tempo para poder roubar o local novamente (segundos)
+				},
+				--
+				icone = {
+				normal = 52,	-- o icone que irá aparecer no mapa
+				assalto = 36, -- o icone que irá aparecer no mapa quando o local estiver sendo roubado
+				},
+				--
+				frases = {
+					--
+					assaltante = {
+					"Ninguem se move, isso é um assalto!",
+					"Isso é um assalto!",
+					"Passa a grana ou estouro seus miolos!",
+					},
+					--
+					vitima = {
+					"Pode levar o que quiser, só não me machuque!",
+					"Não me mate, eu tenho dois filhos para criar!",
+					},
+					--
+					reagir = {
+					"É bom que você tenha vindo preparado!",
+					"Pode vir que tem chumbo grosso!",
+					},
+					--
+				--
+				},
+				--
+			},
+			--
+		},
+		--
+	},
+	--
+	["Hippy Shopper Skate Park"] = {
+		--
+		acesso = {"Everyone"},
+		--
+		vitimas = {
+			--
+			{
+			nome = "Chad", --nome da vitima
+			aparencia = 1, --skin da vitima
+			posicao = {1822.192, -1436.678, 13.655}, --posição
+			rotacao = 354, -- rotação
+			interior = 0, -- interior
+			dimensao = 0, -- dimensao
+			recompensa = {500,750},	-- grana da recompensa
+			bolsa = {"Pacote"}, --o que a vítima irá entregar: Maço, Pacote, Mochila, Maleta e Malote
+			estrelas = {2},	--quantidade média de estrelas colocadas sob o jogador
+			distancia = 50, -- distancia maxima que o jogador poderá se distanciar do atendente sem cancelar o assalto, essa distancia também é necessaria para empreender fuga
+			alarme = nao, -- esta vitima tem acesso a um alarme
+			restricao = {0,1,2,3,4,5,6,7,8,9,41,42,43,10,11,12,13,14,15,44,45,46,40}, -- armas que não intimidam essa vitima
+			rastreavel = nao, --ativar/desativar dinheiro sujo
+			imortal = nao, --ativar/desativar imortalidade para esta vitima
+			balcao = sim,
+			vida = 50, --vida da vitima
+			colete = 0, --colete da vitima
+			arma = 22, --arma da vitima
+			reagir = 50, --porcentagem de chance da vitima reagir ao assalto
+				--
+				tempo = {
+				duracao = {10,20}, --tempo médio que vai durar o roubo (segundos)
+				disponivel = {45,90}, --tempo que o dinheiro ficará disponivel
+				fuga = {45,90}, --tempo médio que vai durar a fuga
+				cooldown = {120,180}, --tempo para poder roubar o local novamente (segundos)
+				},
+				--
+				icone = {
+				normal = 52,	-- o icone que irá aparecer no mapa
+				assalto = 36, -- o icone que irá aparecer no mapa quando o local estiver sendo roubado
+				},
+				--
+				frases = {
+					--
+					assaltante = {
+					"Ninguem se move, isso é um assalto!",
+					"Isso é um assalto!",
+					"Passa a grana ou estouro seus miolos!",
+					},
+					--
+					vitima = {
+					"Pode levar o que quiser, só não me machuque!",
+					"Não me mate, eu tenho dois filhos para criar!",
+					},
+					--
+					reagir = {
+					"É bom que você tenha vindo preparado!",
+					"Pode vir que tem chumbo grosso!",
+					},
+					--
+				--
+				},
+				--
+			},
+			--
+		},
+		--
+	},
+	--
+	["Binco Oeste de Los Santos"] = {
+		--
+		acesso = {"Everyone"},
+		--
+		vitimas = {
+			--
+			{
+			nome = "Kyle", --nome da vitima
+			aparencia = 211, --skin da vitima
+			posicao = {392.835, -1527.743, 32.273}, --posição
+			rotacao = 220, -- rotação
+			interior = 0, -- interior
+			dimensao = 0, -- dimensao
+			recompensa = {750,1000},	-- grana da recompensa
+			bolsa = {"Mochila"}, --o que a vítima irá entregar: Maço, Pacote, Mochila, Maleta e Malote
+			estrelas = {3},	--quantidade média de estrelas colocadas sob o jogador
+			distancia = 50, -- distancia maxima que o jogador poderá se distanciar do atendente sem cancelar o assalto, essa distancia também é necessaria para empreender fuga
+			alarme = sim, -- esta vitima tem acesso a um alarme
+			restricao = {0,1,2,3,4,5,6,7,8,9,41,42,43,10,11,12,13,14,15,44,45,46,40}, -- armas que não intimidam essa vitima
+			rastreavel = nao, --ativar/desativar dinheiro sujo
+			imortal = nao, --ativar/desativar imortalidade para esta vitima
+			balcao = sim,
+			vida = 50, --vida da vitima
+			colete = 0, --colete da vitima
+			arma = 22, --arma da vitima
+			reagir = 50, --porcentagem de chance da vitima reagir ao assalto
+				--
+				tempo = {
+				duracao = {20,40}, --tempo médio que vai durar o roubo (segundos)
+				disponivel = {90,120}, --tempo que o dinheiro ficará disponivel
+				fuga = {90,120}, --tempo médio que vai durar a fuga
+				cooldown = {180,240}, --tempo para poder roubar o local novamente (segundos)
+				},
+				--
+				icone = {
+				normal = 52,	-- o icone que irá aparecer no mapa
+				assalto = 36, -- o icone que irá aparecer no mapa quando o local estiver sendo roubado
+				},
+				--
+				frases = {
+					--
+					assaltante = {
+					"Ninguem se move, isso é um assalto!",
+					"Isso é um assalto!",
+					"Passa a grana ou estouro seus miolos!",
+					},
+					--
+					vitima = {
+					"Pode levar o que quiser, só não me machuque!",
+					"Não me mate, eu tenho dois filhos para criar!",
+					},
+					--
+					reagir = {
+					"É bom que você tenha vindo preparado!",
+					"Pode vir que tem chumbo grosso!",
+					},
+					--
+				--
+				},
+				--
+			},
+			--
+		},
+		--
+	},
+	--
+	["24/7 Vinewood"] = {
+		--
+		acesso = {"Everyone"},
+		--
+		vitimas = {
+			--
+			{
+			nome = "Jay", --nome da vitima
+			aparencia = 217, --skin da vitima
+			posicao = {1305.058, -888.519, 39.655}, --posição
+			rotacao = 271, -- rotação
+			interior = 0, -- interior
+			dimensao = 0, -- dimensao
+			recompensa = {1000,2000},	-- grana da recompensa
+			bolsa = {"Maleta"}, --o que a vítima irá entregar: Maço, Pacote, Mochila, Maleta e Malote
+			estrelas = {4},	--quantidade média de estrelas colocadas sob o jogador
+			distancia = 50, -- distancia maxima que o jogador poderá se distanciar do atendente sem cancelar o assalto, essa distancia também é necessaria para empreender fuga
+			alarme = sim, -- esta vitima tem acesso a um alarme
+			restricao = {0,1,2,3,4,5,6,7,8,9,41,42,43,10,11,12,13,14,15,44,45,46,40}, -- armas que não intimidam essa vitima
+			rastreavel = nao, --ativar/desativar dinheiro sujo
+			imortal = nao, --ativar/desativar imortalidade para esta vitima
+			balcao = sim,
+			vida = 50, --vida da vitima
+			colete = 0, --colete da vitima
+			arma = 22, --arma da vitima
+			reagir = 50, --porcentagem de chance da vitima reagir ao assalto
+				--
+				tempo = {
+				duracao = {40,60}, --tempo médio que vai durar o roubo (segundos)
+				disponivel = {120,180}, --tempo que o dinheiro ficará disponivel
+				fuga = {120,180}, --tempo médio que vai durar a fuga
+				cooldown = {240,300}, --tempo para poder roubar o local novamente (segundos)
+				},
+				--
+				icone = {
+				normal = 52,	-- o icone que irá aparecer no mapa
+				assalto = 36, -- o icone que irá aparecer no mapa quando o local estiver sendo roubado
+				},
+				--
+				frases = {
+					--
+					assaltante = {
+					"Ninguem se move, isso é um assalto!",
+					"Isso é um assalto!",
+					"Passa a grana ou estouro seus miolos!",
+					},
+					--
+					vitima = {
+					"Pode levar o que quiser, só não me machuque!",
+					"Não me mate, eu tenho dois filhos para criar!",
+					},
+					--
+					reagir = {
+					"É bom que você tenha vindo preparado!",
+					"Pode vir que tem chumbo grosso!",
+					},
+					--
+				--
+				},
+				--
+			},
+			--
+		},
+		--
+	},
+	--
 	["Lanchonete em Palamino Creek"] = {
 		--
 		acesso = {"Everyone"},
@@ -278,7 +607,6 @@ assaltos = {
 		--
 	},
 	--
-	--
 	["Banco de Palamino Creek"] = {
 		--
 		acesso = {"Everyone"},
@@ -300,13 +628,9 @@ assaltos = {
 			rastreavel = sim, --ativar/desativar dinheiro sujo
 			imortal = nao, --ativar/desativar imortalidade para esta vitima
 			balcao = sim,
-			vida = 50, --vida da vitima
-			colete = 0, --colete da vitima
-			arma = 22, --arma da vitima
-			reagir = 50, --porcentagem de chance da vitima reagir ao assalto
 				--
 				tempo = {
-				duracao = {60}, --tempo médio que vai durar o roubo (segundos)
+				duracao = {3}, --tempo médio que vai durar o roubo (segundos)
 				disponivel = {10,20}, --tempo que o dinheiro ficará disponivel
 				fuga = {10,20}, --tempo médio que vai durar a fuga
 				cooldown = {20,40}, --tempo para poder roubar o local novamente (segundos)
@@ -328,11 +652,6 @@ assaltos = {
 					vitima = {
 					"Pode levar o que quiser, só não me machuque!",
 					"Não me mate, eu tenho dois filhos para criar!",
-					},
-					--
-					reagir = {
-					"É bom que você tenha vindo preparado!",
-					"Pode vir que tem chumbo grosso!",
 					},
 					--
 				--
@@ -453,8 +772,8 @@ assaltos = {
 			bolsa = "Malote", --o que a vítima irá entregar: Maço, Pacote, Mochila, Maleta e Malote
 				--
 				tempo = {
-					arrombar = {10,20}, --tempo que demora para arrombar
-					coletar = {10,20}, --tempo que demora para coletar o dinheiro
+					arrombar = {2}, --tempo que demora para arrombar
+					coletar = {2}, --tempo que demora para coletar o dinheiro
 					disponivel = {120,240}, --tempo que demora para o dinheiro desaparecer
 					aberto = {30,60}, --por quanto tempo o cofre fica aberto
 					fuga = {30, 60},
@@ -482,7 +801,7 @@ lavagem = {--Descrição: Nesta tabela você poderá adicionar ou remover agiota
 		aparencia = 302, --skin
 		taxa = 25, -- taxa cobrada (porcentagem)
 		icone = 20,
-		imortal = sim,
+		imortal = nao,
 		tempo = 10, -- tempo que o agiota fica escondido após uma negociação
 		--
 		frases = {
@@ -517,7 +836,7 @@ lavagem = {--Descrição: Nesta tabela você poderá adicionar ou remover agiota
 		aparencia = 298, --skin
 		taxa = 50, -- taxa cobrada (porcentagem)
 		icone = 20,
-		imortal = sim,
+		imortal = nao,
 		tempo = 10, -- tempo que o agiota fica escondido após uma negociação
 		--
 		frases = {
@@ -552,7 +871,7 @@ lavagem = {--Descrição: Nesta tabela você poderá adicionar ou remover agiota
 		aparencia = 265, --skin
 		taxa = 75, -- taxa cobrada (porcentagem)
 		icone = 30,
-		imortal = sim,
+		imortal = nao,
 		autoridade = sim,
 		--
 		frases = {
@@ -622,7 +941,7 @@ recompensas = {
 	modelo = 1550,
 	posicao = {0, -0.3, 0.1},
 	rotacao = {90,0,0},
-	tamanho = {0.01, 0.01, 1},
+	tamanho = {1,1,1},
 	},
 	--
 }
@@ -635,6 +954,7 @@ configuracoes = {
 	--==========================================================================--
 	--===========================INVENTÁRIO========================================--
 	--==========================================================================--
+	--[[
 	inventario = {
 	dinheiro = "Dinheiro Sujo",
 		--
@@ -647,6 +967,7 @@ configuracoes = {
 		end,
 		--
 	},
+	]]
 	--
 	--===========================ATENÇÃO========================================--
 	--====--As ACL a seguir serão criadas automaticamente caso não existam--====--
