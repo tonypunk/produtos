@@ -6,8 +6,12 @@
 	<script src="extra/command.lua" type="shared" />
 	<script src="extra/camera.lua" type="shared" />
 	<script src="extra/radio.lua" type="shared" />
+	<script src="extra/shoot.lua" type="shared" />
+	<script src="extra/persistence.lua" type="shared" />
+	<script src="extra/enforcer.lua" type="shared" />
 	<script src="extra/bus.lua" type="shared" />
 	<script src="extra/at400.lua" type="shared" />
+	<script src="extra/replace.lua" type="client" />
 	
 	<export function="warpPedIntoVehicle" type="shared" />
 	<export function="removePedFromVehicle" type="shared" />
@@ -22,6 +26,27 @@
 	<export function="findAccess" type="shared" />
 	<export function="pMove" type="shared" />
 	<export function="pRot" type="shared" />
+	
+	<file src="modelos/enforcer.txd"></file>
+    <file src="modelos/enforcer.dff"></file>
+    <file src="modelos/trash.txd"></file>
+    <file src="modelos/trash.dff"></file>
+    <file src="modelos/bus.txd"></file>
+    <file src="modelos/bus.dff"></file>
+    <file src="modelos/burrito.txd"></file>
+    <file src="modelos/burrito.dff"></file>
+    <file src="modelos/streak.txd"></file>
+    <file src="modelos/streak.dff"></file>
+    <file src="modelos/streakc.txd"></file>
+    <file src="modelos/streakc.dff"></file>
+    <file src="modelos/savanna.txd"></file>
+    <file src="modelos/savanna.dff"></file>
+    <file src="modelos/bobcat.txd"></file>
+    <file src="modelos/bobcat.dff"></file>
+    <file src="modelos/at400.txd"></file>
+    <file src="modelos/at400.dff"></file>
+    <file src="modelos/barracks.txd"></file>
+    <file src="modelos/barracks.dff"></file>
 	
     <oop>true</oop>
 </meta>
