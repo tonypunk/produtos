@@ -13,19 +13,22 @@ Para utilizar elementos de nosso sistema em seus mods cole o seguinte código no
 --Setup
 _spawnPlayer = spawnPlayer --não tocar
 function spawnPlayer (...)
-	if type (arg[6]) == "string" then
-	return exports["PUNK+Skins"]:spawnPlayer (unpack (arg))
+	for i=0, 312 do
+		if arg[6] == i or tonumber (arg[6]) == i then
+		return _spawnPlayer (unpack(arg))
+		end
 	end
-return _spawnPlayer (unpack(arg))
+return exports["PUNK+Skins"]:spawnPlayer (unpack (arg))
 end
 
 _createPed = createPed --não tocar
 function createPed (...)
-    if type (arg[1]) == "number" then
-    return _createPed (unpack (arg))
-    else
-    return exports["PUNK+Skins"]:createPed (unpack (arg))
-    end
+	for i=0, 312 do
+		if arg[1] == i or tonumber (arg[1]) == i then
+		return _createPed (unpack (arg))
+		end
+	end
+return exports["PUNK+Skins"]:createPed (unpack (arg))
 end
 
 _getElementModel = getElementModel --não tocar
@@ -36,7 +39,12 @@ end
 
 _setElementModel = setElementModel --não tocar
 function setElementModel (...)
-	if getElementType (arg[1]) == "ped" or getElementType (arg[1]) == "player" and type (arg[2]) == "string" then
+	if getElementType (arg[1]) == "ped" or getElementType (arg[1]) == "player" then
+		for i=0, 312 do
+			if arg[2] == i or tonumber (arg[2]) == i then
+			return _setElementModel (unpack(arg))
+			end
+		end
 	return exports["PUNK+Skins"]:setElementModel (unpack(arg))
 	end
 return _setElementModel (unpack(arg))
