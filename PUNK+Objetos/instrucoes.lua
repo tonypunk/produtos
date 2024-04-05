@@ -51,18 +51,25 @@ local objects = xmlNodeGetChildren(mapFile)
 			local rotX = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotX") ) )
 			local rotY = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotY") ) )
 			local rotZ = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotZ") ) )
-			local ob = createObject (model, posX, posY,posZ, rotX, rotY, rotZ)
-			local doublesided = xmlNodeGetAttribute(node, "doublesided")
-				if (doublesided == "true") then
-				setElementDoubleSided (ob, true)
+				if localPlayer then
+				objeto = createObject (model, posX, posY,posZ, rotX, rotY, rotZ)
+				else
+				objeto = createObject (model, posX, posY,posZ, rotX, rotY, rotZ)
 				end
-			local scale = xmlNodeGetAttribute(node, "scale")
-				if scale and (scale ~= "1") then
-					if tonumber (scale) then
-					setObjectScale (ob, scale)
-					else
-					local sc =  (loadstring)('return '..scale)()
-					setObjectScale (ob, unpack (sc))
+				if isElement (objeto) then
+				local ob = objeto
+				local doublesided = xmlNodeGetAttribute(node, "doublesided")
+					if (doublesided == "true") then
+					setElementDoubleSided (ob, true)
+					end
+				local scale = xmlNodeGetAttribute(node, "scale")
+					if scale and (scale ~= "1") then
+						if tonumber (scale) then
+						setObjectScale (ob, scale)
+						else
+						local sc =  (loadstring)('return '..scale)()
+						setObjectScale (ob, unpack (sc))
+						end
 					end
 				end
 			end
