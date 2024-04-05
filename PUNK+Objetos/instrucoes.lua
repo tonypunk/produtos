@@ -33,6 +33,40 @@ return exports[resource]:getObjectModel (...)
 end
 
 function setElementModel (...)
-return exports[resource]:setObjectModel (unpack(arg)
+return exports[resource]:setObjectModel (unpack(arg))
+end
+
+local mapa = 'MAPA.map' --Nome do arquivo .map
+if mapa and fileExists (mapa) then
+local mapFile = xmlLoadFile(mapa)
+local objects = xmlNodeGetChildren(mapFile)
+	for i,node in ipairs(objects) do
+		local nodeName = xmlNodeGetName(node)
+		if (nodeName == "object") then
+		local model = xmlNodeGetAttribute(node, "model")
+			if getData()[model] or getData()[tonumber(model)] then
+			local posX = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posX") ) )
+			local posY = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posY") ) )
+			local posZ = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posZ") ) )
+			local rotX = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotX") ) )
+			local rotY = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotY") ) )
+			local rotZ = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotZ") ) )
+			local ob = createObject (model, posX, posY,posZ, rotX, rotY, rotZ)
+			local doublesided = xmlNodeGetAttribute(node, "doublesided")
+				if (doublesided == "true") then
+				setElementDoubleSided (ob, true)
+				end
+			local scale = xmlNodeGetAttribute(node, "scale")
+				if scale and (scale ~= "1") then
+					if tonumber (scale) then
+					setObjectScale (ob, scale)
+					else
+					local sc =  (loadstring)('return '..scale)()
+					setObjectScale (ob, unpack (sc))
+					end
+				end
+			end
+		end
+	end
 end
 ]]
