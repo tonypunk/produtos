@@ -6,47 +6,15 @@
 	<script src="config.lua" type="shared" />
     <script src="escadas.luac" type="shared" />
 	
-	<file src = "arquivos/BeachBlok01_LAe2.col" />
-	<file src = "arquivos/blokz_fireescape.col" />
-	<file src = "arquivos/ebeach_alpahbits2.col" />
-	<file src = "arquivos/ebeach_alphabits.col" />
-	<file src = "arquivos/ebeachalpha5.col" />
-	<file src = "arquivos/ebeachalpha5b.col" />
-	<file src = "arquivos/fescape_sfs01.col" />
-	<file src = "arquivos/fescape_sfw01.col" />
-	<file src = "arquivos/fescape_sfw02.col" />
-	<file src = "arquivos/fescape_sfw03.col" />
-	<file src = "arquivos/fescape_sfw04.col" />
-	<file src = "arquivos/fescape_sfw06.col" />
-	<file src = "arquivos/fescape_sfw07.col" />
-	<file src = "arquivos/fescape_sfw08.col" />
-	<file src = "arquivos/fescape_sfw09.col" />
-	<file src = "arquivos/fescape2_sfe.col" />
-	<file src = "arquivos/fescape2b_sfe.col" />
-	<file src = "arquivos/fire_esc_SFE01.col" />
-	<file src = "arquivos/fire_esc_SFE02.col" />
-	<file src = "arquivos/fire_esc_SFE03.col" />
-	<file src = "arquivos/fire_esc_SFE04.col" />
-	<file src = "arquivos/fire_esc_SFE05.col" />
-	<file src = "arquivos/fire_esc_SFE06.col" />
-	<file src = "arquivos/fire_esc_SFE07.col" />
-	<file src = "arquivos/fire_esc_SFE08.col" />
-	<file src = "arquivos/fire_esc_SFE09.col" />
-	<file src = "arquivos/fire_esc_SFE10.col" />
-	<file src = "arquivos/fire_esc_SFE11.col" />
-	<file src = "arquivos/firscape_sfw01.col" />
-	<file src = "arquivos/firscape_sfw02.col" />
-	<file src = "arquivos/firscape_sfw03.col" />
-	<file src = "arquivos/firscape_sfw04.col" />
-	<file src = "arquivos/lae2transbit.col" />
-	<file src = "arquivos/laeChicanoTr1.col" />
-	<file src = "arquivos/laeGlenPark04Tr.col" />
-	<file src = "arquivos/laenwblk2.col" />
-	<file src = "arquivos/LAn_fescalpha1.col" />
-	<file src = "arquivos/LAn_fescalpha02.col" />
-	<file src = "arquivos/LAn_fescalpha03.col" />
-	<file src = "arquivos/LAn_fescalpha04.col" />
-	<file src = "arquivos/LAn_fescalpha06.col" />
-	<file src = "arquivos/sanpedmexq3_las2.col" />
-	
+	<file src = "files/anim/ladder.ifpunk" />
+	<file src = "files/sound/enter_bot.mp3" />
+	<file src = "files/sound/enter_1.mp3" />
+	<file src = "files/sound/enter_2.mp3" />
+	<file src = "files/sound/enter_3.mp3" />
+	<file src = "files/sound/enter_4.mp3" />
+	<file src = "files/sound/leave_top.mp3" />
+	<file src = "files/sound/ladder_down_1.mp3" />
+	<file src = "files/sound/ladder_down_2.mp3" />
+	<file src = "files/sound/ladder_up_1.mp3" />
+	<file src = "files/sound/ladder_up_2.mp3" />
 </meta>
