@@ -15,7 +15,14 @@ configuracoes = {
 	--Exemplos de veículos
 	------------------------------------
 	--
-	["Stinger"] = { --Exemplo de veículo novo
+	[54545] = { --Exemplo de veículo novo
+		--
+		arquivo = "carro-novo", --nome do arquivo na pasta
+		handling = 429, -- handling
+		--
+	},
+	--
+	[1000] = { --Exemplo de veículo novo
 		--
 		arquivo = "stinger", --nome do arquivo na pasta
 		handling = 506, -- handling
