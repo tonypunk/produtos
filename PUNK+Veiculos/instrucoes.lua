@@ -20,7 +20,7 @@ _setElementModel = setElementModel --não tocar
 
 function isNativeVehicle (id)
 	for i=400, 611 do
-		if arg[1] == i then
+		if id == i then
 		return true
 		end
 	end
