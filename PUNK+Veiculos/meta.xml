@@ -25,12 +25,14 @@
     <file src="modelos/veiculos/lilwill.dff" type="client" />
     <file src="modelos/veiculos/lilwill.txd" type="client" />
 	
-	
-	
     <export function="createVehicle" type="shared" />
     <export function="setVehicleModel" type="shared" />
     <export function="getVehicleModel" type="shared" />
+    <export function="engineImportVehicleTXD" type="client" />
+    <export function="engineReplaceVehicleModel" type="client" />
+    <export function="engineFreeVehicleModel" type="client" />
+    <export function="engineRestoreVehicleModel" type="client" />
 	<export function="getData" type="shared" />
-	
+    
     <oop>true</oop>
 </meta>
