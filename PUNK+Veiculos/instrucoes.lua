@@ -69,4 +69,10 @@ function engineRestoreModel (...)
 return exports["PUNK+Veiculos"]:engineRestoreVehicleModel (unpack(arg))
 end
 
+_getOriginalHandling = getOriginalHandling
+function getOriginalHandling (...)
+	if isNativeVehicle (arg[1]) then return _getOriginalHandling (unpack (arg)) end
+return exports["PUNK+Veiculos"]:engineRestoreVehicleModel (unpack(arg))
+end
+
 ]]

@@ -32,6 +32,7 @@
     <export function="engineReplaceVehicleModel" type="client" />
     <export function="engineFreeVehicleModel" type="client" />
     <export function="engineRestoreVehicleModel" type="client" />
+    <export function="getOriginalHandling" type="client" />
 	<export function="getData" type="shared" />
     
     <oop>true</oop>
