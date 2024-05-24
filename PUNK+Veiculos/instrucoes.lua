@@ -75,4 +75,30 @@ function getOriginalHandling (...)
 return exports["PUNK+Veiculos"]:engineRestoreVehicleModel (unpack(arg))
 end
 
+
+local mapa = 'MAPA.map' --Nome do arquivo .map
+if mapa and fileExists (mapa) then
+local mapFile = xmlLoadFile(mapa)
+local objects = xmlNodeGetChildren(mapFile)
+	for i,node in ipairs(objects) do
+		local nodeName = xmlNodeGetName(node)
+		if (nodeName == "vehicle") then
+		local model = xmlNodeGetAttribute(node, "model")
+			if getData()[model] or getData()[tonumber(model)] then
+			local posX = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posX") ) )
+			local posY = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posY") ) )
+			local posZ = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posZ") ) )
+			local rotX = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotX") ) )
+			local rotY = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotY") ) )
+			local rotZ = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "rotZ") ) )
+				if localPlayer then
+				veiculo = createVehicle (model, posX, posY,posZ, rotX, rotY, rotZ)
+				else
+				veiculo = createVehicle (model, posX, posY,posZ, rotX, rotY, rotZ)
+				end
+			end
+		end
+	end
+end
+
 ]]
