@@ -9,31 +9,55 @@ A diferença é que os elementos novos são referidos pelo NOME em vez de ID
 createObject ("Skateboard", 1242.11, 1245.2, 1545.5)
 
 Para utilizar elementos de nosso sistema em seus mods cole o seguinte código no topo dos scripts
-
 --Setup
-resource = "PUNK+Objetos" --nome da pasta deste mod
 
 _createObject = createObject --não tocar
 _getElementModel = getElementModel --não tocar
 _setElementModel = setElementModel --não tocar
 
-function getData ()
-return exports[resource]:getData ()
+--Funções
+
+function getObjectData (...)
+return exports['PUNK+Objetos']:getData ()
 end
 
---Funções
 function createObject (...)
-local ob = unpack (arg)
-	if getData()[ob] then return exports[resource]:createObject (unpack (arg)) end
+	if getObjectData(arg[1]) then return exports['PUNK+Objetos']:createObject (unpack (arg)) end
 return _createObject (unpack (arg))
 end
 
 function getElementModel (...)
-return exports[resource]:getObjectModel (...)
+	if getElementType (arg[1]) == 'object' then return exports['PUNK+Objetos']:getObjectModel (...) end
+return _getElementModel (unpack (arg))
 end
 
 function setElementModel (...)
-return exports[resource]:setObjectModel (unpack(arg))
+	if getElementType (arg[1]) == 'object' then return exports['PUNK+Objetos']:setObjectModel (unpack(arg)) end
+return _setElementModel (unpack (arg))
+end
+
+_engineImportTXD = engineImportTXD
+function engineImportTXD (...)
+	if  getObjectData(arg[2]) then return exports['PUNK+Objetos']:engineImportObjectTXD (unpack(arg)) end
+return _engineImportTXD (unpack(arg))
+end
+
+_engineReplaceModel = engineReplaceModel
+function engineReplaceModel (...)
+	if  getObjectData(arg[2]) then return exports['PUNK+Objetos']:engineReplaceObjectModel (unpack(arg)) end
+return _engineReplaceModel (unpack(arg))
+end
+
+_engineFreeModel = engineFreeModel
+function engineFreeModel (...)
+	if getObjectData(arg[1]) then return exports['PUNK+Objetos']:engineFreeObjectModel (unpack(arg)) end
+return _engineFreeModel (unpack (arg))
+end
+
+_engineRestoreModel = engineRestoreModel
+function engineRestoreModel (...)
+	if getObjectData(arg[1]) then return exports['PUNK+Objetos']:engineRestoreObjectModel (unpack(arg)) end
+return _engineRestoreModel (unpack (arg))
 end
 
 local mapa = 'MAPA.map' --Nome do arquivo .map
@@ -44,7 +68,7 @@ local objects = xmlNodeGetChildren(mapFile)
 		local nodeName = xmlNodeGetName(node)
 		if (nodeName == "object") then
 		local model = xmlNodeGetAttribute(node, "model")
-			if getData()[model] or getData()[tonumber(model)] then
+			if getObjectData()[model] or getObjectData()[tonumber(model)] then
 			local posX = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posX") ) )
 			local posY = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posY") ) )
 			local posZ = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posZ") ) )
@@ -76,4 +100,5 @@ local objects = xmlNodeGetChildren(mapFile)
 		end
 	end
 end
+
 ]]
