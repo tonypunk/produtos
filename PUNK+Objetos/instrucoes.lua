@@ -68,7 +68,7 @@ local objects = xmlNodeGetChildren(mapFile)
 		local nodeName = xmlNodeGetName(node)
 		if (nodeName == "object") then
 		local model = xmlNodeGetAttribute(node, "model")
-			if getObjectData()[model] or getObjectData()[tonumber(model)] then
+			if getObjectData(model) or getObjectData(tonumber(model)) then
 			local posX = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posX") ) )
 			local posY = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posY") ) )
 			local posZ = tonumber( string.format("%.4f", xmlNodeGetAttribute(node, "posZ") ) )
