@@ -4,4 +4,5 @@
     
 	<script src="config.lua" type="shared" />
     <script src="deitar.luac" type="shared" />
+	<file src = "files/anim/deitar.ifpunk"  type = 'client' cache = 'false'/>
 </meta>
