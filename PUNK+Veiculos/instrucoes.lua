@@ -75,7 +75,7 @@ end
 _getOriginalHandling = getOriginalHandling
 function getOriginalHandling (...)
 	if isNativeVehicle (arg[1]) then return _getOriginalHandling (unpack (arg)) end
-return exports['PUNK+Veiculos']:engineRestoreVehicleModel (unpack(arg))
+return exports['PUNK+Veiculos']:getOriginalHandling (unpack(arg))
 end
 
 local mapa = 'MAPA.map' --Nome do arquivo .map
