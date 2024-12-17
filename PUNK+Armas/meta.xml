@@ -1,0 +1,152 @@
+<meta>
+    <info name="Armas PUNK STUDIOS" author="Tony_Punk" type="script" version="70" description="Acesse nosso discord: discord.gg/DnyCUzJ"></info>
+    <min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+    <oop>true</oop>
+    <script src="config.lua" type="shared" />
+    <script src="armas.luac" type="shared" />
+	<script src="files/script/demo.lua" type="shared" />
+	<script src="files/script/animations.lua" type="shared" />
+	<script src="files/script/sound.lua" type="shared" />
+	<script src="files/script/defaultstats.lua" type="server" />
+	
+					///Handguns
+	<file src="files/weapons/ptl/pistol.dff"></file>
+    <file src="files/weapons/ptl/pistol.txd"></file>
+    <file src="files/weapons/ptl/heavy revolver.dff"></file>
+    <file src="files/weapons/ptl/heavy revolver.txd"></file>
+	<file src="files/weapons/ptl/stun gun.dff"></file>
+    <file src="files/weapons/ptl/stun gun.txd"></file>
+					///SMG
+	<file src="files/weapons/smg/combat pdw.dff"></file>
+    <file src="files/weapons/smg/combat pdw.txd"></file>
+	<file src="files/weapons/smg/micro smg.dff"></file>
+    <file src="files/weapons/smg/micro smg.txd"></file>
+	<file src="files/weapons/smg/machine pistol.dff"></file>
+    <file src="files/weapons/smg/machine pistol.txd"></file>
+					///LMG
+	<file src="files/weapons/lmg/compact rifle.dff"></file>
+    <file src="files/weapons/lmg/compact rifle.txd"></file>
+	<file src="files/weapons/lmg/special carbine.dff"></file>
+    <file src="files/weapons/lmg/special carbine.txd"></file>
+					///MGN
+	<file src="files/weapons/mgn/mg.dff"></file>
+    <file src="files/weapons/mgn/mg.txd"></file>
+	
+	///Sound
+		//Pistol
+	<file src="files/sound/ptl/ptl_pistol/handle/pistolin.mp3"></file>
+	<file src="files/sound/ptl/ptl_pistol/handle/pistolout.mp3"></file>
+	<file src="files/sound/ptl/ptl_pistol/handle/pistoldry.wav"></file>
+	<file src="files/sound/ptl/ptl_heavy/reload/PTL_M1911_CLIPIN.wav"></file>
+	<file src="files/sound/ptl/ptl_pistol/shot/PTL_PISTOL_SHOT.L.wav"></file>
+	<file src="files/sound/ptl/ptl_pistol/shot/PTL_PISTOL_SHOT.R.wav"></file>
+
+		///Heavy Revolver
+	<file src="files/sound/ptl/ptl_revolver/shot/PTL_REVOLVER.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/shot/setup1.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload1.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload2.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload3.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload4.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload5.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/handle/drawin.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/handle/drawout.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/handle/dryfire.wav"></file>
+
+		///Stun Gun
+	<file src="files/sound/ptl/ptl_stun/shot/GTA5_GUN_STUN1.wav"></file>
+	<file src="files/sound/ptl/ptl_stun/shot/CHARGE.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_STUN_IMPACT_A.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_STUN_IMPACT_B.wav"></file>
+	
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_01.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_02.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_04.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_05.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_06.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_08.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_09.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_11.wav"></file>
+	
+	<file src="files/sound/ptl/distant/PTL_INDOOR_2.wav"></file>
+	<file src="files/sound/ptl/distant/PTL_PISTOL_MID_1.wav"></file>
+	<file src="files/sound/ptl/distant/PTL_PISTOL_MID_2.wav"></file>
+	<file src="files/sound/ptl/distant/PTL_PISTOL_FAR_1.wav"></file>
+	<file src="files/sound/ptl/distant/PTL_PISTOL_FAR_2.wav"></file>
+	
+	
+	///SMG
+		///Handle
+	<file src="files/sound/smg/handle/smgin.mp3"></file>
+	<file src="files/sound/smg/handle/smgout.mp3"></file>
+	<file src="files/sound/smg/handle/smgdry.wav"></file>
+	<file src="files/sound/smg/reload/SMG_ASSAULT_CHAMBER_PRT1.wav"></file>
+	<file src="files/sound/smg/reload/SMG_ASSAULT_CHAMBER_PRT2.wav"></file>
+	<file src="files/sound/smg/reload/SMG_ASSAULT_CLIPIN_PRT1.wav"></file>
+		///Impact
+	<file src="files/sound/smg/impact/SMG_IMPACT_01.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_03.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_04.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_06.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_08.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_12.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_14.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_15.wav"></file>
+		///Distant
+	<file src="files/sound/smg/distant/UZI_REPORT_A.wav"></file>
+		///Micro
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_FIRST.wav"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_1.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_2.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_3.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_4.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_RPRT.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_FIRST.wav"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_1.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_2.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_3.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_4.mp3"></file>
+		//SMG
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_00_FIRST.wav"></file>
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_01.L.wav"></file>
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_02.L.wav"></file>
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_03.L.wav"></file>
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_04.L.wav"></file>
+		
+		///PPRT
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_RPRT.mp3"></file>
+	
+	///Crosshair
+	
+	<file src="files/model/crosshair/default/assault.png"></file>
+	<file src="files/model/crosshair/default/default.png"></file>
+	<file src="files/model/crosshair/default/flamer.png"></file>
+	<file src="files/model/crosshair/default/global.png"></file>
+	<file src="files/model/crosshair/default/mg.png"></file>
+	<file src="files/model/crosshair/default/pistol.png"></file>
+	<file src="files/model/crosshair/default/shotgun.png"></file>
+	<file src="files/model/crosshair/default/silenced.png"></file>
+	<file src="files/model/crosshair/default/smg.png"></file>
+	<file src="files/model/crosshair/default/heavy.png"></file>
+	
+	<file src="files/model/crosshair/scope/marksman rifle.png"></file>
+	<file src="files/model/crosshair/scope/heavy sniper.png"></file>
+	
+	///Exports
+	
+    <export function="giveWeapon" type="shared" />
+    <export function="takeWeapon" type="shared" />
+    <export function="takeAllWeapons" type="shared" />
+    <export function="getPedWeapon" type="shared" />
+    <export function="getPedAmmoInClip" type="shared" />
+    <export function="getPedTotalAmmo" type="shared" />
+    <export function="isPedReloadingWeapon" type="shared" />
+    <export function="setWeaponOwner" type="shared" />
+    <export function="getWeaponOwner" type="shared" />
+    <export function="getWeaponName" type="shared" />
+    <export function="getSlotFromWeapon" type="shared" />
+    <export function="getWeaponNameFromID" type="shared" />
+	<export function="getProjectileFireworks" type="shared" />
+	<export function="getProjectileFlare" type="shared" />
+	<export function="getData" type="shared" />
+</meta>

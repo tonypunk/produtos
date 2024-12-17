@@ -1,0 +1,10 @@
+<meta>
+	<info author="Nick_Wilde" type="map" name="Lojas" descriptions="Lojas espalhadas por LV" version="313" />
+	<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+	<script src="config.lua" type="shared"></script>
+	<script src="lojasLV.lua" type="shared"></script>
+	<file src="imagens/loja1.png" type="client" />
+	<file src="imagens/loja2.png" type="client" />
+	<file src="imagens/loja3.png" type="client" />
+	<file src="imagens/loja4.png" type="client" />
+</meta>
