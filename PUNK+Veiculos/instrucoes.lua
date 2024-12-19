@@ -33,7 +33,7 @@ end
 
 _createVehicle = createVehicle
 function createVehicle (...)
-	if isNativeVehicle (arg[1]) then return _createVehicle (unpack (arg)) end
+	if isNativeVehicle (tonumber (arg[1])) then return _createVehicle (unpack (arg)) end
 return exports['PUNK+Veiculos']:createVehicle (unpack (arg))
 end
 Vehicle = createVehicle
