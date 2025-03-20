@@ -43,7 +43,7 @@ end
 if not localPlayer then
 
 --Piloto
-addEventHandler ("onVehicleEnter", getRootElement(), function (ped, seat)
+addEventHandler ('onVehicleEnter', getRootElement(), function (ped, seat)
 	if getElementModel (source) == 577 then
 		if seat == 2 then
 		local tempV = source
@@ -52,23 +52,23 @@ addEventHandler ("onVehicleEnter", getRootElement(), function (ped, seat)
 	end
 end)
 
-addEventHandler ("onVehicleStartExit", getRootElement(), function (ped, seat)
+addEventHandler ('onVehicleStartExit', getRootElement(), function (ped, seat)
 	if getElementModel (source) == 577 then
 		if seat == 0 or seat == 2 then
 		_removePedFromVehicle (ped)
-		exports.PUNKPassageiros:setPedExitVehicle (ped)
+		exports['PUNK+Passageiros']:setPedExitVehicle (ped)
 		end
 	end
 end)
 
-addEventHandler ("onVehicleStartEnter", getRootElement(), function (ped, seat)
+addEventHandler ('onVehicleStartEnter', getRootElement(), function (ped, seat)
 	if getElementModel (source) == 577 then
 		if seat == 0 then
 		cancelEvent()
 		local tempV = source
 			setTimer (function ()
 				if isElement (ped) and isElement (tempV) then
-				exports.PUNKPassageiros:setPedEnterVehicle (ped, tempV, 2)
+				exports['PUNK+Passageiros']:setPedEnterVehicle (ped, tempV, 2)
 				end
 			end, 100, 1)
 		end
@@ -76,7 +76,7 @@ addEventHandler ("onVehicleStartEnter", getRootElement(), function (ped, seat)
 end)
 
 --Co-piloto
-addEventHandler ("onVehicleEnter", getRootElement(), function (ped, seat)
+addEventHandler ('onVehicleEnter', getRootElement(), function (ped, seat)
 	if getElementModel (source) == 577 then
 		if seat == 3 then
 		local tempV = source
@@ -85,23 +85,23 @@ addEventHandler ("onVehicleEnter", getRootElement(), function (ped, seat)
 	end
 end)
 
-addEventHandler ("onVehicleStartExit", getRootElement(), function (ped, seat)
+addEventHandler ('onVehicleStartExit', getRootElement(), function (ped, seat)
 	if getElementModel (source) == 577 then
 		if seat == 1 or seat == 3 then
 		_removePedFromVehicle (ped)
-		exports.PUNKPassageiros:setPedExitVehicle (ped)
+		exports['PUNK+Passageiros']:setPedExitVehicle (ped)
 		end
 	end
 end)
 
-addEventHandler ("onVehicleStartEnter", getRootElement(), function (ped, seat)
+addEventHandler ('onVehicleStartEnter', getRootElement(), function (ped, seat)
 	if getElementModel (source) == 577 then
 		if seat == 1 then
 		cancelEvent()
 		local tempV = source
 			setTimer (function ()
 				if isElement (ped) and isElement (tempV) then
-				exports.PUNKPassageiros:setPedEnterVehicle (ped, tempV, 3)
+				exports['PUNK+Passageiros']:setPedEnterVehicle (ped, tempV, 3)
 				end
 			end, 100, 1)
 		end
