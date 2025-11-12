@@ -103,4 +103,18 @@ local objects = xmlNodeGetChildren(mapFile)
 	end
 end
 
+--Vinculação com o sistema Active Parts da Sailor Showroom (https://discord.gg/h88q4qJxRj)
+
+local tempFunc = function (elem)
+local model = _getElementModel (elem)
+local d = exports['PUNK+Veiculos']:getData ()
+	for i, tabela in pairs (d) do
+		if model == tabela.id then
+		return i
+		end
+	end
+end
+local getElementModel = tempFunc
+
+
 ]]
