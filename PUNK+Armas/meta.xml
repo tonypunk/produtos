@@ -1,0 +1,30 @@
+<meta>
+<info name="Armas PUNK STUDIOS" author="Tony_Punk" type="script" version="70" description="Acesse nosso discord: discord.gg/DnyCUzJ"></info>
+<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+<oop>true</oop>
+<script src="config.lua" type="shared" />
+<script src="armas.luac" type="shared" />
+	
+	///Exports
+	
+	<export function="giveWeapon" type="shared" />
+	<export function="takeWeapon" type="shared" />
+	<export function="takeAllWeapons" type="shared" />
+	<export function="getPedWeapon" type="shared" />
+	<export function="getPedAmmoInClip" type="shared" />
+	<export function="getPedTotalAmmo" type="shared" />
+	<export function="isPedReloadingWeapon" type="shared" />
+	<export function="setWeaponOwner" type="shared" />
+	<export function="getWeaponOwner" type="shared" />
+	<export function="getWeaponName" type="shared" />
+	<export function="getSlotFromWeapon" type="shared" />
+	<export function="getWeaponNameFromID" type="shared" />
+	<export function="createFirework" type="client" />
+	<export function="getPedWeaponReadyTimer" type="client" />
+	<export function="getWeaponProperty" type="client" />
+	<export function="getProjectileData" type="client" />
+	<export function="getFiringCount" type="client" />
+	<export function="setCustomWeaponProperty" type="client" />
+	<export function="getDummy" type="shared" />
+	<export function="getData" type="shared" />
+</meta>
