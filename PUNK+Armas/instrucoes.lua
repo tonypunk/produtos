@@ -10,9 +10,12 @@ Documentação
 *Marcas dos tiros dependendo do material (metal, vidro, madeira etc)
 *Se o tiro avejar então o sangue respinga na parede
 
+Assets
+Baixe os assets nativos de exemplo em : https://github.com/tonypunk/produtos/raw/refs/heads/main/%5BArmas%5D/%5BArmas%5D.rar
+
 Vinculação 
 
-Copie e cole as funções abaixo em um arquivo shared no seu resource ou simplesmente copie e adicione ao meta do seu resource o arquivo vinculum.lua sem as restrições de texto ([[)
+Copie e cole as funções abaixo em um arquivo shared no seu resource ou simplesmente copie e adicione ao meta do seu resource o arquivo vinculum.lua sem as restrições de texto
 
 --Setup
 function giveWeapon (...)
