@@ -1,0 +1,84 @@
+<meta>
+    <info name="PUNK+Armas" author="Punk Studios" type="script" version="70" description="Sistema de armas personalizável. Acesse nosso discord: discord.gg/bkmeQqg"></info>
+    <min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+	<script src="config.lua" type="shared" />
+	<script src="loja.lua" type="shared" />
+	
+	<file src="files/models/ammu_nation_ls.dff" />
+	<file src="files/models/ammu_nation_ls.txd" />
+	<file src="files/models/ammu_nation_ls.col" />
+	<map src="files/models/ammu_nation_ls_door.map" dimension="0"></map>
+	
+	<file src="files/upgrades/ptl/pistol/p1YCG.png"></file>
+	<file src="files/upgrades/ptl/pistol/p2YCG.png"></file>
+	<file src="files/upgrades/ptl/pistol/p3YCG.png"></file>
+	<file src="files/upgrades/ptl/pistol/pmagYCG.png"></file>
+	<file src="files/upgrades/ptl/pistol/prop_bulb_white.png"></file>
+	<file src="files/upgrades/ptl/pistol/w_at_pi_flsh.png"></file>
+	<file src="files/upgrades/ptl/pistol/w_at_pi_supp.png"></file>
+	
+	<file src="files/upgrades/lmg/Advanced Rifle/ARYCG2.png"></file>
+	<file src="files/upgrades/lmg/Advanced Rifle/ARYCG3.png"></file>
+	<file src="files/upgrades/lmg/Advanced Rifle/prop_bulb_white.png"></file>
+	<file src="files/upgrades/lmg/Advanced Rifle/w_ar_advancedrifle_tint.png"></file>
+	<file src="files/upgrades/lmg/Advanced Rifle/w_ar_afgrip.png"></file>
+	<file src="files/upgrades/lmg/Advanced Rifle/w_at_ar_flsh.png"></file>
+	<file src="files/upgrades/lmg/Advanced Rifle/w_at_ar_supp.png"></file>
+	<file src="files/upgrades/lmg/Advanced Rifle/w_at_scope_small.png"></file>
+	
+	<file src="assets/defaultbg.png"/>
+    <file src="assets/fonts/font.ttf"/>
+    <file src="assets/fonts/fonttitle.ttf"/>
+    <file src="assets/24.png"/>
+    <file src="assets/icons/accept1.png"/>
+    <file src="assets/icons/accept2.png"/>
+    <file src="assets/icons/ammo1.png"/>
+    <file src="assets/icons/ammo2.png"/>
+    <file src="assets/icons/armour1.png"/>
+    <file src="assets/icons/armour2.png"/>
+    <file src="assets/icons/art1.png"/>
+    <file src="assets/icons/art2.png"/>
+    <file src="assets/icons/barber1.png"/>
+    <file src="assets/icons/barber2.png"/>
+    <file src="assets/icons/box1.png"/>
+    <file src="assets/icons/box2.png"/>
+    <file src="assets/icons/clothing1.png"/>
+    <file src="assets/icons/clothing2.png"/>
+	<file src="assets/icons/accept3.png"/>
+	<file src="assets/icons/accept4.png"/>
+	<file src="assets/icons/shop_gunclub_icon_b.png"/>
+	
+	<file src="assets/sounds/acquire.wav"/>
+	<file src="assets/sounds/navigation.wav"/>
+	<file src="assets/sounds/return.wav"/>
+	<file src="assets/sounds/confirm.wav"/>
+	<file src="assets/sounds/headsup.wav"/>
+    <file src="assets/sounds/change.wav"/>
+	
+	<export function="createHeadsupMessage" type="shared" />
+	<export function="createNativeUI" type="shared" />
+	<export function="addNativeButton" type="shared" />
+	<export function="getNativeButtons" type="shared" />
+	<export function="playNativeSound" type="shared" />
+	<export function="destroyNativeUI" type="shared" />
+	<export function="removeNativeUI" type="shared" />
+	<export function="destroyNativeBox" type="shared" />
+	<export function="removeNativeBox" type="shared" />
+	<export function="setNativeButtonName" type="shared" />
+	<export function="setNativeButtonPrice" type="shared" />
+	<export function="getNativeButtonPrice" type="shared" />
+	<export function="setNativeButtonIcon" type="shared" />
+	<export function="addNativeCheckBox" type="shared" />
+	<export function="addNativeSwitch" type="shared" />
+    <export function="clearNativeUI" type="client"/>
+    <export function="removeNativeItem" type="client"/>
+    <export function="removeNativeButtonIcon" type="client"/>
+    <export function="nativeSetCheckBoxSelection" type="client"/>
+    <export function="nativeGetCheckBoxSelection" type="client"/>
+    <export function="getSwitchText" type="client"/>
+    <export function="setNativeSwitchSelection" type="client"/>
+	
+	<export function="checar" type="shared" />
+	
+    <oop>true</oop>
+</meta>

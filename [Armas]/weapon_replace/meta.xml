@@ -1,0 +1,251 @@
+<meta>
+<info name="Armas PUNK STUDIOS" author="Tony_Punk" type="script" version="70" description="Acesse nosso discord: discord.gg/DnyCUzJ"></info>
+<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+<oop>true</oop>
+	<script src="vinculum.lua" type="shared" />
+	<script src="utils.lua" type="shared" />
+	
+	<script src="replace.lua" type="shared" />
+	
+					///Melee
+	<file src="files/weapons/melee/Knife.dff"></file>
+	<file src="files/weapons/melee/Knife.txd"></file>
+	<file src="files/weapons/melee/Nightstick.dff"></file>
+	<file src="files/weapons/melee/Nightstick.txd"></file>
+	<file src="files/weapons/melee/Hammer.dff"></file>
+	<file src="files/weapons/melee/Hammer.txd"></file>
+	<file src="files/weapons/melee/Baseball Bat.dff"></file>
+	<file src="files/weapons/melee/Baseball Bat.txd"></file>
+	<file src="files/weapons/melee/Crowbar.dff"></file>
+	<file src="files/weapons/melee/Crowbar.txd"></file>
+	<file src="files/weapons/melee/Golf Club.dff"></file>
+	<file src="files/weapons/melee/Golf Club.txd"></file>
+	<file src="files/weapons/melee/Broken Bottle.dff"></file>
+	<file src="files/weapons/melee/Broken Bottle.txd"></file>
+	<file src="files/weapons/melee/Antique Cavalry Dagger.dff"></file>
+	<file src="files/weapons/melee/Antique Cavalry Dagger.txd"></file>
+	<file src="files/weapons/melee/Hatchet.dff"></file>
+	<file src="files/weapons/melee/Hatchet.txd"></file>
+	<file src="files/weapons/melee/Knuckle Dusters.dff"></file>
+	<file src="files/weapons/melee/Knuckle Dusters.txd"></file>
+	<file src="files/weapons/melee/Machete.dff"></file>
+	<file src="files/weapons/melee/Machete.txd"></file>
+	<file src="files/weapons/melee/Flashlight.dff"></file>
+	<file src="files/weapons/melee/Flashlight.txd"></file>
+	<file src="files/weapons/melee/Switchblade.dff"></file>
+	<file src="files/weapons/melee/Switchblade.txd"></file>
+	<file src="files/weapons/melee/Pool Cue.dff"></file>
+	<file src="files/weapons/melee/Pool Cue.txd"></file>
+	<file src="files/weapons/melee/Pipe Wrench.dff"></file>
+	<file src="files/weapons/melee/Pipe Wrench.txd"></file>
+	<file src="files/weapons/melee/Battle Axe.dff"></file>
+	<file src="files/weapons/melee/Battle Axe.txd"></file>
+	<file src="files/weapons/melee/Stone Hatchet.dff"></file>
+	<file src="files/weapons/melee/Stone Hatchet.txd"></file>
+	<file src="files/weapons/melee/Candy Cane.dff"></file>
+	<file src="files/weapons/melee/Candy Cane.txd"></file>
+	<file src="files/weapons/melee/Stun Rod.dff"></file>
+	<file src="files/weapons/melee/Stun Rod.txd"></file>
+
+					///Handguns
+	<file src="files/weapons/ptl/Ceramic Pistol.dff"></file>
+	<file src="files/weapons/ptl/Ceramic Pistol.txd"></file>
+	<file src="files/weapons/ptl/Pistol.dff"></file>
+	<file src="files/weapons/ptl/Pistol.txd"></file>
+	<file src="files/weapons/ptl/Pistol Mk II.dff"></file>
+	<file src="files/weapons/ptl/Pistol Mk II.txd"></file>
+	<file src="files/weapons/ptl/SNS Pistol.dff"></file>
+	<file src="files/weapons/ptl/SNS Pistol.txd"></file>
+	<file src="files/weapons/ptl/SNS Pistol Mk II.dff"></file>
+	<file src="files/weapons/ptl/SNS Pistol Mk II.txd"></file>
+	<file src="files/weapons/ptl/AP Pistol.dff"></file>
+	<file src="files/weapons/ptl/AP Pistol.txd"></file>
+	<file src="files/weapons/ptl/Double Action Revolver.dff"></file>
+	<file src="files/weapons/ptl/Double Action Revolver.txd"></file>
+	<file src="files/weapons/ptl/Flare.dff"></file>
+	<file src="files/weapons/ptl/Flare.txd"></file>
+	<file src="files/weapons/ptl/Flare Mag.dff"></file>
+	<file src="files/weapons/ptl/Flare Mag.txd"></file>
+	<file src="files/weapons/ptl/Flare Gun.dff"></file>
+	<file src="files/weapons/ptl/Flare Gun.txd"></file>
+	<file src="files/weapons/ptl/Heavy Revolver.dff"></file>
+	<file src="files/weapons/ptl/Heavy Revolver.txd"></file>
+	<file src="files/weapons/ptl/Heavy Revolver Mk II.dff"></file>
+	<file src="files/weapons/ptl/Heavy Revolver Mk II.txd"></file>
+	<file src="files/weapons/ptl/Heavy Pistol.dff"></file>
+	<file src="files/weapons/ptl/Heavy Pistol.txd"></file>
+	<file src="files/weapons/ptl/Marksman Pistol.dff"></file>
+	<file src="files/weapons/ptl/Marksman Pistol.txd"></file>
+	<file src="files/weapons/ptl/Navy Revolver.dff"></file>
+	<file src="files/weapons/ptl/Navy Revolver.txd"></file>
+	<file src="files/weapons/ptl/Stun Gun.dff"></file>
+	<file src="files/weapons/ptl/Stun Gun.txd"></file>
+	<file src="files/weapons/ptl/Up-n-Atomizer.dff"></file>
+	<file src="files/weapons/ptl/Up-n-Atomizer.txd"></file>
+	<file src="files/weapons/ptl/Pistol .50.dff"></file>
+	<file src="files/weapons/ptl/Pistol .50.txd"></file>
+	<file src="files/weapons/ptl/Vintage Pistol.dff"></file>
+	<file src="files/weapons/ptl/Vintage Pistol.txd"></file>
+	<file src="files/weapons/ptl/Combat Pistol.dff"></file>
+	<file src="files/weapons/ptl/Combat Pistol.txd"></file>
+	<file src="files/weapons/ptl/Perico Pistol.dff"></file>
+	<file src="files/weapons/ptl/Perico Pistol.txd"></file>
+	<file src="files/weapons/ptl/VM 29 Pistol.dff"></file>
+	<file src="files/weapons/ptl/VM 29 Pistol.txd"></file>
+
+					///Smg
+	<file src="files/weapons/smg/Assault SMG.dff"></file>
+	<file src="files/weapons/smg/Assault SMG.txd"></file>
+	<file src="files/weapons/smg/Combat PDW.dff"></file>
+	<file src="files/weapons/smg/Combat PDW.txd"></file>
+	<file src="files/weapons/smg/Micro SMG.dff"></file>
+	<file src="files/weapons/smg/Micro SMG.txd"></file>
+	<file src="files/weapons/smg/Machine Pistol.dff"></file>
+	<file src="files/weapons/smg/Machine Pistol.txd"></file>
+	<file src="files/weapons/smg/Mini SMG.dff"></file>
+	<file src="files/weapons/smg/Mini SMG.txd"></file>
+	<file src="files/weapons/smg/SMG.dff"></file>
+	<file src="files/weapons/smg/SMG.txd"></file>
+	<file src="files/weapons/smg/Smg Mk II.dff"></file>
+	<file src="files/weapons/smg/Smg Mk II.txd"></file>
+	<file src="files/weapons/smg/Tactical SMG.dff"></file>
+	<file src="files/weapons/smg/Tactical SMG.txd"></file>
+
+					///Lmg
+	<file src="files/weapons/lmg/Unholy Hellbringer.dff"></file>
+	<file src="files/weapons/lmg/Unholy Hellbringer.txd"></file>
+	<file src="files/weapons/lmg/Gusenberg Sweeper.dff"></file>
+	<file src="files/weapons/lmg/Gusenberg Sweeper.txd"></file>
+	<file src="files/weapons/lmg/Assault Rifle.dff"></file>
+	<file src="files/weapons/lmg/Assault Rifle.txd"></file>
+	<file src="files/weapons/lmg/Assault Rifle Mk II.dff"></file>
+	<file src="files/weapons/lmg/Assault Rifle Mk II.txd"></file>
+	<file src="files/weapons/lmg/Assault MG.dff"></file>
+	<file src="files/weapons/lmg/Assault MG.txd"></file>
+	<file src="files/weapons/lmg/Carbine Rifle.dff"></file>
+	<file src="files/weapons/lmg/Carbine Rifle.txd"></file>
+	<file src="files/weapons/lmg/Carbine Rifle Mk II.dff"></file>
+	<file src="files/weapons/lmg/Carbine Rifle Mk II.txd"></file>
+	<file src="files/weapons/lmg/Bullpup Rifle.dff"></file>
+	<file src="files/weapons/lmg/Bullpup Rifle.txd"></file>
+	<file src="files/weapons/lmg/Bullpup Rifle Mk II.dff"></file>
+	<file src="files/weapons/lmg/Bullpup Rifle Mk II.txd"></file>
+	<file src="files/weapons/lmg/Advanced Rifle.dff"></file>
+	<file src="files/weapons/lmg/Advanced Rifle.txd"></file>
+	<file src="files/weapons/lmg/Compact Rifle.dff"></file>
+	<file src="files/weapons/lmg/Compact Rifle.txd"></file>
+	<file src="files/weapons/lmg/Special Carbine.dff"></file>
+	<file src="files/weapons/lmg/Special Carbine.txd"></file>
+	<file src="files/weapons/lmg/Special Carbine Mk II.dff"></file>
+	<file src="files/weapons/lmg/Special Carbine Mk II.txd"></file>
+	<file src="files/weapons/lmg/Heavy Rifle.dff"></file>
+	<file src="files/weapons/lmg/Heavy Rifle.txd"></file>
+	<file src="files/weapons/lmg/Service Carbine.dff"></file>
+	<file src="files/weapons/lmg/Service Carbine.txd"></file>
+	<file src="files/weapons/lmg/Battle Rifle.dff"></file>
+	<file src="files/weapons/lmg/Battle Rifle.txd"></file>
+	<file src="files/weapons/lmg/Military Rifle.dff"></file>
+	<file src="files/weapons/lmg/Military Rifle.txd"></file>
+
+						///Mgn
+	<file src="files/weapons/mgn/MG.dff"></file>
+	<file src="files/weapons/mgn/MG.txd"></file>
+	<file src="files/weapons/mgn/Combat MG.dff"></file>
+	<file src="files/weapons/mgn/Combat MG.txd"></file>
+	<file src="files/weapons/mgn/Combat Mg Mk II.dff"></file>
+	<file src="files/weapons/mgn/Combat Mg Mk II.txd"></file>
+	<file src="files/weapons/mgn/Minigun.dff"></file>
+	<file src="files/weapons/mgn/Minigun.txd"></file>
+	<file src="files/weapons/mgn/Widowmaker.dff"></file>
+	<file src="files/weapons/mgn/Widowmaker.txd"></file>
+
+					///Shotguns
+	<file src="files/weapons/sht/Combat Shotgun.dff"></file>
+	<file src="files/weapons/sht/Combat Shotgun.txd"></file>
+	<file src="files/weapons/sht/Pump Shotgun.dff"></file>
+	<file src="files/weapons/sht/Pump Shotgun.txd"></file>
+	<file src="files/weapons/sht/Pump Shotgun Mk II.dff"></file>
+	<file src="files/weapons/sht/Pump Shotgun Mk II.txd"></file>
+	<file src="files/weapons/sht/Bullpup Shotgun.dff"></file>
+	<file src="files/weapons/sht/Bullpup Shotgun.txd"></file>
+	<file src="files/weapons/sht/Assault Shotgun.dff"></file>
+	<file src="files/weapons/sht/Assault Shotgun.txd"></file>
+	<file src="files/weapons/sht/Double Barrel Shotgun.dff"></file>
+	<file src="files/weapons/sht/Double Barrel Shotgun.txd"></file>
+	<file src="files/weapons/sht/Sawed-Off Shotgun.dff"></file>
+	<file src="files/weapons/sht/Sawed-Off Shotgun.txd"></file>
+	<file src="files/weapons/sht/Heavy Shotgun.dff"></file>
+	<file src="files/weapons/sht/Heavy Shotgun.txd"></file>
+	<file src="files/weapons/sht/Musket.dff"></file>
+	<file src="files/weapons/sht/Musket.txd"></file>
+	<file src="files/weapons/sht/Sweeper Shotgun.dff"></file>
+	<file src="files/weapons/sht/Sweeper Shotgun.txd"></file>
+
+					///Rifle
+	<file src="files/weapons/snpr/Sniper Rifle.dff"></file>
+	<file src="files/weapons/snpr/Sniper Rifle.txd"></file>
+	<file src="files/weapons/snpr/Heavy Sniper.dff"></file>
+	<file src="files/weapons/snpr/Heavy Sniper.txd"></file>
+	<file src="files/weapons/snpr/Heavy Sniper Mk II.dff"></file>
+	<file src="files/weapons/snpr/Heavy Sniper Mk II.txd"></file>
+	<file src="files/weapons/snpr/Marksman Rifle.dff"></file>
+	<file src="files/weapons/snpr/Marksman Rifle.txd"></file>
+	<file src="files/weapons/snpr/Marksman Rifle Mk II.dff"></file>
+	<file src="files/weapons/snpr/Marksman Rifle Mk II.txd"></file>
+	<file src="files/weapons/snpr/Assault Sniper.dff"></file>
+	<file src="files/weapons/snpr/Assault Sniper.txd"></file>
+	<file src="files/weapons/snpr/Precision Rifle.dff"></file>
+	<file src="files/weapons/snpr/Precision Rifle.txd"></file>
+	<file src="files/weapons/snpr/Railgun.dff"></file>
+	<file src="files/weapons/snpr/Railgun.txd"></file>
+
+					///Rocket Launcher
+	<file src="files/weapons/rckt/Rocket.dff"></file>
+	<file src="files/weapons/rckt/Rocket.txd"></file>
+	<file src="files/weapons/rckt/Rocket Launcher.dff"></file>
+	<file src="files/weapons/rckt/Rocket Launcher.txd"></file>
+	<file src="files/weapons/rckt/Homing Rocket.dff"></file>
+	<file src="files/weapons/rckt/Homing Rocket.txd"></file>
+	<file src="files/weapons/rckt/Homing Launcher.dff"></file>
+	<file src="files/weapons/rckt/Homing Launcher.txd"></file>
+	<file src="files/weapons/rckt/Firework Rocket.dff"></file>
+	<file src="files/weapons/rckt/Firework Rocket.txd"></file>
+	<file src="files/weapons/rckt/Firework Launcher.dff"></file>
+	<file src="files/weapons/rckt/Firework Launcher.txd"></file>
+
+					///Grenade Launcher
+	<file src="files/weapons/gnd/Pipe Bomb.dff"></file>
+	<file src="files/weapons/gnd/Pipe Bomb.txd"></file>
+	<file src="files/weapons/gnd/Grenade.dff"></file>
+	<file src="files/weapons/gnd/Grenade.txd"></file>
+	<file src="files/weapons/gnd/Teargas.dff"></file>
+	<file src="files/weapons/gnd/Teargas.txd"></file>
+	<file src="files/weapons/gnd/Bz Gas.dff"></file>
+	<file src="files/weapons/gnd/Bz Gas.txd"></file>
+	<file src="files/weapons/gnd/Molotov.dff"></file>
+	<file src="files/weapons/gnd/Molotov.txd"></file>
+	<file src="files/weapons/gnd/Proximity Mine.dff"></file>
+	<file src="files/weapons/gnd/Proximity Mine.txd"></file>
+	<file src="files/weapons/gnd/Sticky Bomb.dff"></file>
+	<file src="files/weapons/gnd/Sticky Bomb.txd"></file>
+	<file src="files/weapons/gnd/Ball.dff"></file>
+	<file src="files/weapons/gnd/Ball.txd"></file>
+	<file src="files/weapons/gnd/Grenade Launcher.dff"></file>
+	<file src="files/weapons/gnd/Grenade Launcher.txd"></file>
+	<file src="files/weapons/gnd/Grenade Launcher Shell.dff"></file>
+	<file src="files/weapons/gnd/Grenade Launcher Shell.txd"></file>
+	<file src="files/weapons/gnd/Compact Grenade Launcher.dff"></file>
+	<file src="files/weapons/gnd/Compact Grenade Launcher.txd"></file>
+	<file src="files/weapons/gnd/Compact Emp Launcher.dff"></file>
+	<file src="files/weapons/gnd/Compact Emp Launcher.txd"></file>
+	<file src="files/weapons/gnd/Emp Shell.dff"></file>
+	<file src="files/weapons/gnd/Emp Shell.txd"></file>
+	<file src="files/weapons/gnd/Snowball Launcher.dff"></file>
+	<file src="files/weapons/gnd/Snowball Launcher.txd"></file>
+	<file src="files/weapons/gnd/Snowball.dff"></file>
+	<file src="files/weapons/gnd/Snowball.txd"></file>
+	<file src="files/weapons/gnd/Hand Firework.dff"></file>
+	<file src="files/weapons/gnd/Hand Firework.txd"></file>
+
+	
+</meta>

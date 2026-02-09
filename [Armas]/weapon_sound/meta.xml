@@ -1,0 +1,280 @@
+<meta>
+<info name="Armas PUNK STUDIOS" author="Tony_Punk" type="script" version="70" description="Acesse nosso discord: discord.gg/DnyCUzJ"></info>
+<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+<oop>true</oop>
+	<script src="vinculum.lua" type="shared" />
+	<script src="utils.lua" type="shared" />
+	
+	<script src="sound.lua" type="shared" />
+
+	
+	
+	///Sound
+	
+	<file src="files/sound/suppressed.mp3"></file>
+		//Pistol
+	<file src="files/sound/ptl/ptl_pistol/handle/pistolin.mp3"></file>
+	<file src="files/sound/ptl/ptl_pistol/handle/pistolout.mp3"></file>
+	<file src="files/sound/ptl/ptl_pistol/handle/pistoldry.wav"></file>
+	<file src="files/sound/ptl/ptl_heavy/reload/PTL_M1911_CLIPIN.wav"></file>
+	<file src="files/sound/ptl/ptl_pistol/shot/PTL_PISTOL_SHOT.L.wav"></file>
+	<file src="files/sound/ptl/ptl_pistol/shot/PTL_PISTOL_SHOT.R.wav"></file>
+	
+	<file src="files/sound/ptl/ptl_50cal/shot/PTL_50CAL_SHOT_VER4.L.wav"></file>
+	<file src="files/sound/ptl/ptl_50cal/shot/PTL_50CAL_SHOT_VER4.R.wav"></file>
+	<file src="files/sound/ptl/ptl_50cal/reload/PTL_DESERTEAGLE_CLIPOUT_PRT_1.wav"></file>
+	<file src="files/sound/ptl/ptl_50cal/reload/PTL_DESERTEAGLE_CLIPOUT_PRT_2.wav"></file>
+	<file src="files/sound/ptl/ptl_50cal/reload/PTL_DESERTEAGLE_CHAMBER_PRT1.wav"></file>
+	<file src="files/sound/ptl/ptl_50cal/reload/PTL_DESERTEAGLE_CHAMBER_PRT2_VERA.wav"></file>
+	<file src="files/sound/ptl/ptl_50cal/reload/PTL_DESERTEAGLE_CHAMBER_PRT2_VERB.wav"></file>
+	<file src="files/sound/ptl/ptl_combat/reload/PTL_HK45C_CHAMBER_PRT1.wav"></file>
+	
+		///Heavy Revolver
+	<file src="files/sound/ptl/ptl_revolver/shot/PTL_REVOLVER.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/shot/setup1.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload1.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload2.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload3.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload4.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/reload/reload5.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/handle/drawin.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/handle/drawout.wav"></file>
+	<file src="files/sound/ptl/ptl_revolver/handle/dryfire.wav"></file>
+	
+		///Navy Revolver
+	<file src = 'files/sound/ptl/ptl_navy_revolver/reload/reload1.wav'></file>
+	<file src = 'files/sound/ptl/ptl_navy_revolver/reload/reload2.wav'></file>
+	<file src = 'files/sound/ptl/ptl_navy_revolver/reload/reload3.wav'></file>
+	<file src = 'files/sound/ptl/ptl_navy_revolver/reload/reload4.wav'></file>
+	<file src = 'files/sound/ptl/ptl_navy_revolver/reload/reload5.wav'></file>
+	
+		///Double action revolver
+	<file src = 'files/sound/ptl/ptl_doubleaction_revolver/reload/reload1.wav'></file>
+	<file src = 'files/sound/ptl/ptl_doubleaction_revolver/reload/reload2.wav'></file>
+	<file src = 'files/sound/ptl/ptl_doubleaction_revolver/reload/reload3.wav'></file>
+	<file src = 'files/sound/ptl/ptl_doubleaction_revolver/reload/reload4.wav'></file>
+	<file src = 'files/sound/ptl/ptl_doubleaction_revolver/reload/reload5.wav'></file>
+	
+	<file src = 'files/sound/ptl/ptl_navy_revolver/shot/shot.wav'></file>
+	<file src = 'files/sound/ptl/ptl_navy_revolver/shot/setup1.wav'></file>
+	
+	
+
+		///Stun Gun
+	<file src="files/sound/ptl/ptl_stun/shot/GTA5_GUN_STUN1.wav"></file>
+	<file src="files/sound/ptl/ptl_stun/shot/CHARGE.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_STUN_IMPACT_A.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_STUN_IMPACT_B.wav"></file>
+	
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_01.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_02.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_04.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_05.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_06.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_08.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_09.wav"></file>
+	<file src="files/sound/ptl/impact/PISTOL_IMPACT_11.wav"></file>
+	
+	<file src="files/sound/ptl/distant/PTL_INDOOR_2.wav"></file>
+	<file src="files/sound/ptl/distant/PTL_PISTOL_MID_1.wav"></file>
+	<file src="files/sound/ptl/distant/PTL_PISTOL_MID_2.wav"></file>
+	<file src="files/sound/ptl/distant/PTL_PISTOL_FAR_1.wav"></file>
+	<file src="files/sound/ptl/distant/PTL_PISTOL_FAR_2.wav"></file>
+	
+	///VM29
+	<file src ="files/sound/ptl/ptl_combat/shot/PTL_COMBAT_SHOT_VER3.L.wav"></file>
+	<file src ="files/sound/ptl/ptl_combat/shot/PTL_COMBAT_SHOT_VER3.R.wav"></file>
+	
+	
+	<file src ="files/sound/ptl/ptl_doubleaction_revolver/shot/shot_l.wav"></file>
+	<file src ="files/sound/ptl/ptl_doubleaction_revolver/shot/shot_r.wav"></file>
+	<file src ="files/sound/ptl/ptl_doubleaction_revolver/shot/setup1.wav"></file>
+	<file src ="files/sound/ptl/ptl_doubleaction_revolver/handle/drawin.wav"></file>
+	<file src ="files/sound/ptl/ptl_doubleaction_revolver/handle/drawout.wav"></file>
+	
+	///SMG
+		///Handle
+	<file src="files/sound/smg/handle/smgin.mp3"></file>
+	<file src="files/sound/smg/handle/smgout.mp3"></file>
+	<file src="files/sound/smg/handle/smgdry.wav"></file>
+		///Reload
+	<file src="files/sound/smg/reload/SMG_ASSAULT_CHAMBER_PRT1.wav"></file>
+	<file src="files/sound/smg/reload/SMG_ASSAULT_CHAMBER_PRT2.wav"></file>
+	<file src="files/sound/smg/reload/SMG_ASSAULT_CLIPIN_PRT1.wav"></file>
+		///Impact
+	<file src="files/sound/smg/impact/SMG_IMPACT_01.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_03.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_04.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_06.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_08.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_12.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_14.wav"></file>
+	<file src="files/sound/smg/impact/SMG_IMPACT_15.wav"></file>
+		///Distant
+	<file src="files/sound/smg/distant/UZI_REPORT_A.wav"></file>
+		///Micro
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_FIRST.wav"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_1.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_2.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_3.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_LOW_4.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_RPRT.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_FIRST.wav"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_1.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_2.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_3.mp3"></file>
+	<file src="files/sound/smg/smg_micro/shot/SMG_MICRO_WIDE_4.mp3"></file>
+		//SMG
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_00_FIRST.wav"></file>
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_01.L.wav"></file>
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_02.L.wav"></file>
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_03.L.wav"></file>
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_WIDE_04.L.wav"></file>
+	<file src="files/sound/smg/smg_assault/shot/SMG_SMG_PLYR_PUNCH_00_FIRST.wav"></file>
+	<file src = "files/sound/smg/smg_assault/shot/SMG_SMG_PLYR_PUNCH_01.wav"></file>
+	<file src = "files/sound/smg/smg_assault/shot/SMG_SMG_PLYR_PUNCH_02.wav"></file>
+	<file src = "files/sound/smg/smg_assault/shot/SMG_SMG_PLYR_PUNCH_03.wav"></file>
+	<file src = "files/sound/smg/smg_assault/shot/SMG_SMG_PLYR_PUNCH_04.wav"></file>
+	<file src = "files/sound/smg/smg_assault/shot/SMG_SMG_PLYR_PUNCH_05.wav"></file>
+		///PPRT
+	<file src="files/sound/smg/smg_smg/shot/SMG_SMG_PLYR_RPRT.mp3"></file>
+	
+	///LMG
+		///Handle
+		<file src="files/sound/lmg/handle/lmgin.wav"></file>
+		<file src="files/sound/lmg/handle/lmgout.wav"></file>
+		<file src="files/sound/lmg/handle/lmgdry.wav"></file>
+		///Reload
+		<file src="files/sound/lmg/reload/LMG_FOLEY_HANDLING_1.wav"></file>
+		<file src="files/sound/lmg/reload/LMG_FOLEY_HANDLING_2.wav"></file>
+		<file src="files/sound/lmg/reload/LMG_FOLEY_HANDLING_4.wav"></file>
+		///Impact
+		<file src="files/sound/lmg/impact/AK_IMPACT_01.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_02.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_03.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_04.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_05.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_06.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_07.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_08.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_09.wav"></file>
+		<file src="files/sound/lmg/impact/AK_IMPACT_10.wav"></file>
+		<file src="files/sound/lmg/lmg_assault/shot/LMG_ASSAULT_NPC_RPRT.wav"></file>
+		<file src="files/sound/lmg/lmg_combat/shot/LMG_COMBAT_DIST_01.R.wav"></file>
+		<file src="files/sound/lmg/lmg_combat/shot/LMG_COMBAT_DIST_02.R.wav"></file>
+		<file src="files/sound/lmg/lmg_combat/shot/LMG_COMBAT_DIST_03.R.wav"></file>
+		<file src="files/sound/lmg/lmg_combat/shot/LMG_COMBAT_DIST_04.R.wav"></file>
+		<file src="files/sound/lmg/lmg_mg_player/shot/SNPR_M82_SHOT_A_R.wav"></file>
+		<file src="files/sound/lmg/lmg_mg_player/shot/SNPR_M82_SHOT_B_R.wav"></file>
+		
+		
+	
+	///MGN
+		//Handle
+		<file src="files/sound/mgn/handle/heavyin.mp3"></file>
+		<file src="files/sound/mgn/handle/heavyout.mp3"></file>
+		//Distant
+		<file src="files/sound/mgn/distant/MGN_AK47_MID_MIC1_COLOR1_01.wav"></file>
+		<file src="files/sound/mgn/distant/MGN_AK47_MID_MIC1_COLOR1_02.wav"></file>
+		<file src="files/sound/mgn/distant/MGN_AK47_MID_MIC1_COLOR1_03.wav"></file>
+		<file src="files/sound/mgn/distant/MGN_AK47_MID_MIC1_COLOR1_04.wav"></file>
+		<file src="files/sound/mgn/distant/MGN_AK47_FAR_MIC1_COLOR1_01.wav"></file>
+		<file src="files/sound/mgn/distant/MGN_AK47_FAR_MIC1_COLOR1_03.wav"></file>
+		<file src="files/sound/mgn/distant/MGN_AK47_FAR_MIC1_COLOR1_04.wav"></file>
+		<file src="files/sound/mgn/distant/MGN_AK47_FAR_MIC1_COLOR1_05.wav"></file>
+		<file src="files/sound/mgn/distant/MGN_AK47_FAR_MIC4_RPRT_02.wav"></file>
+		
+		<file src="files/sound/mgn/handle/heavyin.mp3"></file>
+		<file src="files/sound/mgn/handle/heavyout.mp3"></file>
+	
+	///SHT
+		//Handle
+		<file src="files/sound/sht/handle/shotgunin.mp3"></file>
+		<file src="files/sound/sht/handle/shotgunout.mp3"></file>
+		<file src="files/sound/sht/handle/SHOTGUN_DRY_FIRE_01.wav"></file>
+		//Reload
+		<file src="files/sound/sht/reload/SHT_PUMP_ACTION_VER1_PRTA.wav"></file>
+		<file src="files/sound/sht/reload/SHT_PUMP_ACTION_VER1_PRTB.wav"></file>
+		<file src="files/sound/sht/reload/SHT_PUMP_ACTION_VER2_PRTA.wav"></file>
+		//Distant
+		<file src="files/sound/sht/distant/SHT_ASSAULT_INDOOR_VER2.wav"></file>
+		<file src="files/sound/sht/distant/SHT_MID_VERB_NPC_1.wav"></file>
+		<file src="files/sound/sht/distant/SHT_MID_VERB_NPC_2.wav"></file>
+		<file src="files/sound/sht/distant/SHT_FAR_COLORED_NPC_1.wav"></file>
+		<file src="files/sound/sht/distant/SHT_FAR_COLORED_NPC_2.wav"></file>
+		<file src="files/sound/sht/distant/SHT_FAR_COLORED_NPC_3.wav"></file>
+		//Impact
+		<file src="files/sound/sht/impact/SHOTGUN_2_IMPACT_01.wav"></file>
+		<file src="files/sound/sht/impact/SHOTGUN_2_IMPACT_02.wav"></file>
+		<file src="files/sound/sht/impact/SHOTGUN_2_IMPACT_03.wav"></file>
+		<file src="files/sound/sht/impact/SHOTGUN_2_IMPACT_06.wav"></file>
+		<file src="files/sound/sht/impact/SHOTGUN_2_IMPACT_09.wav"></file>
+		<file src="files/sound/sht/impact/SHOTGUN_2_IMPACT_15.wav"></file>
+		//Combat Shotgun
+		<file src="files/sound/sht/sht_assault/shot/SHT_ASSAULT_VER2.R.wav"></file>
+		//Bullpup
+		<file src="files/sound/sht/sht_bullpup/shot/SHT_BULLPUP_VER2.R.wav"></file>
+		//Pump
+		<file src="files/sound/sht/sht_pump/shot/SHT_PUMP_VER2.R.wav"></file>
+		
+	///SNPR
+		//Handle
+		<file src="files/sound/snpr/handle/riflein.mp3"></file>
+		<file src="files/sound/snpr/handle/rifleout.mp3"></file>
+		<file src="files/sound/snpr/handle/SNPR_M82_CHINK.wav"></file>
+		//Reload
+		<file src="files/sound/snpr/reload/GTA5_SNP_BOLT_OPEN_1.wav"></file>
+		<file src="files/sound/snpr/reload/GTA5_SNP_BOLT_OPEN_2.wav"></file>
+		<file src="files/sound/snpr/reload/GTA5_SNP_BOLT_CLOSE_1.wav"></file>
+		<file src="files/sound/snpr/reload/GTA5_SNP_BOLT_CLOSE_2.wav"></file>
+		//Distant
+		<file src="files/sound/snpr/distant/SNP_MID_1_EQ.wav"></file>
+		<file src="files/sound/snpr/distant/SNP_MID_2_EQ.wav"></file>
+		<file src="files/sound/snpr/distant/SNP_MID_BIG_1.wav"></file>
+		<file src="files/sound/snpr/distant/SNP_MID_BIG_2.wav"></file>
+		<file src="files/sound/snpr/distant//SNPR_M82_REPORT_A_R.wav"></file>
+		//Impact
+		<file src="files/sound/snpr/impact/SNPR_M82_THUD_PUNCHY_A.wav"></file>
+		//Sniper Rifle
+		<file src="files/sound/snpr/snpr_rifle/shot/SNP_HEAVY_VERCVER2.wav"></file>
+		<file src="files/sound/snpr/snpr_rifle/shot/SNP_HEAVY_VERBVER2.L.wav"></file>
+		//Heavy Sniper
+		<file src="files/sound/snpr/snpr_heavy/shot/SNPR_M82_SHOT_A_L.wav"></file>
+		<file src="files/sound/snpr/snpr_heavy/shot/SNPR_M82_SHOT_B_L.wav"></file>
+		
+	///Rocket Launchers
+		//Handle
+		<file src="files/sound/rckt/handle/RPG_DRY_FIRE_01.wav"></file>
+		//Reload
+		<file src="files/sound/rckt/reload/RPG_ROCKET_INSERT_VERA_EQ.wav"></file>
+		//Distant
+		<file src="files/sound/rckt/distant/SPL_RPG_DIST_LP1.wav"></file>
+		<file src="files/sound/rckt/distant/SPL_RPG_DIST_LP2.wav"></file>
+		//Shot
+		<file src="files/sound/rckt/shot/rocket launch.mp3"></file>
+		//Firework launcher
+		<file src="files/sound/rckt/frwk/fireworks.mp3"></file>
+	
+	////Grenade Launcher
+	<file src="files/sound/gnd/shot/SPL_GRENADE_THUNK.wav"></file>
+	<file src="files/sound/gnd/handle/GRENADE_LAUNCHER_DRY_FIRE_01.wav"></file>
+	
+	///Lazer
+	<file src="files/sound/spl/lazer/LAZER_01.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_02.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_03.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_04.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_05.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_HUG_01.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_HUG_02.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_MED_01.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_MED_02.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_MED_03.wav"></file>
+	<file src="files/sound/spl/lazer/LAZER_MED_04.wav"></file>
+	
+	///Flare gun
+	<file src="files/sound/ptl/ptl_flare/shot/SPL_TANK_FIRE_NPC_01.wav"></file>
+	<file src="files/sound/ptl/ptl_flare/shot/SPL_TANK_FIRE_NPC_02.wav"></file>
+	<file src="files/sound/ptl/ptl_flare/shot/SPL_TANK_FIRE_NPC_03.wav"></file>
+	
+</meta>

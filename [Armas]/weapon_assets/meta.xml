@@ -1,0 +1,44 @@
+<meta>
+<info name="Armas PUNK STUDIOS" author="Tony_Punk" type="script" version="70" description="Acesse nosso discord: discord.gg/DnyCUzJ"></info>
+<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+<oop>true</oop>
+	<script src="vinculum.lua" type="shared" />
+	<script src="utils.lua" type="shared" />
+	
+	<script src="animations.lua" type="client" />
+	<script src="atomizer.lua" type="client" />
+	<script src="bleeding.lua" type="shared" />
+	<script src="bullethole.lua" type="shared" />
+	<script src="crosshair.lua" type="shared" />
+	<script src="demo.lua" type="shared" />
+	<script src="emp.lua" type="shared" />
+	<script src="fireworks.lua" type="client" />
+	<script src="headshot.lua" type="shared" />
+	<script src="hud.lua" type="client" />
+	<script src="reload.lua" type="shared" />
+	<script src="rolling.lua" type="shared" />
+	<script src="stun rod.lua" type="client" />
+	
+	
+	<file src="files/model/bullethole/bullethole.png" type="client" />
+	<file src="files/ifp/combat_roll.ifp" type="client" />
+	
+	
+	
+	///Crosshair
+	
+	<file src="files/model/crosshair/default/assault.png"></file>
+	<file src="files/model/crosshair/default/default.png"></file>
+	<file src="files/model/crosshair/default/flamer.png"></file>
+	<file src="files/model/crosshair/default/global.png"></file>
+	<file src="files/model/crosshair/default/mg.png"></file>
+	<file src="files/model/crosshair/default/pistol.png"></file>
+	<file src="files/model/crosshair/default/shotgun.png"></file>
+	<file src="files/model/crosshair/default/silenced.png"></file>
+	<file src="files/model/crosshair/default/SMG.png"></file>
+	<file src="files/model/crosshair/default/heavy.png"></file>
+	
+	<file src="files/model/crosshair/scope/marksman rifle.png"></file>
+	<file src="files/model/crosshair/scope/heavy sniper.png"></file>
+	
+</meta>

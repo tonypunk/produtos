@@ -35,6 +35,8 @@
     <export function="createObject" type="shared" />
     <export function="setObjectModel" type="shared" />
     <export function="getObjectModel" type="shared" />
+    <export function="insertModel" type="shared" />
+    <export function="removeModel" type="shared" />
 	<export function="getData" type="shared" />
     
     <oop>true</oop>
