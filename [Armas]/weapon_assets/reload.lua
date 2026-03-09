@@ -28,10 +28,11 @@ local teclas = getBoundKeys ('reload')
 			if estado then
 			local arma, objeto = getPedWeapon (localPlayer)
 				if isElement (objeto) and isPedReloadingWeapon (localPlayer) == false then
+				local ammo = getPedTotalAmmo (localPlayer, arma)
 				local clip = getPedAmmoInClip (localPlayer)
 				local properties = getData ()
 				local pente = properties[objeto]['clip']
-					if clip < pente then
+					if clip < pente and ammo > clip then
 					cancelEvent ()
 						if blockedTasks[getPedSimplestTask(localPlayer)] then
 						return
@@ -120,18 +121,23 @@ local evento = events.change
 		timerReload[jogador] = setTimer (function ()
 		killTimer (timerReload[jogador])
 			if localPlayer then
-			--Arma
 			local arma, objeto = getPedWeapon (jogador)
-			
-			local ammo = getWeaponAmmo (objeto)
-			local clip = getWeaponClipAmmo(objeto)--getPedAmmoInClip (jogador)
-			local pente = properties[objeto]['clip']
-			setWeaponClipAmmo (objeto, pente)
 			setWeaponState (objeto, 'ready')
-			local result = armas[jogador][-1].ammo - pente
-			armas[jogador][getSlotFromWeapon(arma)].ammo = result
-			armas[jogador][-1].ammo = result
-			setWeaponAmmo (objeto, result)
+			
+			
+			local ammo = getPedTotalAmmo (localPlayer, arma)
+			outputChatBox ("AMMO: "..ammo)
+			local clip = getPedAmmoInClip (localPlayer)
+			outputChatBox ("CLIP: "..clip)
+			local pente = properties[objeto].clip
+			outputChatBox ("PENTRE: "..pente)
+				if ammo < pente then
+				setPedAmmoInClip (jogador, arma, ammo)
+				setPedTotalAmmo (jogador, arma, clip)
+				else
+				setPedAmmoInClip (jogador, arma, pente)
+				end
+			
 			--Anim
 				if animations[arma] and animations[arma].reload then
 				local h = animations[arma].reload[isPedDucked (jogador)]
@@ -179,6 +185,7 @@ local evento = events.change
 				end
 			--giveReload (jogador, getPedWeapon(jogador), getPedTotalAmmo(jogador))
 			end
+			
 		end, properties[objeto] and properties[objeto]['reload'] or 1000, 1)
 end
 addEvent ('doReload', true)

@@ -42,8 +42,12 @@ end
 if localPlayer then
 
 
-setWeaponRenderEnabled (false)
+local renderState = isWeaponRenderEnabled ()
 engineSetAsynchronousLoading(true)
+setWeaponRenderEnabled (false)
+addEventHandler ('onClientResourceStop', getResourceRootElement (getThisResource()), function ()
+setWeaponRenderEnabled (renderState)
+end)
 	
 local gtipos = {
 		[16] = 342,
@@ -57,11 +61,14 @@ local gtipos = {
 	}
 	
 
+local ax,ay = guiGetScreenSize ()
+texes = {}
 addEvent("weapons:receiveWeaponTable", true)
 addEventHandler("weapons:receiveWeaponTable", resourceRoot, function(weaponTable)
 local properties, projectiles = getData ()
 	for nome, basePath in pairs(weaponTable) do
 		if properties[nome] then
+		
 		local model = exports['PUNK+Objetos']:insertModel (nome)
 		local txdPath = basePath .. ".txd"
 		local dffPath = basePath .. ".dff"
@@ -69,6 +76,24 @@ local properties, projectiles = getData ()
 		local dff = engineLoadDFF(dffPath)
 		engineImportTXD(txd,model)
 		engineReplaceModel(dff,model)
+		local file = 'files/icons/'..nome..'.png'
+			if fileExists (file) then
+			local img = fileOpen(file)
+			local pixels = fileRead(img, fileGetSize(img))
+			local a,b = dxGetPixelsSize(pixels)
+			fileClose(img)
+			local renderIcon = dxCreateRenderTarget(640, 320, true)
+			dxSetRenderTarget(renderIcon, true)
+			dxSetBlendMode("modulate_add")
+			local sx, sy = dxGetMaterialSize (renderIcon)
+			dxDrawImage ( sx - (sx*0.5) - (a*0.5), sy - (sy*0.5) - (b*0.5), a, b, file)
+			dxSetBlendMode("blend")
+			dxSetRenderTarget()
+			texes[nome] = renderIcon
+			else
+			outputDebugString("Ícone da arma "..nome.." inexistente", 2)
+			end
+			
 			if projectiles[nome] then
 			local nomeM = nome..' Shell'
 			local model = exports['PUNK+Objetos']:insertModel (nomeM)
@@ -92,12 +117,11 @@ local properties, projectiles = getData ()
 			end
 		end
 	end
-
-
-
-    outputDebugString("[WEAPON] Tabela de armas criada a partir do meta.xml")
 	
 end)
 
-
+	function getWeaponIcons ()
+	return texes
+	end
+	
 end

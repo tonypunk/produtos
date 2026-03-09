@@ -6,8 +6,12 @@
 	<script src="utils.lua" type="shared" />
 	
 	<script src="replace.lua" type="shared" />
+	<export function="getWeaponIcons" type="client" />
 	
+	<file src="files/icons/**.png"></file>
 					///Melee
+	<file src="files/weapons/melee/Unarmed.dff"></file>
+	<file src="files/weapons/melee/Unarmed.txd"></file>
 	<file src="files/weapons/melee/Knife.dff"></file>
 	<file src="files/weapons/melee/Knife.txd"></file>
 	<file src="files/weapons/melee/Nightstick.dff"></file>
@@ -208,10 +212,10 @@
 	<file src="files/weapons/rckt/Homing Rocket.txd"></file>
 	<file src="files/weapons/rckt/Homing Launcher.dff"></file>
 	<file src="files/weapons/rckt/Homing Launcher.txd"></file>
-	<file src="files/weapons/rckt/Firework Rocket.dff"></file>
-	<file src="files/weapons/rckt/Firework Rocket.txd"></file>
-	<file src="files/weapons/rckt/Firework Launcher.dff"></file>
-	<file src="files/weapons/rckt/Firework Launcher.txd"></file>
+	<file src="files/weapons/rckt/Fireworks Rocket.dff"></file>
+	<file src="files/weapons/rckt/Fireworks Rocket.txd"></file>
+	<file src="files/weapons/rckt/Fireworks Launcher.dff"></file>
+	<file src="files/weapons/rckt/Fireworks Launcher.txd"></file>
 
 					///Grenade Launcher
 	<file src="files/weapons/gnd/Pipe Bomb.dff"></file>
@@ -236,16 +240,16 @@
 	<file src="files/weapons/gnd/Grenade Launcher Shell.txd"></file>
 	<file src="files/weapons/gnd/Compact Grenade Launcher.dff"></file>
 	<file src="files/weapons/gnd/Compact Grenade Launcher.txd"></file>
-	<file src="files/weapons/gnd/Compact Emp Launcher.dff"></file>
-	<file src="files/weapons/gnd/Compact Emp Launcher.txd"></file>
-	<file src="files/weapons/gnd/Emp Shell.dff"></file>
-	<file src="files/weapons/gnd/Emp Shell.txd"></file>
+	<file src="files/weapons/gnd/Compact EMP Launcher.dff"></file>
+	<file src="files/weapons/gnd/Compact EMP Launcher.txd"></file>
+	<file src="files/weapons/gnd/EMP Shell.dff"></file>
+	<file src="files/weapons/gnd/EMP Shell.txd"></file>
 	<file src="files/weapons/gnd/Snowball Launcher.dff"></file>
 	<file src="files/weapons/gnd/Snowball Launcher.txd"></file>
 	<file src="files/weapons/gnd/Snowball.dff"></file>
 	<file src="files/weapons/gnd/Snowball.txd"></file>
-	<file src="files/weapons/gnd/Hand Firework.dff"></file>
-	<file src="files/weapons/gnd/Hand Firework.txd"></file>
+	<file src="files/weapons/gnd/Hand Fireworks.dff"></file>
+	<file src="files/weapons/gnd/Hand Fireworks.txd"></file>
 
 	
 </meta>
