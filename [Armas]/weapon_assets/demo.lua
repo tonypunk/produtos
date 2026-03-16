@@ -7,7 +7,6 @@ function commandosIni ()
 local jogador = getElementsByType ("player")[1]
 	if not localPlayer then
 	setTimer (function ()
-	outputChatBox ("Dando arma")
 --giveWeapon (jogador, 'Pistol', 99, true)
 	end, 2000, 1)
 local tempTab = {}
