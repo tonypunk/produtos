@@ -8,10 +8,14 @@
 	///Exports
 	<export function="giveWeapon" type="shared" />
 	<export function="takeWeapon" type="shared" />
+	<export function="removeWeapon" type="shared" />
 	<export function="takeAllWeapons" type="shared" />
+	<export function="removeAllWeapons" type="shared" />
 	<export function="getPedWeapon" type="shared" />
 	<export function="getPedAmmoInClip" type="shared" />
+	<export function="setPedAmmoInClip" type="shared" />
 	<export function="getPedTotalAmmo" type="shared" />
+	<export function="setPedTotalAmmo" type="shared" />
 	<export function="isPedReloadingWeapon" type="shared" />
 	<export function="setWeaponOwner" type="shared" />
 	<export function="getWeaponOwner" type="shared" />
@@ -23,7 +27,8 @@
 	<export function="getWeaponProperty" type="client" />
 	<export function="getProjectileData" type="client" />
 	<export function="getFiringCount" type="client" />
-	<export function="setCustomWeaponProperty" type="client" />
+	<export function="setCustomWeaponProperty" type="shared" />
+	<export function="setElementAlpha" type="shared" />
 	<export function="getDummy" type="shared" />
 	<export function="getData" type="shared" />
 
