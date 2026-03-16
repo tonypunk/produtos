@@ -90,8 +90,33 @@ Remote sniper
 
 properties = {
 	--Melee
+	['Unarmed'] = { 
+		['damage'] = 5,
+		['accuracy'] = 0.36, --0.0 a 1.0
+		['rate'] = 800, --espaço de tempo entre os tiros
+		['clip'] = 12, --quantidade de balas do pente
+		['reload'] = 900, -- tempo pra recarregar
+		['weapon_range'] = 40,
+		['target_range'] = 40,
+		['knockdown'] = nil, -- o jogador é nocauteado pelo disparo
+		['fragments'] = 1, --fragments number
+		['force'] = 0.8, --força percentual que o projetil mantem com relação a distancia (0.0 a 1.0)
+		['piercing'] = 0.0, --força percentual que o projetil mantem com relação a alvos atravessados (0.0 a 1.0)
+		['smoke'] = {0,0,0}, -- posição da fumaça do tiro na arma (nil ou apagar para desativar)
+		['spark'] = 0, -- chance da arma produzir faísca ao disparar (0% a 100% ou true = para sempre)
+		['bullethole'] = true, --buraco de bala true ou tamanho
+		['bleed'] = { chance = 100, duration = 60000, interval = 5000, damage = 1, amount = 10, squish = true, pool = true, foot = true },
+		['instant_reload'] = false,
+		['shoot_if_out_of_range'] = true,
+		['shoot_if_blocked'] = true,
+		['flags'] = { true, true, true, true, true, true, false, false},
+		['crosshair'] = 'files/model/crosshair/default/global.png',
+		['handle'] = { [1] = { base = 0} },
+		['slot'] = 5,
+	},
+	--
 	['Knife'] = { 
-		--['file'] = 'files/weapons/melee/knife', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/knife', --caminho do arquivo ou ID do objeto
 		['damage'] = 15,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -113,10 +138,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 4} },
+		['slot'] = 5,
 	},
 	--
 	['Nightstick'] = { 
-		--['file'] = 'files/weapons/melee/nightstick', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/nightstick', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -138,10 +164,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 3} },
+		['slot'] = 5,
 	},
 	--
 	['Hammer'] = { 
-		--['file'] = 'files/weapons/melee/hammer', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/hammer', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -163,10 +190,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 12} },
+		['slot'] = 5,
 	},
 	--
 	['Baseball Bat'] = { 
-		--['file'] = 'files/weapons/melee/baseball_bat', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/baseball_bat', --caminho do arquivo ou ID do objeto
 		['damage'] = 20,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 900, --espaço de tempo entre os tiros
@@ -188,10 +216,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 5} },
+		['slot'] = 5,
 	},
 	--
 	['Crowbar'] = { 
-		--['file'] = 'files/weapons/melee/crowbar', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/crowbar', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -213,10 +242,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 3} },
+		['slot'] = 5,
 	},
 	--
 	['Golf Club'] = { 
-		--['file'] = 'files/weapons/melee/golf_club', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/golf_club', --caminho do arquivo ou ID do objeto
 		['damage'] = 20,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 900, --espaço de tempo entre os tiros
@@ -238,10 +268,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 2} },
+		['slot'] = 5,
 	},
 	--
 	['Broken Bottle'] = { 
-		--['file'] = 'files/weapons/melee/broken_bottle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/broken_bottle', --caminho do arquivo ou ID do objeto
 		['damage'] = 20,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -263,10 +294,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 4} },
+		['slot'] = 5,
 	},
 	--
 	['Antique Cavalry Dagger'] = { 
-		--['file'] = 'files/weapons/melee/ac_dagger', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/ac_dagger', --caminho do arquivo ou ID do objeto
 		['damage'] = 20,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -288,10 +320,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 4} },
+		['slot'] = 5,
 	},
 	--
 	['Hatchet'] = { 
-		--['file'] = 'files/weapons/melee/hatchet', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/hatchet', --caminho do arquivo ou ID do objeto
 		['damage'] = 15,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -313,10 +346,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 12} },
+		['slot'] = 5,
 	},
 	--
 	['Knuckle Dusters'] = { 
-		--['file'] = 'files/weapons/melee/knuckle_dusters', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/knuckle_dusters', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -338,10 +372,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 1} },
+		['slot'] = 5,
 	},
 	--
 	['Machete'] = { 
-		--['file'] = 'files/weapons/melee/machete', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/machete', --caminho do arquivo ou ID do objeto
 		['damage'] = 15,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -363,10 +398,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 4} },
+		['slot'] = 5,
 	},
 	--
 	['Flashlight'] = { 
-		--['file'] = 'files/weapons/melee/flashlight', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/flashlight', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -388,10 +424,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 11} },
+		['slot'] = 5,
 	},
 	--
 	['Switchblade'] = { 
-		--['file'] = 'files/weapons/melee/switchblade', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/switchblade', --caminho do arquivo ou ID do objeto
 		['damage'] = 15,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -413,10 +450,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 4} },
+		['slot'] = 5,
 	},
 	--
 	['Pool Cue'] = { 
-		--['file'] = 'files/weapons/melee/pool_cue', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/pool_cue', --caminho do arquivo ou ID do objeto
 		['damage'] = 20,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 900, --espaço de tempo entre os tiros
@@ -438,10 +476,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 3} },
+		['slot'] = 5,
 	},
 	--
 	['Pipe Wrench'] = { 
-		--['file'] = 'files/weapons/melee/pipe_wrench', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/pipe_wrench', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -463,10 +502,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 3} },
+		['slot'] = 5,
 	},
 	--
 	['Battle Axe'] = { 
-		--['file'] = 'files/weapons/melee/battle_axe', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/battle_axe', --caminho do arquivo ou ID do objeto
 		['damage'] = 15,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -488,10 +528,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 3} },
+		['slot'] = 5,
 	},
 	--
 	['Stone Hatchet'] = { 
-		--['file'] = 'files/weapons/melee/stone_hatchet', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/stone_hatchet', --caminho do arquivo ou ID do objeto
 		['damage'] = 30,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -513,10 +554,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 3} },
+		['slot'] = 5,
 	},
 	--
 	['Candy Cane'] = { 
-		--['file'] = 'files/weapons/melee/candy_cane', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/candy_cane', --caminho do arquivo ou ID do objeto
 		['damage'] = 30,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -538,10 +580,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 12} },
+		['slot'] = 5,
 	},
 	--
 	['Stun Rod'] = { 
-		--['file'] = 'files/weapons/melee/stun_rod', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/melee/stun_rod', --caminho do arquivo ou ID do objeto
 		['damage'] = 30,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -563,11 +606,12 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 3} },
+		['slot'] = 5,
 	},
 	--
 	--Handguns
 	['Ceramic Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/ceramic pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/ceramic pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 32,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -589,12 +633,13 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 26,
-		['accuracy'] = 0.40, --0.0 a 1.0
+		['accuracy'] = 0.4, --0.0 a 1.0
 		['rate'] = 400, --espaço de tempo entre os tiros
 		['clip'] = 12, --quantidade de balas do pente
 		['reload'] = 900, -- tempo pra recarregar
@@ -613,57 +658,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
-		['upgrades'] = {
-		
-			[1] = {
-				['name'] = 'Default Clip',
-				['stat'] = 'clip',
-				['value'] = 12,
-				['price'] = 100,
-				['tex'] = {
-					['name'] = 'pmagYCG',
-					--['file'] = nil,
-				},
-			},
-				
-			[2] = {
-				['name'] = 'Extended Clip',
-				['stat'] = 'clip',
-				['value'] = 24,
-				['price'] = 100,
-				['tex'] = {
-					['name'] = 'pmagYCG',
-					--['file'] = 'files/upgrades/ptl/pistol/pmagYCG.png'
-				},
-			},
-			
-			[3] = {
-				['name'] = 'Flashlight',
-				['stat'] = 'flashlight',
-				['value'] = true,
-				['price'] = 100,
-				['tex'] = {
-					['name'] = 'w_at_pi_flsh',
-					--['file'] = 'files/upgrades/ptl/pistol/w_at_pi_flsh.png'
-				},
-			},
-			
-			[4] = {
-				['name'] = 'Supressor',
-				['stat'] = 'suppressor',
-				['value'] = true,
-				['price'] = 100,
-				['tex'] = {
-					['name'] = 'w_at_pi_supp',
-					--['file'] = 'files/upgrades/ptl/pistol/w_at_pi_supp.png'
-				},
-			},
-			
-		},
+		['slot'] = 1,
 	},
 	--
 	['Pistol Mk II'] = { 
-		--['file'] = 'files/weapons/ptl/pistol mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/pistol mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 38,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 400, --espaço de tempo entre os tiros
@@ -684,10 +683,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['SNS Pistol'] = {
-		--['file'] = 'files/weapons/ptl/sns pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/sns pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 30,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 400, --espaço de tempo entre os tiros
@@ -708,10 +708,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['SNS Pistol Mk II'] = { 
-		--['file'] = 'files/weapons/ptl/sns pistol mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/sns pistol mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 30,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 400, --espaço de tempo entre os tiros
@@ -732,10 +733,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['AP Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/ap pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/ap pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 26,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 200, --espaço de tempo entre os tiros
@@ -756,10 +758,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Double-Action Revolver'] = { 
-		--['file'] = 'files/weapons/ptl/double action revolver', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/double action revolver', --caminho do arquivo ou ID do objeto
 		['damage'] = 70,
 		['accuracy'] = 0.65, --0.0 a 1.0
 		['rate'] = 650, --espaço de tempo entre os tiros
@@ -780,10 +783,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 24, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Heavy Revolver'] = {
-		--['file'] = 'files/weapons/ptl/heavy revolver', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/heavy revolver', --caminho do arquivo ou ID do objeto
 		['damage'] = 70,
 		['accuracy'] = 0.65, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -805,10 +809,11 @@ properties = {
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 24, skill = 1000}, },
 		['attachment'] = {24, 0,0,0, 0,0,0},
+		['slot'] = 1,
 	},
 	--
 	['Heavy Revolver Mk II'] = { 
-		--['file'] = 'files/weapons/ptl/heavy revolver mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/heavy revolver mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 75,
 		['accuracy'] = 0.65, --0.0 a 1.0
 		['rate'] = 700, --espaço de tempo entre os tiros
@@ -829,10 +834,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 24, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Heavy Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/heavy pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/heavy pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 40,
 		['accuracy'] = 0.5, --0.0 a 1.0
 		['rate'] = 600, --espaço de tempo entre os tiros
@@ -853,10 +859,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 24, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Marksman Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/marksman pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/marksman pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 80,
 		['accuracy'] = 0.30, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -877,10 +884,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, },
+		['slot'] = 1,
 	},
 	--
 	['Navy Revolver'] = { 
-		--['file'] = 'files/weapons/ptl/navy revolver', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/navy revolver', --caminho do arquivo ou ID do objeto
 		['damage'] = 70,
 		['accuracy'] = 0.60, --0.0 a 1.0
 		['rate'] = 750, --espaço de tempo entre os tiros
@@ -904,7 +912,7 @@ properties = {
 	},
 	
 	['Pistol .50'] = { 
-		--['file'] = 'files/weapons/ptl/pistol 50', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/pistol 50', --caminho do arquivo ou ID do objeto
 		['damage'] = 51,
 		['accuracy'] = 0.55, --0.0 a 1.0
 		['rate'] = 600, --espaço de tempo entre os tiros
@@ -925,10 +933,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 24, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Vintage Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/vintage pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/vintage pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 35,
 		['accuracy'] = 0.4, --0.0 a 1.0
 		['rate'] = 600, --espaço de tempo entre os tiros
@@ -949,10 +958,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Combat Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/combat pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/combat pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 27,
 		['accuracy'] = 0.5, --0.0 a 1.0
 		['rate'] = 600, --espaço de tempo entre os tiros
@@ -973,10 +983,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 24, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Perico Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/perico pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/perico pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 80,
 		['accuracy'] = 0.3, --0.0 a 1.0
 		['rate'] = 850, --espaço de tempo entre os tiros
@@ -997,10 +1008,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['VM 29 Pistol'] = { 
-		--['file'] = 'files/weapons/ptl/vm 29 pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/vm 29 pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 36,
 		['accuracy'] = 0.5, --0.0 a 1.0
 		['rate'] = 300, --espaço de tempo entre os tiros
@@ -1021,10 +1033,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/pistol.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--SMG
 	['Assault SMG'] = { 
-		--['file'] = 'files/weapons/smg/assault smg', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/smg/assault smg', --caminho do arquivo ou ID do objeto
 		['damage'] = 23,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 225, --espaço de tempo entre os tiros
@@ -1045,10 +1058,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/smg.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Combat PDW'] = { 
-		--['file'] = 'files/weapons/smg/combat pdw', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/smg/combat pdw', --caminho do arquivo ou ID do objeto
 		['damage'] = 25,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 250, --espaço de tempo entre os tiros
@@ -1070,10 +1084,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/smg.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Micro SMG'] = { 
-		--['file'] = 'files/weapons/smg/micro smg', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/smg/micro smg', --caminho do arquivo ou ID do objeto
 		['damage'] = 21,
 		['accuracy'] = 0.30, --0.0 a 1.0
 		['rate'] = 200, --espaço de tempo entre os tiros
@@ -1094,10 +1109,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/smg.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Machine Pistol'] = { 
-		--['file'] = 'files/weapons/smg/machine pistol', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/smg/machine pistol', --caminho do arquivo ou ID do objeto
 		['damage'] = 28,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 150, --espaço de tempo entre os tiros
@@ -1118,10 +1134,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/smg.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Mini SMG'] = { 
-		--['file'] = 'files/weapons/smg/mini smg', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/smg/mini smg', --caminho do arquivo ou ID do objeto
 		['damage'] = 22,
 		['accuracy'] = 0.33, --0.0 a 1.0
 		['rate'] = 80, --espaço de tempo entre os tiros
@@ -1142,10 +1159,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/smg.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['SMG'] = { 
-		--['file'] = 'files/weapons/smg/smg', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/smg/smg', --caminho do arquivo ou ID do objeto
 		['damage'] = 22,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 225, --espaço de tempo entre os tiros
@@ -1166,10 +1184,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/smg.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['SMG Mk II'] = { 
-		--['file'] = 'files/weapons/smg/smg mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/smg/smg mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 22,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 225, --espaço de tempo entre os tiros
@@ -1190,10 +1209,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/smg.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Tactical SMG'] = { 
-		--['file'] = 'files/weapons/smg/tactical smg', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/smg/tactical smg', --caminho do arquivo ou ID do objeto
 		['damage'] = 28,
 		['accuracy'] = 0.35, --0.0 a 1.0
 		['rate'] = 100, --espaço de tempo entre os tiros
@@ -1214,10 +1234,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/smg.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 2,
 	},
 	--LMG
 	['Gusenberg Sweeper'] = { 
-		--['file'] = 'files/weapons/lmg/gusenberg sweeper', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/gusenberg sweeper', --caminho do arquivo ou ID do objeto
 		['damage'] = 34,
 		['accuracy'] = 0.38, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -1239,10 +1260,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Assault MG'] = { 
-		--['file'] = 'files/weapons/lmg/assault mg', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/assault mg', --caminho do arquivo ou ID do objeto
 		['damage'] = 60,
 		['accuracy'] = 0.5, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -1264,10 +1286,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Assault Rifle'] = { 
-		--['file'] = 'files/weapons/lmg/assault rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/assault rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 30,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 200, --espaço de tempo entre os tiros
@@ -1289,10 +1312,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Assault Rifle Mk II'] = { 
-		--['file'] = 'files/weapons/lmg/assault rifle mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/assault rifle mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 33,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 200, --espaço de tempo entre os tiros
@@ -1314,10 +1338,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Carbine Rifle'] = { 
-		--['file'] = 'files/weapons/lmg/carbine rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/carbine rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 32,
 		['accuracy'] = 0.55, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -1339,10 +1364,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Carbine Rifle Mk II'] = { 
-		--['file'] = 'files/weapons/lmg/carbine rifle mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/carbine rifle mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 36,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -1364,10 +1390,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Bullpup Rifle'] = { 
-		--['file'] = 'files/weapons/lmg/bullpup rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/bullpup rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 32,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 150, --espaço de tempo entre os tiros
@@ -1389,10 +1416,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Bullpup Rifle Mk II'] = { 
-		--['file'] = 'files/weapons/lmg/bullpup rifle mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/bullpup rifle mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 35,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 140, --espaço de tempo entre os tiros
@@ -1414,10 +1442,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Advanced Rifle'] = {
-		--['file'] = 'files/weapons/lmg/advanced rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/advanced rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 34,
 		['accuracy'] = 0.50, --0.0 a 1.0
 		['rate'] = 150, --espaço de tempo entre os tiros
@@ -1439,10 +1468,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Compact Rifle'] = { 
-		--['file'] = 'files/weapons/lmg/compact rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/compact rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 36,
 		['accuracy'] = 0.35, --0.0 a 1.0
 		['rate'] = 200, --espaço de tempo entre os tiros
@@ -1464,10 +1494,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Special Carbine'] = { 
-		--['file'] = 'files/weapons/lmg/special carbine', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/special carbine', --caminho do arquivo ou ID do objeto
 		['damage'] = 34,
 		['accuracy'] = 0.55, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -1489,10 +1520,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Special Carbine Mk II'] = { 
-		--['file'] = 'files/weapons/lmg/special carbine mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/special carbine mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 34,
 		['accuracy'] = 0.55, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -1514,10 +1546,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Heavy Rifle'] = { 
-		--['file'] = 'files/weapons/lmg/heavy rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/heavy rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 40,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 250, --espaço de tempo entre os tiros
@@ -1539,10 +1572,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Service Carbine'] = { 
-		--['file'] = 'files/weapons/lmg/service carbine', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/service carbine', --caminho do arquivo ou ID do objeto
 		['damage'] = 39,
 		['accuracy'] = 0.55, --0.0 a 1.0
 		['rate'] = 185, --espaço de tempo entre os tiros
@@ -1564,10 +1598,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Battle Rifle'] = { 
-		--['file'] = 'files/weapons/lmg/battle rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/battle rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 41,
 		['accuracy'] = 0.42, --0.0 a 1.0
 		['rate'] = 240, --espaço de tempo entre os tiros
@@ -1589,10 +1624,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--
 	['Military Rifle'] = { 
-		--['file'] = 'files/weapons/lmg/military rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/military rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 41,
 		['accuracy'] = 0.42, --0.0 a 1.0
 		['rate'] = 240, --espaço de tempo entre os tiros
@@ -1614,10 +1650,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 3,
 	},
 	--Shotguns
 	['Combat Shotgun'] = { 
-		--['file'] = 'files/weapons/sht/combat shotgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/combat shotgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 8.55,
 		['accuracy'] = 0.25, --0.0 a 1.0
 		['rate'] = 500, --espaço de tempo entre os tiros
@@ -1638,10 +1675,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Pump Shotgun'] = { 
-		--['file'] = 'files/weapons/sht/pump shotgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/pump shotgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 5.58,
 		['accuracy'] = 0.3, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -1650,22 +1688,23 @@ properties = {
 		['weapon_range'] = 40,
 		['target_range'] = 40,
 		['knockdown'] = 5000, -- o jogador é nocauteado pelo disparo
-		['fragments'] = 1, --fragments number
+		['fragments'] = 12, --fragments number
 		['force'] = 0.5, --força percentual que o projetil mantem com relação a distancia (0.0 a 1.0)
 		['piercing'] = nil, --força percentual que o projetil mantem com relação a alvos atravessados (0.0 a 1.0)
 		['smoke'] = {0,0,0}, -- posição da fumaça do tiro na arma (nil ou apagar para desativar)
 		['spark'] = 50, -- chance da arma produzir faísca ao disparar (0% a 100% ou true = para sempre)
-		['bullethole'] = 6, --buraco de bala true ou tamanho
+		['bullethole'] = 1, --buraco de bala true ou tamanho
 		['instant_reload'] = false,
 		['shoot_if_out_of_range'] = true,
 		['shoot_if_blocked'] = true,
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Pump Shotgun Mk II'] = { 
-		--['file'] = 'files/weapons/sht/pump shotgun mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/pump shotgun mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 5.58,
 		['accuracy'] = 0.30, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -1674,22 +1713,23 @@ properties = {
 		['weapon_range'] = 40,
 		['target_range'] = 40,
 		['knockdown'] = 5000, -- o jogador é nocauteado pelo disparo
-		['fragments'] = 1, --fragments number
+		['fragments'] = 12, --fragments number
 		['force'] = 0.8, --força percentual que o projetil mantem com relação a distancia (0.0 a 1.0)
 		['piercing'] = nil, --força percentual que o projetil mantem com relação a alvos atravessados (0.0 a 1.0)
 		['smoke'] = {0,0,0}, -- posição da fumaça do tiro na arma (nil ou apagar para desativar)
 		['spark'] = 50, -- chance da arma produzir faísca ao disparar (0% a 100% ou true = para sempre)
-		['bullethole'] = 6, --buraco de bala true ou tamanho
+		['bullethole'] = 1, --buraco de bala true ou tamanho
 		['instant_reload'] = false,
 		['shoot_if_out_of_range'] = true,
 		['shoot_if_blocked'] = true,
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Bullpup Shotgun'] = { 
-		--['file'] = 'files/weapons/sht/bullpup shotgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/bullpup shotgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 5.58,
 		['accuracy'] = 0.30, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -1710,10 +1750,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Assault Shotgun'] = { 
-		--['file'] = 'files/weapons/sht/assault shotgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/assault shotgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 6.41,
 		['accuracy'] = 0.25, --0.0 a 1.0
 		['rate'] = 500, --espaço de tempo entre os tiros
@@ -1734,10 +1775,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Double Barrel Shotgun'] = {
-		--['file'] = 'files/weapons/sht/double barrel shotgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/double barrel shotgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 8.16,
 		['accuracy'] = 0.15, --0.0 a 1.0
 		['rate'] = 750, --espaço de tempo entre os tiros
@@ -1758,10 +1800,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Sawed-Off Shotgun'] = {
-		--['file'] = 'files/weapons/sht/sawed-off shotgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/sawed-off shotgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 8,
 		['accuracy'] = 0.20, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -1782,10 +1825,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Heavy Shotgun'] = { 
-		--['file'] = 'files/weapons/sht/heavy shotgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/heavy shotgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 7.08,
 		['accuracy'] = 0.30, --0.0 a 1.0
 		['rate'] = 650, --espaço de tempo entre os tiros
@@ -1806,10 +1850,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Musket'] = { 
-		--['file'] = 'files/weapons/sht/musket', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/musket', --caminho do arquivo ou ID do objeto
 		['damage'] = 8.08,
 		['accuracy'] = 0.65, --0.0 a 1.0
 		['rate'] = 900, --espaço de tempo entre os tiros
@@ -1831,10 +1876,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 6,
 	},
 	--
 	['Sweeper Shotgun'] = { 
-		--['file'] = 'files/weapons/sht/sweeper shotgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/sht/sweeper shotgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 5.83,
 		['accuracy'] = 0.22, --0.0 a 1.0
 		['rate'] = 550, --espaço de tempo entre os tiros
@@ -1855,10 +1901,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/shotgun.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 6,
 	},
 	--Rifles
 	['Sniper Rifle'] = { 
-		--['file'] = 'files/weapons/snpr/sniper rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/snpr/sniper rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 96,
 		['accuracy'] = 0.70, --0.0 a 1.0
 		['rate'] = 750, --espaço de tempo entre os tiros
@@ -1880,10 +1927,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 33, skill = 1000}, [2] = { base = 34, skill = 1000} },
+		['slot'] = 4,
 	},
 	--
 	['Heavy Sniper'] = { 
-		--['file'] = 'files/weapons/snpr/heavy sniper', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/snpr/heavy sniper', --caminho do arquivo ou ID do objeto
 		['damage'] = 98,
 		['accuracy'] = 0.90, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -1906,10 +1954,11 @@ properties = {
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['scope'] = 'files/model/crosshair/scope/heavy sniper.png',
 		['handle'] = { [1] = { base = 33, skill = 1000}, [2] = { base = 34, skill = 1000} },
+		['slot'] = 4,
 	},
 	--
 	['Heavy Sniper Mk II'] = { 
-		--['file'] = 'files/weapons/snpr/heavy sniper mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/snpr/heavy sniper mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 98,
 		['accuracy'] = 0.90, --0.0 a 1.0
 		['rate'] = 800, --espaço de tempo entre os tiros
@@ -1932,10 +1981,11 @@ properties = {
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['scope'] = 'files/model/crosshair/scope/heavy sniper.png',
 		['handle'] = { [1] = { base = 33, skill = 1000}, [2] = { base = 34, skill = 1000} },
+		['slot'] = 4,
 	},
 	--
 	['Marksman Rifle'] = { 
-		--['file'] = 'files/weapons/snpr/marksman rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/snpr/marksman rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 70,
 		['accuracy'] = 0.80, --0.0 a 1.0
 		['rate'] = 600, --espaço de tempo entre os tiros
@@ -1958,10 +2008,11 @@ properties = {
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['scope'] = 'files/model/crosshair/scope/marksman rifle.png',
 		['handle'] = { [1] = { base = 33, skill = 1000}, [2] = { base = 34, skill = 1000} },
+		['slot'] = 4,
 	},
 	--
 	['Marksman Rifle Mk II'] = { 
-		--['file'] = 'files/weapons/snpr/marksman rifle mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/snpr/marksman rifle mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 70,
 		['accuracy'] = 0.80, --0.0 a 1.0
 		['rate'] = 600, --espaço de tempo entre os tiros
@@ -1984,10 +2035,11 @@ properties = {
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['scope'] = 'files/model/crosshair/scope/marksman rifle.png',
 		['handle'] = { [1] = { base = 33, skill = 1000}, [2] = { base = 34, skill = 1000} },
+		['slot'] = 4,
 	},
 	--
 	['Assault Sniper'] = { 
-		--['file'] = 'files/weapons/snpr/assault sniper', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/snpr/assault sniper', --caminho do arquivo ou ID do objeto
 		['damage'] = 70,
 		['accuracy'] = 0.80, --0.0 a 1.0
 		['rate'] = 600, --espaço de tempo entre os tiros
@@ -2010,10 +2062,11 @@ properties = {
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['scope'] = 'files/model/crosshair/scope/marksman rifle.png',
 		['handle'] = { [1] = { base = 33, skill = 1000}, [2] = { base = 34, skill = 1000} },
+		['slot'] = 4,
 	},
 	--
 	['Precision Rifle'] = { 
-		--['file'] = 'files/weapons/snpr/precision rifle', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/snpr/precision rifle', --caminho do arquivo ou ID do objeto
 		['damage'] = 88,
 		['accuracy'] = 0.90, --0.0 a 1.0
 		['rate'] = 730, --espaço de tempo entre os tiros
@@ -2036,10 +2089,11 @@ properties = {
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['scope'] = 'files/model/crosshair/scope/marksman rifle.png',
 		['handle'] = { [1] = { base = 33, skill = 1000}, [2] = { base = 34, skill = 1000} },
+		['slot'] = 4,
 	},
 	--MGN
 	['MG'] = { 
-		--['file'] = 'files/weapons/mgn/mg', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/mgn/mg', --caminho do arquivo ou ID do objeto
 		['damage'] = 50,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 200, --espaço de tempo entre os tiros
@@ -2061,10 +2115,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/mg.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Combat MG'] = { 
-		--['file'] = 'files/weapons/mgn/combat mg', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/mgn/combat mg', --caminho do arquivo ou ID do objeto
 		['damage'] = 55,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -2086,10 +2141,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/mg.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Combat MG Mk II'] = { 
-		--['file'] = 'files/weapons/mgn/combat mg mk ii', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/mgn/combat mg mk ii', --caminho do arquivo ou ID do objeto
 		['damage'] = 57,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -2111,10 +2167,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/mg.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Minigun'] = { 
-		--['file'] = 'files/weapons/mgn/minigun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/mgn/minigun', --caminho do arquivo ou ID do objeto
 		['damage'] = 30,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 50, --espaço de tempo entre os tiros
@@ -2136,10 +2193,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 38, skill = 199}, [2] = { base = 38, skill = 1000} },
+		['slot'] = 7,
 	},
 	--Throwable
 	['Pipe Bomb'] = { 
-		--['file'] = 'files/weapons/gnd/pipe bomb', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/pipe bomb', --caminho do arquivo ou ID do objeto
 		['damage'] = 85,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -2161,10 +2219,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 16, skill = 1000} },
+		['slot'] = 8,
 	},
 	--
 	['Grenade'] = { 
-		--['file'] = 'files/weapons/gnd/grenade', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/grenade', --caminho do arquivo ou ID do objeto
 		['damage'] = 15,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 50, --espaço de tempo entre os tiros
@@ -2186,10 +2245,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 16, skill = 1000} },
+		['slot'] = 8,
 	},
 	--
 	['BZ Gas'] = { 
-		--['file'] = 'files/weapons/gnd/bz gas', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/bz gas', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -2211,10 +2271,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 17, skill = 1000} },
+		['slot'] = 8,
 	},
 	--
 	['Teargas'] = { 
-		--['file'] = 'files/weapons/gnd/teargas', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/teargas', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -2236,10 +2297,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 17, skill = 1000} },
+		['slot'] = 8,
 	},
 	--
 	['Molotov'] = { 
-		--['file'] = 'files/weapons/gnd/molotov', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/molotov', --caminho do arquivo ou ID do objeto
 		['damage'] = 50,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -2261,10 +2323,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 18, skill = 1000} },
+		['slot'] = 8,
 	},
 	--
 	['Proximity Mine'] = { 
-		--['file'] = 'files/weapons/gnd/proximity mine', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/proximity mine', --caminho do arquivo ou ID do objeto
 		['damage'] = 90,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -2286,10 +2349,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 16, skill = 1000} },
+		['slot'] = 8,
 	},
 	--
 	['Sticky Bomb'] = { 
-		--['file'] = 'files/weapons/gnd/sticky bomb', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/sticky bomb', --caminho do arquivo ou ID do objeto
 		['damage'] = 1,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -2311,10 +2375,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 39, skill = 1000} },
+		['slot'] = 8,
 	},
 	--
 	['Ball'] = { 
-		--['file'] = 'files/weapons/gnd/ball', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/ball', --caminho do arquivo ou ID do objeto
 		['damage'] = 1,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -2336,10 +2401,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 16, skill = 1000} },
+		['slot'] = 8,
 	},
 	--
 	['Snowball'] = { 
-		--['file'] = 'files/weapons/gnd/snowball', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/snowball', --caminho do arquivo ou ID do objeto
 		['damage'] = 0,
 		['accuracy'] = 0.36, --0.0 a 1.0
 		['rate'] = 440, --espaço de tempo entre os tiros
@@ -2361,10 +2427,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/global.png',
 		['handle'] = { [1] = { base = 16, skill = 1000} },
+		['slot'] = 8,
 	},
 	--Rocket launchers
 	['Rocket Launcher'] = { 
-		--['file'] = 'files/weapons/rckt/rocket launcher', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/rckt/rocket launcher', --caminho do arquivo ou ID do objeto
 		['damage'] = 100,
 		['accuracy'] = 0.10, --0.0 a 1.0
 		['rate'] = 1000, --espaço de tempo entre os tiros
@@ -2386,10 +2453,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/heavy.png',
 		['handle'] = { [1] = { base = 35, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
 	['Homing Launcher'] = { 
-		--['file'] = 'files/weapons/rckt/homing launcher', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/rckt/homing launcher', --caminho do arquivo ou ID do objeto
 		['damage'] = 95,
 		['accuracy'] = 0.25, --0.0 a 1.0
 		['rate'] = 1000, --espaço de tempo entre os tiros
@@ -2411,10 +2479,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/heavy.png',
 		['handle'] = { [1] = { base = 36, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
 	['Teargas Launcher'] = { 
-		--['file'] = 'files/weapons/gnd/grenade launcher', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/grenade launcher', --caminho do arquivo ou ID do objeto
 		['damage'] = 10,
 		['accuracy'] = 0.10, --0.0 a 1.0
 		['rate'] = 1000, --espaço de tempo entre os tiros
@@ -2436,10 +2505,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/heavy.png',
 		['handle'] = { [1] = { base = 27, skill = 200}, [2] = { base = 25, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
 	['Grenade Launcher'] = { 
-		--['file'] = 'files/weapons/gnd/grenade launcher', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/grenade launcher', --caminho do arquivo ou ID do objeto
 		['damage'] = 95,
 		['accuracy'] = 0.10, --0.0 a 1.0
 		['rate'] = 1000, --espaço de tempo entre os tiros
@@ -2461,10 +2531,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/heavy.png',
 		['handle'] = { [1] = { base = 27, skill = 200}, [2] = { base = 25, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
 	['Compact Grenade Launcher'] = { 
-		--['file'] = 'files/weapons/gnd/compact grenade launcher', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/compact grenade launcher', --caminho do arquivo ou ID do objeto
 		['damage'] = 95,
 		['accuracy'] = 0.15, --0.0 a 1.0
 		['rate'] = 1000, --espaço de tempo entre os tiros
@@ -2486,10 +2557,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/heavy.png',
 		['handle'] = { [1] = { base = 29, skill = 1000} },
+		['slot'] = 7,
 	},
 	--Special
 	['Flare'] = {
-		--['file'] = 'files/weapons/ptl/flare', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/flare', --caminho do arquivo ou ID do objeto
 		['damage'] = 0,
 		['accuracy'] = 0.30, --0.0 a 1.0
 		['rate'] = 2000, --espaço de tempo entre os tiros
@@ -2511,10 +2583,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 16, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
 	['Flare Gun'] = {
-		--['file'] = 'files/weapons/ptl/flare gun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/flare gun', --caminho do arquivo ou ID do objeto
 		['damage'] = 0,
 		['accuracy'] = 0.30, --0.0 a 1.0
 		['rate'] = 2000, --espaço de tempo entre os tiros
@@ -2536,10 +2609,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Stun Gun'] = { 
-		--['file'] = 'files/weapons/ptl/stun gun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/stun gun', --caminho do arquivo ou ID do objeto
 		['damage'] = 1,
 		['accuracy'] = 0.40, --0.0 a 1.0
 		['rate'] = 900, --espaço de tempo entre os tiros
@@ -2560,10 +2634,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Up-n-Atomizer'] = { 
-		--['file'] = 'files/weapons/ptl/up n atomizer', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/ptl/up n atomizer', --caminho do arquivo ou ID do objeto
 		['damage'] = 80,
 		['accuracy'] = 0.10, --0.0 a 1.0
 		['rate'] = 900, --espaço de tempo entre os tiros
@@ -2584,10 +2659,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 23, skill = 1000},  },
+		['slot'] = 1,
 	},
 	--
 	['Unholy Hellbringer'] = { 
-		--['file'] = 'files/weapons/lmg/unholy hellbringer', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/lmg/unholy hellbringer', --caminho do arquivo ou ID do objeto
 		['damage'] = 55,
 		['accuracy'] = 0.45, --0.0 a 1.0
 		['rate'] = 175, --espaço de tempo entre os tiros
@@ -2609,10 +2685,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
+		['slot'] = 2,
 	},
 	--
 	['Railgun'] = { 
-		--['file'] = 'files/weapons/snpr/railgun', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/snpr/railgun', --caminho do arquivo ou ID do objeto
 		['damage'] = 90,
 		['accuracy'] = 0.2, --0.0 a 1.0
 		['rate'] = 500, --espaço de tempo entre os tiros
@@ -2636,10 +2713,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 27, skill = 200}, [2] = { base = 25, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
 	['Widowmaker'] = { 
-		--['file'] = 'files/weapons/mgn/widowmaker', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/mgn/widowmaker', --caminho do arquivo ou ID do objeto
 		['damage'] = 30,
 		['accuracy'] = 0.8, --0.0 a 1.0
 		['rate'] = 50, --espaço de tempo entre os tiros
@@ -2661,10 +2739,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 38, skill = 199}, [2] = { base = 38, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
-	['Hand Firework'] = { 
-		--['file'] = 'files/weapons/gnd/hand firework', --caminho do arquivo ou ID do objeto
+	['Hand Fireworks'] = { 
+		['file'] = 'files/weapons/gnd/hand firework', --caminho do arquivo ou ID do objeto
 		['damage'] = 45,
 		['accuracy'] = 0.12, --0.0 a 1.0
 		['rate'] = 1000, --espaço de tempo entre os tiros
@@ -2686,10 +2765,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 26, skill = 250} },
+		['slot'] = 7,
 	},
 	--
-	['Firework Launcher'] = { 
-		--['file'] = 'files/weapons/rckt/firework launcher', --caminho do arquivo ou ID do objeto
+	['Fireworks Launcher'] = { 
+		['file'] = 'files/weapons/rckt/firework launcher', --caminho do arquivo ou ID do objeto
 		['damage'] = 45,
 		['accuracy'] = 0.12, --0.0 a 1.0
 		['rate'] = 1000, --espaço de tempo entre os tiros
@@ -2711,10 +2791,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/heavy.png',
 		['handle'] = { [1] = { base = 35, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
 	['Compact EMP Launcher'] = { 
-		--['file'] = 'files/weapons/gnd/compact emp launcher', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/compact emp launcher', --caminho do arquivo ou ID do objeto
 		['damage'] = 95,
 		['accuracy'] = 0.15, --0.0 a 1.0
 		['rate'] = 900, --espaço de tempo entre os tiros
@@ -2735,10 +2816,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/default.png',
 		['handle'] = { [1] = { base = 23, skill = 998} },
+		['slot'] = 1,
 	},
 	--
 	['Snowball Launcher'] = { 
-		--['file'] = 'files/weapons/gnd/snowball launcher', --caminho do arquivo ou ID do objeto
+		['file'] = 'files/weapons/gnd/snowball launcher', --caminho do arquivo ou ID do objeto
 		['damage'] = 0,
 		['accuracy'] = 0.15, --0.0 a 1.0
 		['rate'] = 2000, --espaço de tempo entre os tiros
@@ -2760,9 +2842,11 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/heavy.png',
 		['handle'] = { [1] = { base = 29, skill = 1000}, [2] = { base = 29, skill = 1000} },
+		['slot'] = 7,
 	},
 	--
 }
+
 
 for item, valor in pairs (properties) do
 	valor.handling = getWeaponNameFromID (valor.handle[1].base)
@@ -2778,7 +2862,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = {500, 2000}, --time to detonate
-		['file'] = 'files/weapons/gnd/pipe bomb', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Pipe Bomb', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = false,
@@ -2795,7 +2879,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/grenade', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Grenade', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -2812,7 +2896,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = 5000, --time to detonate
-		['file'] = 'files/weapons/gnd/bz gas', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/BZ Gas', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -2829,7 +2913,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/teargas', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Teargas', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -2846,7 +2930,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/molotov', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Molotov', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -2864,7 +2948,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/proximity mine', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Proximity Mine', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = { element = {createColTube, 0.5, 1}, result = {12,5} }, --element (marker or colshape), result (resulting explosions)
 		['detonate'] = nil,
@@ -2882,7 +2966,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/sticky bomb', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Sticky Bomb', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = {5, 7},
@@ -2901,7 +2985,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = {0.5,0.1,0.1}, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/ball', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Ball', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = { element = {createColTube, 0.5, 1} },
 		['detonate'] = false,
@@ -2917,7 +3001,7 @@ projectiles = {
 		['force'] = 1.0, 
 		['velocity'] = {0.5,0.1,0.1}, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/snowball', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Snowball', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['collision'] = nil,
 		['arrival'] = nil,
@@ -2935,7 +3019,7 @@ projectiles = {
 		['force'] = 1.0, 
 		['velocity'] = {0.5,0.1,0.1}, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/grenade launcher shell', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Grenade Launcher Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -2951,7 +3035,7 @@ projectiles = {
 		['force'] = 1.0, 
 		['velocity'] = {0.5,0.1,0.1}, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/grenade launcher shell', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Grenade Launcher Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -2967,7 +3051,7 @@ projectiles = {
 		['force'] = 1.0, 
 		['velocity'] = {0.5,0.1,0.1}, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/grenade launcher shell', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Grenade Launcher Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -2985,7 +3069,7 @@ projectiles = {
 		['force'] = 1.0, 
 		['velocity'] = {0.5,0.1,0.1}, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/snowball', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Snowball', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = false,
@@ -3002,7 +3086,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/rckt/rocket', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/rckt/Rocket Launcher Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -3018,7 +3102,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/rckt/homing rocket', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/rckt/Homing Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -3026,7 +3110,7 @@ projectiles = {
 		['pickable'] = nil,
 	},
 	--
-	['Firework Launcher'] = {
+	['Fireworks Launcher'] = {
 		['type'] = 18, --projectile type https://wiki.multitheftauto.com/wiki/Projectiles
 		['position'] = {0,0,0}, --offset from starting point (muzzle position)
 		['rotation'] = {90,0,0},
@@ -3034,7 +3118,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = {2,1,1}, --physics
 		['counter'] = 2000, --time to detonate
-		['file'] = 'files/weapons/rckt/firework rocket', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/rckt/Fireworks Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = { name = 'smoke_flare', position = {0,0,0}, rotation = {-90,0,0} },
 		['arrival'] = nil,
 		['detonate'] = false,
@@ -3043,7 +3127,7 @@ projectiles = {
 		['data'] = { ['fireworks'] = 50, },
 	},
 	--
-	['Hand Firework'] = {
+	['Hand Fireworks'] = {
 		['type'] = 18, --projectile type https://wiki.multitheftauto.com/wiki/Projectiles
 		['position'] = {0,0,0}, --offset from starting point (muzzle position)
 		['rotation'] = {90,0,0},
@@ -3051,7 +3135,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = {2,1,1}, --physics
 		['counter'] = 2000, --time to detonate
-		['file'] = 'files/weapons/rckt/firework rocket', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/rckt/Fireworks Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = { name = 'smoke_flare', position = {0,0,0}, rotation = {-90,0,0} },
 		['arrival'] = nil,
 		['detonate'] = false,
@@ -3068,7 +3152,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = {1,0.5,0.5}, --physics
 		['counter'] = 60000, --time to detonate
-		['file'] = 'files/weapons/ptl/flare mag', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/ptl/Flare', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = { name = 'smoke_flare', position = {0,0,0}, rotation = {-90,0,0} },
 		['arrival'] = nil,
 		['detonate'] = false,
@@ -3085,7 +3169,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = {1,0.5,0.5}, --physics
 		['counter'] = 60000, --time to detonate
-		['file'] = 'files/weapons/ptl/flare mag', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/ptl/Flare Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = { name = 'smoke_flare', position = {0,0,0}, rotation = {-90,0,0} },
 		['arrival'] = nil,
 		['detonate'] = false,
@@ -3119,7 +3203,7 @@ projectiles = {
 		['force'] = 0, 
 		['velocity'] = {1,1,1}, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/emp shell', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/EMP Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = false,
@@ -3137,7 +3221,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = {4,0.4,0.4}, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/gnd/grenade launcher shell', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/gnd/Grenade Launcher Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,

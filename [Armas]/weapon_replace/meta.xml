@@ -68,8 +68,8 @@
 	<file src="files/weapons/ptl/Double Action Revolver.txd"></file>
 	<file src="files/weapons/ptl/Flare.dff"></file>
 	<file src="files/weapons/ptl/Flare.txd"></file>
-	<file src="files/weapons/ptl/Flare Mag.dff"></file>
-	<file src="files/weapons/ptl/Flare Mag.txd"></file>
+	<file src="files/weapons/ptl/Flare Shell.dff"></file>
+	<file src="files/weapons/ptl/Flare Shell.txd"></file>
 	<file src="files/weapons/ptl/Flare Gun.dff"></file>
 	<file src="files/weapons/ptl/Flare Gun.txd"></file>
 	<file src="files/weapons/ptl/Heavy Revolver.dff"></file>
@@ -156,8 +156,8 @@
 	<file src="files/weapons/mgn/MG.txd"></file>
 	<file src="files/weapons/mgn/Combat MG.dff"></file>
 	<file src="files/weapons/mgn/Combat MG.txd"></file>
-	<file src="files/weapons/mgn/Combat Mg Mk II.dff"></file>
-	<file src="files/weapons/mgn/Combat Mg Mk II.txd"></file>
+	<file src="files/weapons/mgn/Combat MG Mk II.dff"></file>
+	<file src="files/weapons/mgn/Combat MG Mk II.txd"></file>
 	<file src="files/weapons/mgn/Minigun.dff"></file>
 	<file src="files/weapons/mgn/Minigun.txd"></file>
 	<file src="files/weapons/mgn/Widowmaker.dff"></file>
@@ -204,12 +204,12 @@
 	<file src="files/weapons/snpr/Railgun.txd"></file>
 
 					///Rocket Launcher
-	<file src="files/weapons/rckt/Rocket.dff"></file>
-	<file src="files/weapons/rckt/Rocket.txd"></file>
+	<file src="files/weapons/rckt/Rocket Launcher Shell.dff"></file>
+	<file src="files/weapons/rckt/Rocket Launcher Shell.txd"></file>
 	<file src="files/weapons/rckt/Rocket Launcher.dff"></file>
 	<file src="files/weapons/rckt/Rocket Launcher.txd"></file>
-	<file src="files/weapons/rckt/Homing Rocket.dff"></file>
-	<file src="files/weapons/rckt/Homing Rocket.txd"></file>
+	<file src="files/weapons/rckt/Homing Launcher Shell.dff"></file>
+	<file src="files/weapons/rckt/Homing Launcher Shell.txd"></file>
 	<file src="files/weapons/rckt/Homing Launcher.dff"></file>
 	<file src="files/weapons/rckt/Homing Launcher.txd"></file>
 	<file src="files/weapons/rckt/Fireworks Shell.dff"></file>
