@@ -149,7 +149,12 @@ end
 	function aiming (state)
 		if localPlayer then
 			if source == localPlayer then
-				if state then addEventHandler ('onClientPreRender', root, renderSight) else removeEventHandler ('onClientPreRender', root, renderSight) end
+				if state then
+				removeEventHandler ('onClientPreRender', root, renderSight)
+				addEventHandler ('onClientPreRender', root, renderSight)
+				else
+				removeEventHandler ('onClientPreRender', root, renderSight)
+				end
 			end
 		else
 		triggerClientEvent (source, 'onClient'..events.aim, source, state)

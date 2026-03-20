@@ -126,6 +126,7 @@ local evento = events.change
 			
 			
 			local ammo = getPedTotalAmmo (localPlayer, arma)
+			outputChatBox ("TOTAL: "..tostring (ammo))
 			local clip = getPedAmmoInClip (localPlayer)
 			local pente = properties[objeto].clip
 				if ammo < pente then

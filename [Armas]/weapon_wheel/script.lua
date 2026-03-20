@@ -316,13 +316,13 @@ if localPlayer then
 
 function commandIni ()
 
-addEventHandler ('onClientResourceStart', getResourceRootElement (getThisResource ()), function ()
-toggleControl("next_weapon", false) 
-toggleControl("previous_weapon", false)
 
 addCommandHandler ('weapon_wheel', function () end)
 bindKey ('tab', 'down', 'weapon_wheel')
-end)
+
+toggleControl("next_weapon", false) 
+toggleControl("previous_weapon", false)
+
 
 end
 

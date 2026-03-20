@@ -9406,18 +9406,15 @@ soundIni ()
 --Handle
 drawSound = {}
 function draw (state)
-	if not localPlayer then return triggerClientEvent ("onClient"..events.aim, source, state) end
 local owner = source
 local name, weapon = getPedWeapon (owner)
-	--if not handle[getSlotFromWeapon (name)] then return end
 	if not sounds[name] or not sounds[name].handle then return end
-local t = sounds[name].handle--handle[getSlotFromWeapon (name)]
+local t = sounds[name].handle
 	if state == true then
 	t = t.draw
 	else
 	t = t.holster
 	end
-	
 local r = math.random (#t)
 s = t[r]
 local x,y,z = getElementPosition (weapon)
@@ -9430,7 +9427,6 @@ local x,y,z = getElementPosition (weapon)
 	end
 end
 addEventHandler ('onClient'..events.aim, getRootElement (), draw)
-addEventHandler ('on'..events.aim, getRootElement (), draw)
 
 --Shoot
 shotSound = {}
@@ -9448,9 +9444,13 @@ local x,y,z = getElementPosition (ob)
 --Shot
 	if name then
 		if not sounds[name] then
-		t = sounds[getWeaponIDFromName(getData()[name].handling)] or nil
+		return--t = sounds[getWeaponIDFromName(getData()[name].handling)] or nil
 		else
-		t = sounds[arma].shot
+			if getPedAmmoInClip (owner) > 0 then
+			t = sounds[arma].shot
+			else
+			t = sounds[arma]['handle'].dry
+			end
 		end
 		if not t then return end
 	else
@@ -9466,13 +9466,14 @@ local tab = exports['PUNK+Armas']:getFiringCount (owner)
 	end
 	
 	for i=1, #s do
+	local a = s[i]
 		if s[i].delay then
 		local tempS = s[i]
 			setTimer (function ()
 				if getElementData (ob, 'suppressor') == true then 
 				ms = playSound3D ('files/sounds/suppressed.mp3', x,y,z, false)
 				else
-				ms = playSound3D (unpack (s[i]), x,y,z, false)
+				ms = playSound3D (unpack (tempS), x,y,z, false)
 				end
 				if owner == localPlayer then
 					if getWeaponNameFromID ( _getPedWeapon (owner) ) == 'Sniper' or getWeaponNameFromID ( _getPedWeapon (owner) ) == 'Camera' or getWeaponNameFromID ( _getPedWeapon (owner) ) == 'Rocket Launcher' or getWeaponNameFromID ( _getPedWeapon (owner) ) == 'Rocket Launcher HS' then
