@@ -1475,48 +1475,6 @@ local properties, projectiles, armas = getData ()
 	end
 end
 
-addEventHandler ('onPlayerLogin', getRootElement(), function ()
-triggerClientEvent (source, 'shopStart', source, source)
-end)
-
-addEventHandler ('onPlayerResourceStart', getRootElement(), function (mod)
-	if mod ~= getThisResource () then return end
-	if getPlayerAccount (source) and isGuestAccount (getPlayerAccount (source)) == false then
-	triggerClientEvent (source, 'shopStart', source, source)
-	end
-end)
-
---[[
-myWeapons = {}
-function shopStart (jogador)
-	if localPlayer and jogador ~= localPlayer then return end
-local properties, projectiles, armas = getData ()
-	if armas[jogador] then
-		for slot, tabela in pairs (armas[jogador]) do
-			for arma, valor in pairs (tabela) do
-				if item ~= -1 then
-					if localPlayer then
-						if not minhasArmas then minhasArmas = {} end
-					minhasArmas[arma] = {}
-					else
-					minhasArmas[jogador][arma] = {}
-					end
-				end
-			end
-		end
-	end
-end
-addEvent ('shopStart', true)
-addEventHandler ('shopStart', getRootElement(), shopStart)
-addEventHandler ('giveWeapon', getRootElement(), shopStart)
-addEventHandler ('takeWeapon', getRootElement(), shopStart)
-addEventHandler ('takeAllWeapons', getRootElement(), shopStart)
-addEventHandler ('setPedAmmoInClip', getRootElement(), shopStart)
-addEventHandler ('setPedTotalAmmo', getRootElement(), shopStart)
-addEventHandler ('updateMyWeapons', getRootElement(), shopStart)
-addEventHandler ('PUNKArmasComprar', getRootElement(), shopStart)
-]]
-
 	--Client
 	if localPlayer then
 	
@@ -1571,10 +1529,6 @@ addEventHandler ('PUNKArmasComprar', getRootElement(), shopStart)
 			currentButton = idBotao
 			moveObject (ob, 100, px,py,pz, rx1, ry1, rz1, 'Linear')
 			setElementAlpha (localPlayer, 0)
-			local _,_,o = exports['PUNK+Armas']:getPedWeapon (localPlayer)
-				if isElement (o) then
-				setElementAlpha (o, 0)
-				end
 			local x,y,z = unpack (tabela.camera['default']['position'])
 			local px,py,pz = unpack (tabela.camera['default']['target'])
 			setCameraMatrix (x,y,z, px,py,pz)
@@ -1605,8 +1559,6 @@ addEventHandler ('PUNKArmasComprar', getRootElement(), shopStart)
 				end
 			else
 			setElementAlpha (localPlayer, 255)
-			local _,_,o = exports['PUNK+Armas']:getPedWeapon (localPlayer)
-			setElementAlpha (o, 255)
 			setCameraTarget (localPlayer)
 				for i=1, #prateleiras do
 				local t = prateleiras[i]
@@ -2123,9 +2075,6 @@ shopIni ()
 function upgradesIni ()
 
 if localPlayer then 
-
-
-
 
 shaders = {}
 

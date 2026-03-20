@@ -2115,7 +2115,7 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/mg.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
-		['slot'] = 2,
+		['slot'] = 6,
 	},
 	--
 	['Combat MG'] = { 
@@ -2141,7 +2141,7 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/mg.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
-		['slot'] = 2,
+		['slot'] = 6,
 	},
 	--
 	['Combat MG Mk II'] = { 
@@ -2167,7 +2167,7 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/mg.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
-		['slot'] = 2,
+		['slot'] = 6,
 	},
 	--
 	['Minigun'] = { 
@@ -2685,7 +2685,7 @@ properties = {
 		['flags'] = { true, true, true, true, true, true, false, false},
 		['crosshair'] = 'files/model/crosshair/default/assault.png',
 		['handle'] = { [1] = { base = 30, skill = 199}, [2] = { base = 33, skill = 1000} },
-		['slot'] = 2,
+		['slot'] = 3,
 	},
 	--
 	['Railgun'] = { 
@@ -3102,7 +3102,7 @@ projectiles = {
 		['force'] = nil, 
 		['velocity'] = nil, --physics
 		['counter'] = nil, --time to detonate
-		['file'] = 'files/weapons/rckt/Homing Shell', --projectile model ID or nil (default model) or -1 (invisible model)
+		['file'] = 'files/weapons/rckt/Homing Launcher Shell', --projectile model ID or nil (default model) or -1 (invisible model)
 		['effect'] = nil,
 		['arrival'] = nil,
 		['detonate'] = nil,
@@ -3249,13 +3249,6 @@ events = {
 
 attachment = {
 
-
-	--["right_hand"] = {24, 0,0,0, 0,0,-0.275},
-	--["left_hand"] = {34, 0.05,0.05,0, 180,30,-30},
-	
-	["right_hand"] = {24,0,0,0, 0,0,0},
-	["left_hand"] = {34,-0.04, 0.0525, 0.04, 6, 3, 0.2},
-	
 	offsets = {24, 0,0,0, 0,0,0}, --bone id, x,y,z, rx,ry,rz
 
 	attach = function (...)

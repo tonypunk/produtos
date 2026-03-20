@@ -126,11 +126,8 @@ local evento = events.change
 			
 			
 			local ammo = getPedTotalAmmo (localPlayer, arma)
-			outputChatBox ("AMMO: "..ammo)
 			local clip = getPedAmmoInClip (localPlayer)
-			outputChatBox ("CLIP: "..clip)
 			local pente = properties[objeto].clip
-			outputChatBox ("PENTRE: "..pente)
 				if ammo < pente then
 				setPedAmmoInClip (jogador, arma, ammo)
 				setPedTotalAmmo (jogador, arma, clip)

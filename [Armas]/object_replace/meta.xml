@@ -1,0 +1,13 @@
+<meta>
+<info name="Armas PUNK STUDIOS" author="Tony_Punk" type="script" version="70" description="Acesse nosso discord: discord.gg/DnyCUzJ"></info>
+<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+<oop>true</oop>
+	
+	<script src="replace.lua" type="shared" />
+	
+	<file src="files/files/**.dff"></file>
+	<file src="files/files/**.txd"></file>
+	<file src="files/files/**.col"></file>
+
+	
+</meta>

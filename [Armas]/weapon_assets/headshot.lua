@@ -3,7 +3,7 @@ headshot = { -- Sistema de headshot
 dano = 100, -- quantidade de dano que o headshot tira, 100 causa morte instantanea
 tremer = true, -- se habilitado esta opção faz a camera do alvo tremer ao levar um headshot (true = ativado, false = desativado)
 duracao = 2, -- tempo de duração do efeito de tela tremendo (segundos)
-armas = {8,24,25,26,27,30,31,33, 'Heavy Revolver', 'Marksman Pistol'}, -- armas que farão perder a cabeça
+armas = {'Heavy Revolver', 'Marksman Pistol'}, -- armas que farão perder a cabeça
 }
 
 
@@ -94,8 +94,8 @@ end
 				if semCabeca[jogador] == true then
 				setPedHeadless (jogador, false)
 				end
+			removeEventHandler ('onClientPlayerSpawn', alvo, spawnar)
 			end
-			addEventHandler ("onPlayerSpawn", getRootElement(), nasceu)
 
 		end
 

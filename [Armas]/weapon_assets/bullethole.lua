@@ -146,7 +146,7 @@ textures = {}
 		dxSetRenderTarget(tempTex, true)
 		dxSetBlendMode("modulate_add")
 		local e,f,g,h = unpack (valor[i])
-		dxDrawImageSection(0,0,x,y,e,f,g,h, textura, 0,0,0) -- Draw a certain section
+		dxDrawImageSection(0,0,x,y,e,f,g,h, textura, 0,0,0)
 		dxSetBlendMode("blend")
 		dxSetRenderTarget()
 		textures[nome][i] = tempTex
