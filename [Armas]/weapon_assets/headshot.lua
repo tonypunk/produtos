@@ -44,13 +44,12 @@ end
 
 	if not localPlayer then
 
-	semCabeca = {}
 		if headshot.dano and type (headshot.dano) == "number" and headshot.dano > 0 then
 
 			function spawnar ()
-			removeEventHandler ('onClientPlayerSpawn', alvo, spawnar)
 			setPedHeadless (source, false)
 			end
+			addEventHandler ('onPlayerSpawn', alvo, spawnar)
 
 			function headFunc (agressor, arma, parte, perda)
 				if arma == "Stun Gun" then return end
@@ -59,18 +58,16 @@ end
 				local vida = getElementHealth (alvo)
 					if vida <= headshot.dano then
 						if getElementType (alvo) == 'ped' then
-						triggerEvent ("onPedWasted", alvo, agressor, arma, parte)
+						--triggerEvent ("onPedWasted", alvo, agressor, arma, parte)
 						elseif getElementType (alvo) == 'player' then
-						triggerEvent ("onPlayerWasted", alvo, agressor, a, parte)
+						--triggerEvent ("onPlayerWasted", alvo, agressor, a, parte)
 						end
-					setElementHealth (alvo, 0)
+					--setElementHealth (alvo, 0)
 					--killPed(alvo, agressor, arma, parte)
 						if headshot.armas and #headshot.armas > 0  then
 							for i=1, #headshot.armas do
 								if arma == headshot.armas[i] then
 								setPedHeadless (alvo, true)
-								semCabeca[alvo] = true
-								addEventHandler ('onClientPlayerSpawn', alvo, spawnar)
 								break
 								end
 							end
@@ -87,15 +84,6 @@ end
 			end
 			addEventHandler ("onPlayerDamage", getRootElement(), headFunc)
 			addEventHandler ("onPedDamage", getRootElement(), headFunc)
-
-
-			function nasceu ()
-			local jogador = source
-				if semCabeca[jogador] == true then
-				setPedHeadless (jogador, false)
-				end
-			removeEventHandler ('onClientPlayerSpawn', alvo, spawnar)
-			end
 
 		end
 

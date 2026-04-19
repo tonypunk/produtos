@@ -34,7 +34,7 @@ function crosshairIni ()
 		--
 		for i=1, #tab do
 			for j=1, #tab[i] do
-			local r,b,g,a = tab[i][j][1], tab[i][j][2], tab[i][j][3], tab[i][j][4]
+			local r,g,b,a = tab[i][j][1], tab[i][j][2], tab[i][j][3], tab[i][j][4]
 			dxSetPixelColor (pixel, (sx) - i, (sy) -j, r,g,b,a)
 			end
 		end
@@ -157,10 +157,11 @@ end
 				end
 			end
 		else
-		triggerClientEvent (source, 'onClient'..events.aim, source, state)
+		triggerClientEvent (source, 'mandarMira', source, state)
 		end
 	end
-	addEventHandler ('onClient'..events.aim, getRootElement(), aiming)
+	addEvent ('mandarMira', true)
+	addEventHandler ('mandarMira', getRootElement(), aiming)
 	addEventHandler ('on'..events.aim, getRootElement(), aiming)
 
 

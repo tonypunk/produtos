@@ -5,6 +5,7 @@
 	<script src="vinculum.lua" type="shared" />
 	<script src="utils.lua" type="shared" />
 	
+	<script src="config.lua" type="shared" />
 	<script src="sound.lua" type="shared" />
 
 	
