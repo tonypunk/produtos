@@ -13,6 +13,12 @@ Documentação
 Assets
 Baixe os assets nativos de exemplo em : https://github.com/tonypunk/produtos/raw/refs/heads/main/%5BArmas%5D/%5BArmas%5D.rar
 
+Ordem de ligação dos mods:
++Armas
++Objetos
+weapon_replace
+depois pode ligar qualquer um independente da ordem
+
 Vinculação 
 
 Copie e cole as funções abaixo em um arquivo shared no seu resource ou simplesmente copie e adicione ao meta do seu resource o arquivo vinculum.lua sem as restrições de texto
