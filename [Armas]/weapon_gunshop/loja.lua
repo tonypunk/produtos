@@ -2012,9 +2012,6 @@ end
 	return elements
 	end
 	
-	local p = getElementsByType ('player')[1]
-	setElementPosition (p, 1379.954, -1282.688, 13.547, true)
-	setElementCollisionsEnabled (p, false)
 	local marker = createMarker (1379.9541015625, -1282.4208984375, 13.546875, "cylinder", 1, 170,0,0,0)
 		function movimento (jogador, dimensao)
 			if getElementType (jogador) == "player" then
