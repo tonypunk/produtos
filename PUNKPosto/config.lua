@@ -322,3 +322,13 @@ abastecer = "e", -- tecla padrão para abastecer o veiculo
 --Mensagens -- aqui você pode configurar em qual parte da tela as notificações devem aparecer
 posicaoHorizontal = "esquerda" --posições horizontais: "esquerda" "centro" "direita"
 posicaoVertial = "topo" --posicoes verticais:"fundo" "centro" "topo"
+
+--Não mecher
+dadosShader = [[
+    texture tex;
+    technique replace {
+        pass P0 {
+            Texture[0] = tex;
+        }
+    }
+]]
