@@ -3,6 +3,10 @@ function utils ()
 function setupIni ()
 
 if localPlayer then
+color1 = {41, 80, 113, 200}
+color2 = {41, 80, 113, 100}
+color3 = {0, 0, 0, 120}
+
  screenW,screenH = guiGetScreenSize()
  resW, resH = 1920, 1080
  resW2, resH2 = 1366, 768
@@ -181,6 +185,7 @@ function cursor (_, _, absX, absY)
 		else
 		direction = getDirectionFromAngle(angle)
 		end
+		force[direction] = force[direction] + 1
 		--        startX = absX
         --startY = absY
 		removeEventHandler("onClientCursorMove", root, cursor)
@@ -188,6 +193,11 @@ function cursor (_, _, absX, absY)
 		addEventHandler("onClientCursorMove", root, cursor)
 end
 
+force = {}
+
+	for i=1, 8 do
+	force[i] = 0
+	end
 
 function getDirectionFromAngle(angle)
     if angle >= 337.5 or angle < 22.5 then
@@ -315,14 +325,13 @@ utils ()
 if localPlayer then
 
 function commandIni ()
-
-
 addCommandHandler ('weapon_wheel', function () end)
 bindKey ('tab', 'down', 'weapon_wheel')
 
+addEventHandler ('onClientResourceStart', getResourceRootElement (getThisResource ()), function ()
 toggleControl("next_weapon", false) 
 toggleControl("previous_weapon", false)
-
+end)
 
 end
 
@@ -343,6 +352,22 @@ dxDrawImage (530.08*x, 18.08*y, 859.84*x, 859.84*y, weapon_wheel)
 		dxDrawImage (530.08*x, 18.08*y, 859.84*x, 859.84*y, wheel_selected, 0 + (45*(i-1)))
 		end
 	end
+--[[
+	if isCursorOnElement(x*1210, y*605, x*100, y*100) then
+	dxDrawCircle(x*1920/2+x*300, y*655, x*100, y*100, tocolor(color2[1], color2[2], color2[3], color2[4]), 0, 360, y*100)
+	else
+	dxDrawCircle(x*1920/2+x*300, y*655, x*100, y*100, tocolor(0, 0, 0, 153), 0, 360, y*100)
+	end
+dxDrawCircle(x*1920/2+x*300, y*655, x*100, y*100, tocolor(color3[1], color3[2], color3[3], color3[4]), 0, 360, y*5)
+	
+	if isCursorOnElement(x*610, y*605, x*100, y*100) then
+	dxDrawCircle(x*1920/2-x*300, y*655, x*100, y*100, tocolor(color2[1], color2[2], color2[3], color2[4]), 0, 360, y*100)
+	else
+	dxDrawCircle(x*1920/2-x*300, y*655, x*100, y*100, tocolor(0, 0, 0, 153), 0, 360, y*100)
+	end
+dxDrawCircle(x*1920/2-x*300, y*655, x*100, y*100, tocolor(color3[1], color3[2], color3[3], color3[4]), 0, 360, y*5)
+	]]
+	
 end
 
 function border ()

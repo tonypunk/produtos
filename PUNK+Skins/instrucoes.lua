@@ -8,6 +8,9 @@ exemplo: createPed (181, 1242.11, 1245.2, 1545.5)
 A diferença é que os elementos novos são referidos pelo NOME em vez de ID
 createPed ("Skatista", 1242.11, 1245.2, 1545.5)
 
+Assets
+Baixe os assets nativos de exemplo em : https://github.com/tonypunk/produtos/raw/refs/heads/main/%5BSkins%5D/%5BSkins%5D.rar
+
 Para utilizar elementos de nosso sistema em seus mods cole o seguinte código no topo dos scripts
 
 --Setup

@@ -20,6 +20,10 @@ getData () --obtem todas as informações do arquivo config
 getDetails () -- obtem os detalhes de acoplagem do capacete
 
 
+
+Assets
+Baixe os assets nativos de exemplo em : https://github.com/tonypunk/produtos/raw/refs/heads/main/%5BCapacetes%5D/%5BCapacetes%5D.rar
+
 acoplagem do capacete custom da squad: 
 --
 acoplagem = { --posições do capacete na cabeça e na mão

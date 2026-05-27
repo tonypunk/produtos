@@ -1,0 +1,10 @@
+<meta>
+    <info name="Sistema dinâmico de blindagem" author="PUNK STUDIOS" type="script" version="2748" description="Acesse nosso discord: https://discord.gg/kAuFT3gV7A"></info>
+	<min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"></min_mta_version>
+    <script src="config.lua" type="shared" />
+	<script src="client.lua" type="client" />
+	<script src="server.lua" type="server" />
+	<script src="vinculum.lua" type="server" />
+	<export function="obterMelhorias" type="server" />
+	<export function="aplicarMelhorias" type="server" />
+</meta>

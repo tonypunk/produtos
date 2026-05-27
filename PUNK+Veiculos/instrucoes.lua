@@ -11,6 +11,9 @@ createVehicle ("Stinger", 1242.11, 1245.2, 1545.5)
 Ou um ID diferente dos que já existem
 createVehicle (1000, 1242.11, 1245.2, 1545.5)
 
+Assets
+Baixe os assets nativos de exemplo em : https://github.com/tonypunk/produtos/raw/refs/heads/main/%5BVeiculos%5D/%5BVeiculos%5D.rar
+
 Para utilizar elementos de nosso sistema em seus mods cole o seguinte código no topo dos scripts
 --Setup
 
